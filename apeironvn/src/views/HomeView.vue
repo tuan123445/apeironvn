@@ -101,7 +101,7 @@
           năng riêng của chính mình.
         </div>
         <div class="see-detail-btn">
-          <a href="./apostle.html" target="_blank">Xem thêm</a>
+          <a href="./apostle" target="_blank">Xem thêm</a>
         </div>
       </div>
     </div>
@@ -201,7 +201,7 @@
       <div class="body-wrapper">
         <div class="img-line-one">
           <div class="img-hover-zoom" style="margin: 0 !important">
-            <img src="./img/BlackHole.jpg" alt="" />
+            <img src="../assets/img/BlackHole.jpg" alt="" />
             <div class="slide-img-captions">
               <h1>Star NFT</h1>
               <div class="detail-btn">
@@ -210,7 +210,7 @@
             </div>
           </div>
           <div class="img-hover-zoom" style="margin: 0 !important">
-            <img src="./img/relic.png" alt="" />
+            <img src="../assets/img/relic.png" alt="" />
             <div class="slide-img-captions">
               <h1>Relic</h1>
               <div class="detail-btn">
@@ -219,7 +219,7 @@
             </div>
           </div>
           <div class="img-hover-zoom" style="margin: 0 !important">
-            <img src="./img/event.jpeg" alt="" />
+            <img src="../assets/img/event.jpeg" alt="" />
             <div class="slide-img-captions">
               <h1>Event</h1>
               <div class="detail-btn">
@@ -230,7 +230,7 @@
         </div>
         <div class="img-line-two">
           <div class="img-hover-zoom" style="margin: 0 !important">
-            <img src="./img/token.png" alt="" />
+            <img src="../assets/img/token.png" alt="" />
             <div class="slide-img-captions">
               <h1>Tokennomic</h1>
               <div class="detail-btn">
@@ -239,7 +239,7 @@
             </div>
           </div>
           <div class="img-hover-zoom" style="margin: 0 !important">
-            <img src="./img/roadmap.jpg" alt="" />
+            <img src="../assets/img/roadmap.jpg" alt="" />
             <div class="slide-img-captions">
               <h1>Road map</h1>
               <div class="detail-btn">
@@ -248,7 +248,7 @@
             </div>
           </div>
           <div class="img-hover-zoom" style="margin: 0 !important">
-            <img src="./img/team.png" alt="" />
+            <img src="../assets/img/team.png" alt="" />
             <div class="slide-img-captions">
               <h1>team</h1>
               <div class="detail-btn">
@@ -257,6 +257,19 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+    <!-- section-ten -->
+    <div class="section-ten">
+      <div class="body-wrapper">
+        <div class="icon-wrapper">
+          <img class="icon" src="../assets/img/discord_icon.png" alt="" />
+          <img class="icon" src="../assets/img/facebook_icon.png" alt="" />
+          <img src="../assets/img/logo_resize.png" alt="" />
+          <img class="icon" src="../assets/img/telegram_icon.png" alt="" />
+          <img class="icon" src="../assets/img/twitter_icon.png" alt="" />
+        </div>
+        <div class="join">join us</div>
       </div>
     </div>
   </main>
