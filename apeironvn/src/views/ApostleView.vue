@@ -1,5 +1,5 @@
 <template>
-  <main class="body-wrapper">
+  <main class="body-wrapper apostle-view">
     <!-- section-one -->
     <div class="section-one">
       <h1 class="title">
@@ -48,7 +48,7 @@
     </div>
     <!-- section-four -->
     <div class="section-four">
-      <div class="infomation" style="margin-top: 70px">
+      <div class="infomation">
         <Splide :options="options" style="z-index: 10">
           <SplideSlide class="slide-item">
             <div class="slide-img">
@@ -277,7 +277,18 @@ export default {
 </script>
 
 <style>
-.section-one {
+.apostle-view .section-one {
   background-image: url(../assets/img/apostles.png) !important;
+}
+
+.section-four {
+  margin: 0%;
+}
+
+.section-four .infomation {
+  color: #fff8dc;
+  width: -webkit-fill-available;
+  font-weight: 300;
+  padding: 0 50px;
 }
 </style>

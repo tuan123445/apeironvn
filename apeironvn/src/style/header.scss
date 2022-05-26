@@ -1,0 +1,55 @@
+.header {
+  width: 100%;
+  height: fit-content;
+  position: absolute;
+  z-index: 10000;
+
+  .navigation-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: -webkit-fill-available;
+    height: 90px;
+    position: fixed;
+    background-image: url(../assets/img/landing-background-img-1.jpg);
+    box-shadow: 0 0 50px black;
+    opacity: 1;
+
+    .nav-bar-icon {
+      position: absolute;
+      left: 20px;
+    }
+
+    .nav-bar-item {
+      position: relative;
+      width: fit-content;
+      overflow: hidden;
+
+      a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #fff;
+        font-size: large;
+        margin: 0px 30px;
+        cursor: unset !important;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -100%;
+        width: 100%;
+        height: 2px;
+        background: black;
+        transition: 0.2s;
+        transition-delay: 0.1s;
+      }
+
+      &:hover:before {
+        left: 0%;
+      }
+    }
+  }
+}

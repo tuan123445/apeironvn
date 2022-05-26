@@ -282,7 +282,6 @@ body {
     animation: breath 50s linear none;
     -webkit-animation: breath 50s linear none;
     -moz-animation: breath 50s linear none;
-    background-image: url(../assets/img/apostle_oasis.jpg);
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -363,7 +362,7 @@ body {
         img {
           border-radius: 10px;
           box-shadow: 0 0 30px black;
-          width: -webkit-fill-available;
+          width: 70%;
         }
       }
     }

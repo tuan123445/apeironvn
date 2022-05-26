@@ -1,5 +1,5 @@
 <template>
-  <main class="body-wrapper">
+  <main class="body-wrapper home-view">
     <!-- section-one -->
     <div class="section-one">
       <h1 class="title">
@@ -101,7 +101,7 @@
           năng riêng của chính mình.
         </div>
         <div class="see-detail-btn">
-          <a href="./apostle" target="_blank">Xem thêm</a>
+          <RouterLink to="/apostle" target="_blank">Xemthem</RouterLink>
         </div>
       </div>
     </div>
@@ -274,3 +274,8 @@
     </div>
   </main>
 </template>
+<style>
+.home-view .section-one {
+  background-image: url(../assets/img/apostle_oasis.jpg) !important;
+}
+</style>
