@@ -251,16 +251,118 @@
         </Splide>
       </div>
     </div>
+    <!-- section-five -->
+    <div class="section-five">
+      <img class="bgr-img" src="../assets/img/apostle-opensea.jpeg" alt="" />
+      <div class="info-wrapper">
+        <div>
+          <img
+            src="../assets/img/Logomark-Blue.png"
+            alt=""
+            @click="toApostleShop"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- section-two -->
+    <div class="section-six">
+      <h1>Profit</h1>
+      <div class="center-icon">
+        <img
+          src="../assets/img/center-icon/small_dood_kv_lineup_left.png"
+          alt=""
+        />
+        <img
+          src="../assets/img/center-icon/treasure.png"
+          alt=""
+          style="width: 30px !important"
+        />
+        <img
+          src="../assets/img/center-icon/small_dood_kv_lineup_right.png"
+          alt=""
+        />
+      </div>
+      <div class="infomation">
+        Tùy thuộc vào số lượng Apostle mà bạn sở hữu. Bạn sẽ có cơ hội nhận được
+        cực kỳ nhiều phần thưởng giá trị.
+        <br />
+        <br />
+        <div>
+          Dưới đây là danh sách phần thưởng tùy theo số lượng Apostle bạn sở
+          hữu:
+        </div>
+        <br />
+        <div style="text-align: center">
+          <div>
+            <h6>4 Unique Apostle</h6>
+            <div>- Dood Plushie Rafle</div>
+          </div>
+          <div style="padding-top: 10px">
+            <h6>6 Unique Apostle</h6>
+            <div>- Planet NFT Whitelist [Completed]</div>
+          </div>
+          <div style="padding-top: 10px">
+            <h6>7 Unique Apostle</h6>
+            <div>- APRS TGE Whitelist</div>
+          </div>
+          <div style="padding-top: 10px">
+            <h6>8 Unique Apostle</h6>
+            <div>- Star NFT Whitelist</div>
+          </div>
+          <div style="padding-top: 10px">
+            <h6>9 Unique Apostle</h6>
+            <div>
+              - Planet VIP Whitelist [Completed], Free Planet NFT Raffle
+            </div>
+          </div>
+          <div style="padding-top: 10px">
+            <h6>10 Unique Apostle</h6>
+            <div>
+              - APRS TGE Whitelist , Increased APRS Staking Rewards , Free APRS
+              Raffle , Discord OG Role
+            </div>
+          </div>
+          <div style="padding-top: 10px">
+            <h6>11 Unique Apostle</h6>
+            <div>- Star NFT VIP Whitelist, Free Star NFT Raffle</div>
+          </div>
+          <div style="padding-top: 10px">
+            <h6>12 Unique Apostle</h6>
+            <div>- CLASSIFIED</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- section-five -->
+    <div class="section-five">
+      <img class="bgr-img" src="../assets/img/team.png" alt="" />
+      <div class="info-wrapper"></div>
+    </div>
+    <!-- section-ten -->
+    <div class="section-ten">
+      <div class="body-wrapper">
+        <div class="icon-wrapper">
+          <img class="icon" src="../assets/img/discord_icon.png" alt="" />
+          <img class="icon" src="../assets/img/facebook_icon.png" alt="" />
+          <img src="../assets/img/logo_resize.png" alt="" />
+          <img class="icon" src="../assets/img/telegram_icon.png" alt="" />
+          <img class="icon" src="../assets/img/twitter_icon.png" alt="" />
+        </div>
+        <div class="join">join us</div>
+      </div>
+    </div>
   </main>
 </template>
 
 <script>
 import { Splide, SplideSlide } from "@splidejs/vue-splide";
+import index from "../core/index.js";
 export default {
   components: {
     Splide,
     SplideSlide,
   },
+  mixins: [index.mixins],
   data() {
     return {
       options: {
@@ -268,15 +370,24 @@ export default {
         gap: "1rem",
         autoplay: true,
         height: "15rem",
-        arrows: false,
-        pagination: true,
+        arrows: true,
+        pagination: false,
       },
     };
+  },
+  created() {
+    this.scrollToTop();
+  },
+  methods: {
+    toApostleShop() {
+      window.open("https://opensea.io/collection/apeironoriginscollection");
+    },
   },
 };
 </script>
 
 <style>
+/* apostle-view */
 .apostle-view .section-one {
   background-image: url(../assets/img/apostles.png) !important;
 }
@@ -285,10 +396,26 @@ export default {
   margin: 0%;
 }
 
+.apostle-view .section-five .info-wrapper {
+  text-align: center;
+}
+.apostle-view .section-five .info-wrapper img {
+  transition: 0.7s;
+  border-radius: 50%;
+}
+
+.apostle-view .section-five .info-wrapper img:hover {
+  box-shadow: 0 0 30px black;
+}
+
+.apostle-view .section-six {
+  height: 1100px !important;
+}
+
 .apostle-view .section-four .infomation {
   color: #fff8dc;
   width: -webkit-fill-available;
   font-weight: 300;
-  padding: 0 50px;
+  padding: 0 20px;
 }
 </style>

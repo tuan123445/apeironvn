@@ -205,7 +205,7 @@
             <div class="slide-img-captions">
               <h1>Star NFT</h1>
               <div class="detail-btn">
-                <a href=""> Xem Thêm </a>
+                <a href="#"> Xem Thêm </a>
               </div>
             </div>
           </div>
@@ -214,7 +214,7 @@
             <div class="slide-img-captions">
               <h1>Relic</h1>
               <div class="detail-btn">
-                <a href=""> Xem Thêm </a>
+                <a href="#"> Xem Thêm </a>
               </div>
             </div>
           </div>
@@ -223,7 +223,7 @@
             <div class="slide-img-captions">
               <h1>Event</h1>
               <div class="detail-btn">
-                <a href=""> Xem Thêm </a>
+                <a href="#"> Xem Thêm </a>
               </div>
             </div>
           </div>
@@ -234,7 +234,7 @@
             <div class="slide-img-captions">
               <h1>Tokennomic</h1>
               <div class="detail-btn">
-                <a href=""> Xem Thêm </a>
+                <a href="#"> Xem Thêm </a>
               </div>
             </div>
           </div>
@@ -243,7 +243,7 @@
             <div class="slide-img-captions">
               <h1>Road map</h1>
               <div class="detail-btn">
-                <a href=""> Xem Thêm </a>
+                <a href="#"> Xem Thêm </a>
               </div>
             </div>
           </div>
@@ -252,7 +252,7 @@
             <div class="slide-img-captions">
               <h1>team</h1>
               <div class="detail-btn">
-                <a href=""> Xem Thêm </a>
+                <a href="#"> Xem Thêm </a>
               </div>
             </div>
           </div>
@@ -274,6 +274,19 @@
     </div>
   </main>
 </template>
+
+<script>
+import index from "../core/index.js";
+
+export default {
+  mixins: [index.mixins],
+  created() {
+    this.scrollToTop();
+  },
+  methods: {},
+};
+</script>
+
 <style>
 .home-view .section-one {
   background-image: url(../assets/img/apostle_oasis.jpg) !important;

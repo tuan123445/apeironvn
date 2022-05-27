@@ -29,14 +29,14 @@
   width: 100%;
   height: fit-content;
   position: absolute;
-  z-index: 10000;
+  z-index: 1000;
 
   .navigation-bar {
     display: flex;
     align-items: center;
     justify-content: center;
     width: -webkit-fill-available;
-    height: 90px;
+    height: 70px;
     position: fixed;
     background-image: url(../assets/img/landing-background-img-1.jpg);
     box-shadow: 0 0 50px black;

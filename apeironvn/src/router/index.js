@@ -1,13 +1,12 @@
 /* eslint-disable prettier/prettier */
 import {
   createRouter,
-  createWebHistory
+  createMemoryHistory
 } from "vue-router";
 
 const router = createRouter({
   mode: "history",
-  history: createWebHistory(
-    import.meta.env.BASE_URL),
+  history: createMemoryHistory(),
   routes: [{
       path: "/",
       name: "",
@@ -22,11 +21,13 @@ const router = createRouter({
     {
       path: "/apostle",
       name: "apostle",
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import("../views/ApostleView.vue"),
     },
+    {
+      path: "/planet",
+      name: "planet",
+      component: () => import("../views/PlanetView.vue")
+    }
   ],
 });
 

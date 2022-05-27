@@ -2,7 +2,7 @@
   <main class="header" id="menu-pc">
     <div class="navigation-bar" id="navigation-bar">
       <div class="nav-bar-icon">
-        <img src="../../assets/img/logo_resize.png" alt="" width="70" />
+        <img src="../../assets/img/logo_resize.png" alt="" width="50" />
       </div>
       <div v-for="item in menuList" :key="item.name">
         <div class="nav-bar-item">
