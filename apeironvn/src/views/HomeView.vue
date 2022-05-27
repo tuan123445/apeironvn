@@ -101,7 +101,7 @@
           năng riêng của chính mình.
         </div>
         <div class="see-detail-btn">
-          <RouterLink to="/apostle" target="_blank">Xemthem</RouterLink>
+          <RouterLink to="/apostle" target="_blank">Xem thêm</RouterLink>
         </div>
       </div>
     </div>

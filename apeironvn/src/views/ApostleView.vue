@@ -49,7 +49,7 @@
     <!-- section-four -->
     <div class="section-four">
       <div class="infomation">
-        <Splide :options="options" style="z-index: 10">
+        <Splide :options="options" style="z-index: 1">
           <SplideSlide class="slide-item">
             <div class="slide-img">
               <img src="../assets/img/apostle/warrior_nft.jpg" />
@@ -281,11 +281,11 @@ export default {
   background-image: url(../assets/img/apostles.png) !important;
 }
 
-.section-four {
+.apostle-view .section-four {
   margin: 0%;
 }
 
-.section-four .infomation {
+.apostle-view .section-four .infomation {
   color: #fff8dc;
   width: -webkit-fill-available;
   font-weight: 300;

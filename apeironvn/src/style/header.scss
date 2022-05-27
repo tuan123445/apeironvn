@@ -1,4 +1,31 @@
-.header {
+/* Small devices (tablets, 200px and up) */
+@media (min-width: 200px) {
+  #menu-pc {
+    display: none;
+  }
+
+  #menu-phone {
+    display: block;
+  }
+}
+
+/* Small devices (tablets, 400px and up) */
+@media (min-width: 400px) {
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #menu-pc {
+    display: block;
+  }
+
+  #menu-phone {
+    display: none;
+  }
+}
+
+/* pc menu */
+#menu-pc {
   width: 100%;
   height: fit-content;
   position: absolute;
@@ -17,7 +44,7 @@
 
     .nav-bar-icon {
       position: absolute;
-      left: 20px;
+      left: 30px;
     }
 
     .nav-bar-item {
@@ -26,12 +53,44 @@
       overflow: hidden;
 
       a {
+        position: relative;
         text-transform: uppercase;
         text-decoration: none;
-        color: #fff;
+        color: transparent;
         font-size: large;
         margin: 0px 30px;
+        transition: 0.5s;
         cursor: unset !important;
+
+        &::before,
+        &::after {
+          content: attr(data-text);
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          color: #fff;
+          box-sizing: border-box;
+          transition: 0.5s;
+        }
+
+        &::before {
+          -webkit-clip-path: polygon(0 0, 100% 0%, 100% 50%, 0 50%);
+          clip-path: polygon(0 0, 100% 3%, 100% 50%, 0 50%);
+        }
+        &::after {
+          -webkit-clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+          clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+        }
+
+        &:hover::before {
+          color: #f26;
+          transform: translate(5px, -2px);
+        }
+        &:hover::after {
+          color: #f26;
+          transform: translate(-5px, 2px);
+        }
       }
 
       &::before {
@@ -50,6 +109,162 @@
       &:hover:before {
         left: 0%;
       }
+    }
+  }
+}
+
+/* phone menu */
+#menu-phone {
+  width: 100%;
+  height: fit-content;
+
+  .menu-area {
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+
+    /* menu-item */
+    .menu-items {
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      display: flex;
+      top: 0;
+      left: -100%;
+      background-image: url("../assets/img/landing-background-img-1.jpg");
+      transition: 1s;
+      opacity: 1;
+
+      .menu-items-wrapper {
+        width: fit-content;
+        height: fit-content;
+        position: relative;
+        margin: auto;
+
+        .menu-item {
+          margin: 10px;
+          overflow: hidden;
+
+          a {
+            position: relative;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #fff;
+            font-size: large;
+            transition: 0.5s;
+            transition-delay: 0.1s;
+            cursor: unset !important;
+
+            &::before {
+              content: "";
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              left: -100%;
+              width: 100%;
+              height: 2px;
+              background: black;
+              transition: 0.2s;
+              transition-delay: 0.1s;
+            }
+
+            &:hover:before {
+              left: 0%;
+            }
+          }
+
+          /*
+          Enter and leave animations can use different
+          durations and timing functions.
+        */
+          .slide-fade-enter-active {
+            transition: all 0.3s ease-out;
+          }
+
+          .slide-fade-leave-active {
+            transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+          }
+
+          .slide-fade-enter-from,
+          .slide-fade-leave-to {
+            transform: translateX(20px);
+            opacity: 0;
+          }
+        }
+      }
+
+      /* menu icon */
+      .phone-menu-icon {
+        position: absolute;
+        width: 100%;
+        height: fit-content;
+        text-align: center;
+        top: 50px;
+        left: auto;
+      }
+    }
+
+    /* menu-btn */
+    .menu-btn {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      transition: all 0.5s ease-in-out;
+      z-index: 10;
+
+      .menu-btn_burger {
+        width: 30px;
+        height: 3px;
+        background: #fff;
+        box-shadow: 0 2px 5px black;
+        transition: all 0.5s ease-in-out;
+
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          width: 30px;
+          height: 3px;
+          background: #fff;
+          box-shadow: 0 2px 5px black;
+          transition: all 0.5s ease-in-out;
+        }
+
+        &::before {
+          transform: translateY(-10px);
+        }
+
+        &::after {
+          transform: translateY(10px);
+        }
+      }
+    }
+
+    .opened {
+      .menu-btn_burger {
+        transform: translateX(-50px);
+        background: transparent;
+        box-shadow: none;
+
+        &::before {
+          transform: rotate(45deg) translate(35px, -35px);
+        }
+
+        &::after {
+          transform: rotate(-45deg) translate(35px, 35px);
+        }
+      }
+    }
+
+    .menu-showed {
+      -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+      transform: translateX(100%);
     }
   }
 }
