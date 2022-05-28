@@ -1,4 +1,5 @@
 <template>
+  <LoadingView></LoadingView>
   <main class="body-wrapper apostle-view">
     <!-- section-one -->
     <div class="section-one">
@@ -264,7 +265,7 @@
         </div>
       </div>
     </div>
-    <!-- section-two -->
+    <!-- section-six -->
     <div class="section-six">
       <h1>Profit</h1>
       <div class="center-icon">
@@ -356,11 +357,14 @@
 
 <script>
 import { Splide, SplideSlide } from "@splidejs/vue-splide";
+import LoadingView from "../components/LoadingView.vue";
+
 import index from "../core/index.js";
 export default {
   components: {
     Splide,
     SplideSlide,
+    LoadingView,
   },
   mixins: [index.mixins],
   data() {

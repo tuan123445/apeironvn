@@ -101,6 +101,49 @@
       }
     }
   }
+
+  /* third body */
+  .third-body {
+    display: grid;
+    height: fit-content;
+    .side-one,
+    .side-two,
+    .side-three {
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  /* half-body */
+  .half-body {
+    display: block;
+    .left-side,
+    .right-side {
+      width: 100%;
+      .age_line_table {
+        display: none;
+      }
+
+      .age_vertical_table {
+        display: inline-table;
+      }
+    }
+  }
+
+  .planet-view {
+    .info-center-img {
+      .slide-item-wrapper {
+        .planet {
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
 }
 
 /* Small devices (tablets, 400px and up) */
@@ -241,10 +284,64 @@
       }
     }
   }
+
+  /* third body */
+  .third-body {
+    display: grid;
+    height: fit-content;
+    grid-template-columns: 1fr 1fr 1fr;
+    .side-one,
+    .side-two,
+    .side-three {
+      width: 100%;
+      height: fit-content;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  /* half-body */
+  .half-body {
+    display: flex;
+    .left-side {
+      width: 30%;
+    }
+    .right-side {
+      width: 70%;
+
+      .age_line_table {
+        display: none;
+      }
+    }
+  }
+
+  .planet-view {
+    .info-center-img {
+      .slide-item-wrapper {
+        .planet {
+          img {
+            width: 300px;
+            margin: auto;
+          }
+        }
+      }
+    }
+  }
 }
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+@media (min-width: 900px) {
+  .half-body {
+    .right-side {
+      .age_line_table {
+        display: block;
+      }
+      .age_vertical_table {
+        display: none;
+      }
+    }
+  }
 }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -276,6 +373,17 @@
   .img-line-two div:nth-child(1) {
     width: 25%;
   }
+
+  /* half-body */
+  .half-body {
+    display: flex;
+    .left-side {
+      width: 40%;
+    }
+    .right-side {
+      width: 60%;
+    }
+  }
 }
 
 /* Large devices (large desktops, 1400px and up) */
@@ -283,6 +391,17 @@
   .slide-info img,
   .img-hover-zoom {
     width: 400px;
+  }
+
+  /* half-body */
+  .half-body {
+    display: flex;
+    .left-side {
+      width: 50%;
+    }
+    .right-side {
+      width: 50%;
+    }
   }
 }
 body {
@@ -562,6 +681,25 @@ body {
     }
   }
 
+  /* half-body */
+  .half-body {
+    position: relative;
+    .left-side,
+    .right-side {
+      position: relative;
+
+      .title {
+        text-align: center;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
   /* section 1-3-5-7-9 */
   @mixin section-option-one() {
     display: flex;
@@ -651,7 +789,7 @@ body {
   .section-eight {
     @include section-option-two(
       900px,
-      1100px,
+      1300px,
       "../assets/img/landing-background-img-1.jpg"
     );
   }

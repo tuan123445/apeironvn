@@ -1,4 +1,5 @@
 <template>
+  <LoadingView></LoadingView>
   <main class="body-wrapper home-view">
     <!-- section-one -->
     <div class="section-one">
@@ -277,8 +278,12 @@
 
 <script>
 import index from "../core/index.js";
+import LoadingView from "../components/LoadingView.vue";
 
 export default {
+  components: {
+    LoadingView: LoadingView,
+  },
   mixins: [index.mixins],
   created() {
     this.scrollToTop();
