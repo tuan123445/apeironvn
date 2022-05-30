@@ -1,12 +1,15 @@
 /* eslint-disable prettier/prettier */
 import {
   createRouter,
-  createMemoryHistory
+  createWebHistory,
+  // createMemoryHistory
 } from "vue-router";
 
 const router = createRouter({
   mode: "history",
-  history: createMemoryHistory(),
+  history: createWebHistory(
+    import.meta.env.BASE_URL),
+  // history: createMemoryHistory(),
   routes: [{
       path: "/",
       name: "",
@@ -27,8 +30,14 @@ const router = createRouter({
       path: "/planet",
       name: "planet",
       component: () => import("../views/PlanetView.vue")
+    },
+    {
+      path: "/events",
+      name: "events",
+      component: () => import("../views/EventsView.vue")
     }
   ],
+
 });
 
 export default router;

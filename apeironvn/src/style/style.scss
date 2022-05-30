@@ -404,6 +404,7 @@
     }
   }
 }
+
 body {
   cursor: url("../assets/img/mouse.png"), auto;
   -moz-user-select: none !important;
@@ -516,7 +517,6 @@ body {
           border-radius: 10px;
           box-shadow: 0 0 30px black;
           width: 70%;
-          height: -webkit-fill-available;
         }
       }
     }

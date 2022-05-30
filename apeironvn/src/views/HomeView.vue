@@ -102,7 +102,7 @@
           năng riêng của chính mình.
         </div>
         <div class="see-detail-btn">
-          <RouterLink to="/apostle" target="_blank">Xem thêm</RouterLink>
+          <a href="#" target="_blank">Xem thêm</a>
         </div>
       </div>
     </div>
@@ -264,11 +264,27 @@
     <div class="section-ten">
       <div class="body-wrapper">
         <div class="icon-wrapper">
-          <img class="icon" src="../assets/img/discord_icon.png" alt="" />
-          <img class="icon" src="../assets/img/facebook_icon.png" alt="" />
-          <img src="../assets/img/logo_resize.png" alt="" />
-          <img class="icon" src="../assets/img/telegram_icon.png" alt="" />
-          <img class="icon" src="../assets/img/twitter_icon.png" alt="" />
+          <img
+            class="icon"
+            src="../assets/img/discord_icon.png"
+            @click="goDiscord"
+          />
+          <img
+            class="icon"
+            src="../assets/img/facebook_icon.png"
+            @click="goFacebook"
+          />
+          <img src="../assets/img/logo_resize.png" @click="goOfficial" />
+          <img
+            class="icon"
+            src="../assets/img/telegram_icon.png"
+            @click="goTele"
+          />
+          <img
+            class="icon"
+            src="../assets/img/twitter_icon.png"
+            @click="goTwitter"
+          />
         </div>
         <div class="join">join us</div>
       </div>

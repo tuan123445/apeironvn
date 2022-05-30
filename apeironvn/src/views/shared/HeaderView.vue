@@ -61,6 +61,7 @@ export default {
       }
     },
     getMenuList() {
+      console.log(this.$router);
       this.$router.options.routes.forEach((item) => {
         if (item.name != "") this.menuList.push(item);
       });

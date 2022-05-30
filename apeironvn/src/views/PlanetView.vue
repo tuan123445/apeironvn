@@ -173,7 +173,7 @@
         <Splide :options="options">
           <SplideSlide>
             <div class="slide-item-wrapper">
-              <div class="planet">
+              <div class="planet normal-rotate">
                 <img src="../assets/img/planet/Delta.png" alt="" />
               </div>
               <div class="avatar">
@@ -183,7 +183,7 @@
           </SplideSlide>
           <SplideSlide>
             <div class="slide-item-wrapper">
-              <div class="planet">
+              <div class="planet normal-rotate">
                 <img src="../assets/img/planet/Archipelago.png" alt="" />
               </div>
               <div class="avatar">
@@ -193,7 +193,7 @@
           </SplideSlide>
           <SplideSlide>
             <div class="slide-item-wrapper">
-              <div class="planet">
+              <div class="planet normal-rotate">
                 <img src="../assets/img/planet/Dunes.png" alt="" />
               </div>
               <div class="avatar">
@@ -203,7 +203,7 @@
           </SplideSlide>
           <SplideSlide>
             <div class="slide-item-wrapper">
-              <div class="planet">
+              <div class="planet normal-rotate">
                 <img src="../assets/img/planet/Foresty.png" alt="" />
               </div>
               <div class="avatar">
@@ -213,7 +213,7 @@
           </SplideSlide>
           <SplideSlide>
             <div class="slide-item-wrapper">
-              <div class="planet">
+              <div class="planet normal-rotate">
                 <img src="../assets/img/planet/Gigas.png" alt="" />
               </div>
               <div class="avatar">
@@ -223,7 +223,7 @@
           </SplideSlide>
           <SplideSlide>
             <div class="slide-item-wrapper">
-              <div class="planet">
+              <div class="planet normal-rotate">
                 <img src="../assets/img/planet/Inferno.png" alt="" />
               </div>
               <div class="avatar">
@@ -233,7 +233,7 @@
           </SplideSlide>
           <SplideSlide>
             <div class="slide-item-wrapper">
-              <div class="planet">
+              <div class="planet normal-rotate">
                 <img src="../assets/img/planet/Karst.png" alt="" />
               </div>
               <div class="avatar">
@@ -243,7 +243,7 @@
           </SplideSlide>
           <SplideSlide>
             <div class="slide-item-wrapper">
-              <div class="planet">
+              <div class="planet normal-rotate">
                 <img src="../assets/img/planet/Leviathan.png" alt="" />
               </div>
               <div class="avatar">
@@ -253,7 +253,7 @@
           </SplideSlide>
           <SplideSlide>
             <div class="slide-item-wrapper">
-              <div class="planet">
+              <div class="planet normal-rotate">
                 <img src="../assets/img/planet/Mountainous.png" alt="" />
               </div>
               <div class="avatar">
@@ -263,7 +263,7 @@
           </SplideSlide>
           <SplideSlide>
             <div class="slide-item-wrapper">
-              <div class="planet">
+              <div class="planet normal-rotate">
                 <img src="../assets/img/planet/Normal.png" alt="" />
               </div>
               <div class="avatar">
@@ -273,7 +273,7 @@
           </SplideSlide>
           <SplideSlide>
             <div class="slide-item-wrapper">
-              <div class="planet">
+              <div class="planet normal-rotate">
                 <img src="../assets/img/planet/Oasis.png" alt="" />
               </div>
               <div class="avatar">
@@ -283,7 +283,7 @@
           </SplideSlide>
           <SplideSlide>
             <div class="slide-item-wrapper">
-              <div class="planet">
+              <div class="planet normal-rotate">
                 <img src="../assets/img/planet/Tempest.png" alt="" />
               </div>
               <div class="avatar">
@@ -293,7 +293,7 @@
           </SplideSlide>
           <SplideSlide>
             <div class="slide-item-wrapper">
-              <div class="planet">
+              <div class="planet normal-rotate">
                 <img src="../assets/img/planet/Tundra.png" alt="" />
               </div>
               <div class="avatar">
@@ -303,7 +303,7 @@
           </SplideSlide>
           <SplideSlide>
             <div class="slide-item-wrapper">
-              <div class="planet">
+              <div class="planet normal-rotate">
                 <img src="../assets/img/planet/Volcanic.png" alt="" />
               </div>
               <div class="avatar">
@@ -313,7 +313,7 @@
           </SplideSlide>
           <SplideSlide>
             <div class="slide-item-wrapper">
-              <div class="planet">
+              <div class="planet normal-rotate">
                 <img src="../assets/img/planet/Wasterland.png" alt="" />
               </div>
               <div class="avatar">
@@ -408,11 +408,27 @@
     <div class="section-ten">
       <div class="body-wrapper">
         <div class="icon-wrapper">
-          <img class="icon" src="../assets/img/discord_icon.png" alt="" />
-          <img class="icon" src="../assets/img/facebook_icon.png" alt="" />
-          <img src="../assets/img/logo_resize.png" alt="" />
-          <img class="icon" src="../assets/img/telegram_icon.png" alt="" />
-          <img class="icon" src="../assets/img/twitter_icon.png" alt="" />
+          <img
+            class="icon"
+            src="../assets/img/discord_icon.png"
+            @click="goDiscord"
+          />
+          <img
+            class="icon"
+            src="../assets/img/facebook_icon.png"
+            @click="goFacebook"
+          />
+          <img src="../assets/img/logo_resize.png" @click="goOfficial" />
+          <img
+            class="icon"
+            src="../assets/img/telegram_icon.png"
+            @click="goTele"
+          />
+          <img
+            class="icon"
+            src="../assets/img/twitter_icon.png"
+            @click="goTwitter"
+          />
         </div>
         <div class="join">join us</div>
       </div>
@@ -519,6 +535,10 @@ export default {
           box-shadow: unset;
         }
       }
+
+      .normal-rotate {
+        animation: spin 90s linear infinite;
+      }
     }
   }
 
@@ -545,6 +565,12 @@ export default {
           }
         }
       }
+    }
+  }
+
+  @keyframes spin {
+    100% {
+      transform: rotate(1440deg);
     }
   }
 }

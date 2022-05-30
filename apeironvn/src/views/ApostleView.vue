@@ -343,11 +343,27 @@
     <div class="section-ten">
       <div class="body-wrapper">
         <div class="icon-wrapper">
-          <img class="icon" src="../assets/img/discord_icon.png" alt="" />
-          <img class="icon" src="../assets/img/facebook_icon.png" alt="" />
-          <img src="../assets/img/logo_resize.png" alt="" />
-          <img class="icon" src="../assets/img/telegram_icon.png" alt="" />
-          <img class="icon" src="../assets/img/twitter_icon.png" alt="" />
+          <img
+            class="icon"
+            src="../assets/img/discord_icon.png"
+            @click="goDiscord"
+          />
+          <img
+            class="icon"
+            src="../assets/img/facebook_icon.png"
+            @click="goFacebook"
+          />
+          <img src="../assets/img/logo_resize.png" @click="goOfficial" />
+          <img
+            class="icon"
+            src="../assets/img/telegram_icon.png"
+            @click="goTele"
+          />
+          <img
+            class="icon"
+            src="../assets/img/twitter_icon.png"
+            @click="goTwitter"
+          />
         </div>
         <div class="join">join us</div>
       </div>
@@ -358,7 +374,6 @@
 <script>
 import { Splide, SplideSlide } from "@splidejs/vue-splide";
 import LoadingView from "../components/LoadingView.vue";
-
 import index from "../core/index.js";
 export default {
   components: {
