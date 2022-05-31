@@ -95,7 +95,7 @@
             <img src="../assets/img/elemental_core.png" alt="" />
           </div>
           <div class="side-three">
-            <img src="../assets/img/mythic_core.png" alt="" />
+            <img src="../assets/img/Mythic_core.png" alt="" />
           </div>
         </div>
         <div class="third-body">
