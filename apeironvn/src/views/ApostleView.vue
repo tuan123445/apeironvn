@@ -45,6 +45,8 @@
         loop
         type="video/mp4"
         muted="muted"
+        controls
+        playsinline
       ></video>
     </div>
     <!-- section-four -->

@@ -13,10 +13,6 @@ export default {
       loading: true,
     };
   },
-  mounted() {
-    setTimeout(() => {
-      document.getElementById("loader").classList.add("fadeout");
-    }, 3000);
-  },
+  mounted() {},
 };
 </script>

@@ -18,6 +18,62 @@
         <h1>Sự kiện gần đây</h1>
         <hr />
         <div class="event-list">
+          <!-- event one -->
+          <div class="event-item">
+            <div class="event-item-img">
+              <img src="../assets/img/event/event4.jpeg" alt="" />
+            </div>
+            <div class="event-item-information">
+              <h6>The doodiequest tell-a-tale contest.</h6>
+              <div>Thời gian: 31/05/2022 ~ 08/06/2022 06:00 AM .</div>
+              <div>Đối tượng: Toàn bộ doodies.</div>
+              <div>
+                Entry: Hãy gửi tổng cộng 2 câu truyện bằng cách điền vào
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSeOHSBFhG43lh1MQHl5yF6cOo7j00LrBL3FXmxrXZ3rj09nNw/viewform"
+                  target="_blank"
+                  >form</a
+                >
+              </div>
+              <div>
+                Điều cần làm? Bạn phải gửi 2 câu chuyện tương tác phân nhánh,
+                một là dựa trên Apeiron và một là một thể loại bất kỳ. Mỗi câu
+                chuyện phải trong 150 từ. Mỗi câu chuyện bao gồm từ 2-4 câu trả
+                lời phản ứng để người chơi lựa chọn. Những câu trả lời cũng bị
+                giới hạn trong 150 từ.
+              </div>
+              <div>Phần thưởng: Primeval Elemental Planet Core 🪐.</div>
+              <div>
+                Số người thắng cuộc sẽ dựa vào số lượng người dự thi.(1-3) người
+              </div>
+              <div>
+                Thông tin chi tiết:
+                <div>
+                  -
+                  <span
+                    ><a
+                      href="https://discord.com/channels/922326984497954857/922336631820787732/981154009891110912"
+                      target="_blank"
+                    >
+                      discord.gg/apeironnft
+                    </a></span
+                  >
+                </div>
+                <div>
+                  -
+                  <span
+                    ><a
+                      href="https://twitter.com/ApeironNFT/status/1531591339430670336?s=20&t=FRTFpEUL5Iqim9IWiKjYpQ"
+                      target="_blank"
+                      >twitter</a
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <!-- event two -->
           <div class="event-item">
             <div class="event-item-img">
               <img src="../assets/img/event/event3.png" alt="" />
@@ -68,7 +124,10 @@
               <div>
                 Thông tin chi tiết:
                 <span
-                  ><a href="https://discord.gg/UAJsWwZygr" target="_blank">
+                  ><a
+                    href="https://discord.com/channels/922326984497954857/922336631820787732/980760321314652180"
+                    target="_blank"
+                  >
                     discord.gg/apeironnft
                   </a></span
                 >
@@ -76,6 +135,7 @@
             </div>
           </div>
           <hr />
+          <!-- event three -->
           <div class="event-item">
             <div class="event-item-img">
               <img src="../assets/img/event/event1.png" alt="" />
@@ -99,6 +159,7 @@
             </div>
           </div>
           <hr />
+          <!-- event four -->
           <div class="event-item">
             <div class="event-item-img">
               <img src="../assets/img/event/event2.jpg" alt="" />
@@ -219,18 +280,20 @@ export default {
 
   .section-ten {
     background-image: url(../assets/img/landing-background-img-1.jpg);
+    background-position: center !important;
+    background-attachment: fixed !important;
 
     .events-wrapper {
       padding: 200px 20%;
       width: 100%;
 
       h1 {
-        color: #fff;
+        color: #fff8dc;
       }
 
       hr {
         margin: 2rem 0 1rem 0;
-        color: #fff;
+        color: #fff8dc;
         border: 0;
         border-top: 4px solid;
         opacity: 0.5;
@@ -253,7 +316,7 @@ export default {
           }
 
           .event-item-information {
-            color: #fff;
+            color: #fff8dc;
 
             h6 {
               padding-top: 20px;
