@@ -1,9 +1,7 @@
 /* eslint-disable prettier/prettier */
 export default {
   mounted() {
-    setTimeout(() => {
-      document.getElementById("loader").classList.add("fadeout");
-    }, 3000);
+    this.load();
   },
   data() {
     return {
@@ -11,6 +9,11 @@ export default {
     };
   },
   methods: {
+    load() {
+      setTimeout(() => {
+        document.getElementById("loader").classList.add("fadeout");
+      }, 3000);
+    },
     scrollToTop() {
       window.scrollTo(0, 0);
     },
