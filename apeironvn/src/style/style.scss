@@ -774,7 +774,11 @@ body {
 
   /* section-two */
   .section-two {
-    @include section-option-two(700px, 800px, "../assets/img/banner3.jpg");
+    @include section-option-two(
+      700px,
+      800px,
+      "../assets/img/background/background-avatar-left.jpg"
+    );
   }
 
   /* section-three */
@@ -784,7 +788,11 @@ body {
 
   /* section-four */
   .section-four {
-    @include section-option-two(850px, 1050px, "../assets/img/banner4.jpg");
+    @include section-option-two(
+      850px,
+      1050px,
+      "../assets/img/background/background-avatar-right.jpg"
+    );
   }
 
   /* section-five */
@@ -797,7 +805,7 @@ body {
     @include section-option-two(
       900px,
       1300px,
-      "../assets/img/landing-background-img-1.jpg"
+      "../assets/img/background/background-planet-left.jpg"
     );
   }
 

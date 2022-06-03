@@ -264,35 +264,6 @@
         </div>
       </div>
     </div>
-    <!-- section-ten -->
-    <div class="section-ten">
-      <div class="body-wrapper">
-        <div class="icon-wrapper">
-          <img
-            class="icon"
-            src="../assets/img/discord_icon.png"
-            @click="goDiscord"
-          />
-          <img
-            class="icon"
-            src="../assets/img/facebook_icon.png"
-            @click="goFacebook"
-          />
-          <img src="../assets/img/logo_resize.png" @click="goOfficial" />
-          <img
-            class="icon"
-            src="../assets/img/telegram_icon.png"
-            @click="goTele"
-          />
-          <img
-            class="icon"
-            src="../assets/img/twitter_icon.png"
-            @click="goTwitter"
-          />
-        </div>
-        <div class="join">join us</div>
-      </div>
-    </div>
   </main>
 </template>
 

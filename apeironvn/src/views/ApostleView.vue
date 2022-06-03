@@ -341,35 +341,6 @@
       <img class="bgr-img" src="../assets/img/team.png" alt="" />
       <div class="info-wrapper"></div>
     </div>
-    <!-- section-ten -->
-    <div class="section-ten">
-      <div class="body-wrapper">
-        <div class="icon-wrapper">
-          <img
-            class="icon"
-            src="../assets/img/discord_icon.png"
-            @click="goDiscord"
-          />
-          <img
-            class="icon"
-            src="../assets/img/facebook_icon.png"
-            @click="goFacebook"
-          />
-          <img src="../assets/img/logo_resize.png" @click="goOfficial" />
-          <img
-            class="icon"
-            src="../assets/img/telegram_icon.png"
-            @click="goTele"
-          />
-          <img
-            class="icon"
-            src="../assets/img/twitter_icon.png"
-            @click="goTwitter"
-          />
-        </div>
-        <div class="join">join us</div>
-      </div>
-    </div>
   </main>
 </template>
 
@@ -407,36 +378,55 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
 /* apostle-view */
-.apostle-view .section-one {
-  background-image: url(../assets/img/apostles.png) !important;
-}
 
-.apostle-view .section-four {
-  margin: 0%;
-}
+.apostle-view {
+  .section-one {
+    background-image: url(../assets/img/apostles.png) !important;
+  }
 
-.apostle-view .section-five .info-wrapper {
-  text-align: center;
-}
-.apostle-view .section-five .info-wrapper img {
-  transition: 0.7s;
-  border-radius: 50%;
-}
+  .section-two {
+    &::before {
+      background-image: url(../assets/img/background/background-apostle.jpg);
+    }
+  }
 
-.apostle-view .section-five .info-wrapper img:hover {
-  box-shadow: 0 0 30px black;
-}
+  .section-four {
+    margin: 0%;
 
-.apostle-view .section-six {
-  height: 1100px !important;
-}
+    &::before {
+      background-image: url(../assets/img/background/landing-background.jpg);
+    }
 
-.apostle-view .section-four .infomation {
-  color: #fff8dc;
-  width: -webkit-fill-available;
-  font-weight: 300;
-  padding: 0 20px;
+    .infomation {
+      color: #fff8dc;
+      width: -webkit-fill-available;
+      font-weight: 300;
+      padding: 0 20px;
+    }
+  }
+
+  .section-five {
+    .info-wrapper {
+      text-align: center;
+      img {
+        transition: 0.7s;
+        border-radius: 50%;
+
+        &:hover {
+          box-shadow: 0 0 30px black;
+        }
+      }
+    }
+  }
+
+  .section-six {
+    height: 1100px !important;
+
+    &::before {
+      background-image: url(../assets/img/background/background-apostle2.jpg);
+    }
+  }
 }
 </style>

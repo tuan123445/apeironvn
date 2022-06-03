@@ -181,7 +181,7 @@
         </div>
       </div>
       <div class="center-item">
-        <div class="">
+        <div class="infor">
           <h1 style="margin-bottom: 30px; text-align: center">
             Tỷ lệ phát hành APRS Token
           </h1>
@@ -215,35 +215,6 @@
             resources
           </div>
         </div>
-      </div>
-    </div>
-    <!-- section-seven -->
-    <div class="section-ten">
-      <div class="body-wrapper">
-        <div class="icon-wrapper">
-          <img
-            class="icon"
-            src="../assets/img/discord_icon.png"
-            @click="goDiscord"
-          />
-          <img
-            class="icon"
-            src="../assets/img/facebook_icon.png"
-            @click="goFacebook"
-          />
-          <img src="../assets/img/logo_resize.png" @click="goOfficial" />
-          <img
-            class="icon"
-            src="../assets/img/telegram_icon.png"
-            @click="goTele"
-          />
-          <img
-            class="icon"
-            src="../assets/img/twitter_icon.png"
-            @click="goTwitter"
-          />
-        </div>
-        <div class="join">join us</div>
       </div>
     </div>
   </main>
@@ -298,10 +269,6 @@ export default {
           name: "Win to Earn",
           data: [],
         },
-        {
-          name: "Public Round",
-          data: [],
-        },
       ],
       chartOptions: {
         chart: {
@@ -347,7 +314,7 @@ export default {
     this.series[7].data = this.getTGEList(6, 8, 32, 60);
     this.series[8].data = this.getTGEList(14, 8, 32, 60);
 
-    // this.scrollToTop();
+    this.scrollToTop();
   },
   methods: {
     getTGEList(percent, blockMonths, tgeMonths, allMonth) {
@@ -398,8 +365,8 @@ export default {
     }
     .infomation,
     .center-item {
-      padding-left: unset;
-      padding-right: unset;
+      padding-left: 10px;
+      padding-right: 10px;
     }
   }
 }
@@ -440,7 +407,7 @@ export default {
 
   .section-two {
     &::before {
-      background-image: url(../assets/img/landing-background-img-3.jpg) !important;
+      background-image: url(../assets/img/background/background-APRS-token.jpg) !important;
     }
   }
 
@@ -454,7 +421,7 @@ export default {
   .section-four {
     height: 100%;
     &::before {
-      background-image: url(../assets/img/landing-background-img-4.jpg) !important;
+      background-image: url(../assets/img/background/background-anima-token.jpg) !important;
       height: 100%;
     }
   }
@@ -479,6 +446,10 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .infor {
+    padding: 0 20px;
   }
 }
 </style>
