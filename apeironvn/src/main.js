@@ -10,11 +10,11 @@ import VueApexCharts from "vue3-apexcharts";
 
 // Default theme
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
+import "../node_modules/@mdi/font/css/materialdesignicons.css";
 import "./style/loader.scss";
 import "./style/style.scss";
 import "./style/header.scss";
 import '../node_modules/@splidejs/splide/dist/css/splide.min.css';
-
 
 const app = createApp(App);
 

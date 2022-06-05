@@ -18,4 +18,7 @@ export default defineConfig({
         import.meta.url)),
     },
   },
+  build: {
+    chunkSizeWarningLimit: 1600,
+  },
 });

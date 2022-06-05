@@ -9,6 +9,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "@mdi/font": "^6.7.96",
     "@splidejs/splide": "^4.0.2",
     "@splidejs/vue-splide": "^0.6.4",
     "apexcharts": "^3.35.3",

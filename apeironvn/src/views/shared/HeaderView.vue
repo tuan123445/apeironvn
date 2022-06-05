@@ -6,9 +6,30 @@
       </div>
       <div v-for="item in menuList" :key="item.name">
         <div class="nav-bar-item">
-          <RouterLink :data-text="item.name" :to="item.name">{{
-            item.name
-          }}</RouterLink>
+          <RouterLink
+            v-if="!item.meta.dropdown"
+            :data-text="item.name"
+            :to="item.name"
+            >{{ item.name }}</RouterLink
+          >
+        </div>
+      </div>
+      <div class="drop-down">
+        <div class="nav-bar-item">
+          <a class="more" data-text="more">more</a>
+        </div>
+        <div class="more-dropdown-item-list">
+          <div
+            class="more-dropdown-item"
+            v-for="dropdownItem in dropdownList"
+            :key="dropdownItem.name"
+          >
+            <RouterLink
+              :data-text="dropdownItem.name"
+              :to="dropdownItem.name"
+              >{{ dropdownItem.name }}</RouterLink
+            >
+          </div>
         </div>
       </div>
     </div>
@@ -25,8 +46,32 @@
         <div class="menu-items-wrapper">
           <div v-for="item in menuList" :key="item.name">
             <div class="menu-item">
-              <RouterLink :to="item.name" @click="itemSelected">{{
-                item.name
+              <RouterLink
+                v-if="!item.meta.dropdown"
+                :to="item.name"
+                @click="itemSelected"
+                >{{ item.name }}</RouterLink
+              >
+            </div>
+          </div>
+          <div>
+            <div class="menu-item" @click="dropdownClick">
+              <a data-text="more">
+                more
+                <span class="arrow">
+                  <i class="mdi mdi-chevron-down"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="dropdown-item">
+            <div
+              class="menu-item"
+              v-for="dropdownItem in dropdownList"
+              :key="dropdownItem.name"
+            >
+              <RouterLink :to="dropdownItem.name" @click="itemSelected">{{
+                dropdownItem.name
               }}</RouterLink>
             </div>
           </div>
@@ -41,6 +86,7 @@ export default {
   data() {
     return {
       menuList: [],
+      dropdownList: [],
       menuOpen: false,
     };
   },
@@ -61,10 +107,11 @@ export default {
       }
     },
     getMenuList() {
-      console.log(this.$router);
       this.$router.options.routes.forEach((item) => {
-        if (item.name != "") this.menuList.push(item);
+        if (item.meta.dropdownItem) this.dropdownList.push(item);
+        if (item.name != "" && !item.meta.dropdown) this.menuList.push(item);
       });
+      console.log(this.dropdownList);
     },
     menuClicked() {
       const menuBtn = document.getElementsByClassName("menu-btn")[0];
@@ -82,6 +129,17 @@ export default {
     },
     itemSelected() {
       this.menuClicked();
+    },
+    dropdownClick() {
+      let arrow = document.getElementsByClassName("arrow");
+      let dropdownItem = document.getElementsByClassName("dropdown-item");
+      if (arrow[0].classList.length < 2) {
+        dropdownItem[0].style.display = "block";
+        arrow[0].classList.add("dropdown-active");
+      } else {
+        dropdownItem[0].style.display = "none";
+        arrow[0].classList.remove("dropdown-active");
+      }
     },
   },
 };
