@@ -42,7 +42,7 @@
         thể kết hợp được các nguyên tố lại với nhau để có thể tạo ra được nguyên
         tố mới tương tác với môi trường và xã hội Dood của bạn.
         <div class="eden-img" style="text-align: center">
-          <img src="../assets/img/Good.jpg" />
+          <img src="../assets/img/eden_img.png" />
         </div>
       </div>
     </div>
