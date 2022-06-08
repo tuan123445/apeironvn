@@ -81,23 +81,7 @@ const router = createRouter({
         dropdownItem: true
       },
       component: () => import("../views/GameplayView.vue")
-    }, {
-      path: "/breed",
-      name: "breed",
-      meta: {
-        dropdown: true,
-        dropdownItem: true
-      },
-      component: () => import("../views/GameplayView.vue")
-    }, {
-      path: "/avatar",
-      name: "avatar",
-      meta: {
-        dropdown: true,
-        dropdownItem: true
-      },
-      component: () => import("../views/GameplayView.vue")
-    }
+    },
   ],
 
 });

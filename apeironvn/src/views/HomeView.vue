@@ -104,7 +104,7 @@
           năng riêng của chính mình.
         </div>
         <div class="see-detail-btn">
-          <a href="#" target="_blank">Xem thêm</a>
+          <a href="/apostle">Xem thêm</a>
         </div>
       </div>
     </div>
@@ -228,7 +228,7 @@
             <div class="slide-img-captions">
               <h1>Event</h1>
               <div class="detail-btn">
-                <a href="#"> Xem Thêm </a>
+                <a href="/events"> Xem Thêm </a>
               </div>
             </div>
           </div>
@@ -239,7 +239,7 @@
             <div class="slide-img-captions">
               <h1>Tokennomic</h1>
               <div class="detail-btn">
-                <a href="#"> Xem Thêm </a>
+                <a href="/token"> Xem Thêm </a>
               </div>
             </div>
           </div>
