@@ -21,6 +21,42 @@
           <!-- event one -->
           <div class="event-item">
             <div class="event-item-img">
+              <img src="../assets/img/event/askAndAnswerContest.jpg" alt="" />
+            </div>
+            <div class="event-item-information">
+              <h6>ASK and ANSWER contest.</h6>
+              <div>Thời gian: 13/05/2022 ~ 19/06/2022 .</div>
+              <div>Đối tượng: Doodies Việt Nam.</div>
+              <div>
+                Mỗi ngày vào một khoảng thời gian bất kỳ trên discord. Mình sẽ
+                đặt một câu hỏi về Apeiron. Mỗi ngày ba câu hỏi. Nếu ai có câu
+                trả lời đúng và nhanh nhất sẽ là người chiến thắng.
+              </div>
+              <div>
+                Điều cần làm? Bạn hãy học và tìm kiếm mọi thông tin về Apeiron.
+                Có thể xem trên trang chủ hoặc
+                <a
+                  href="https://whitepaper.apeironnft.com/apeironnft/ascension-what-is-apeiron"
+                  target="_blank"
+                  >White Paper</a
+                >
+                hoặc trên
+                <a
+                  href="https://apeironabridged.gitbook.io/apeironabridged/"
+                  target="_blank"
+                  >Gitbook</a
+                >
+              </div>
+              <div>
+                Phần thưởng: Mỗi câu trả lời đúng bạn sẽ nhân được 10$USDC. Phần
+                thưởng sẽ được trao kể từ sao khi sự kiện kết thúc.
+              </div>
+            </div>
+          </div>
+          <hr />
+          <!-- event one -->
+          <div class="event-item">
+            <div class="event-item-img">
               <img src="../assets/img/event/event4.jpeg" alt="" />
             </div>
             <div class="event-item-information">
@@ -148,34 +184,6 @@
                 ZombieDood.
               </div>
               <div>Phần thưởng: Có thể nhận được lên đến 2000 USDC.</div>
-              <div>
-                Thông tin chi tiết:
-                <span
-                  ><a href="https://discord.gg/UAJsWwZygr" target="_blank">
-                    discord.gg/apeironnft
-                  </a></span
-                >
-              </div>
-            </div>
-          </div>
-          <hr />
-          <!-- event four -->
-          <div class="event-item">
-            <div class="event-item-img">
-              <img src="../assets/img/event/event2.jpg" alt="" />
-            </div>
-            <div class="event-item-information">
-              <h6>Inhouse fireside AMA with LoreKeeper.</h6>
-              <div>Thời gian: 29/05/2022 2PM UTC.</div>
-              <div>Đối tượng: Toàn bộ Doodie.</div>
-              <div>
-                Cách thức tham gia: Đặt câu hỏi và câu đùa hay nhất cho
-                LORDKEEPER.
-              </div>
-              <div>
-                Phần thưởng: 10 người có câu hỏi và câu đùa hay nhất sẽ nhận
-                được 50USDC.
-              </div>
               <div>
                 Thông tin chi tiết:
                 <span

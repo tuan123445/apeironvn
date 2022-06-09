@@ -478,7 +478,7 @@ export default {
 <style lang="scss" scoped>
 .planet-view {
   .section-one {
-    background-image: url(../assets/img/planet.jpg) !important;
+    background-image: url(../assets/img/planet_background.jpg) !important;
   }
 
   .section-four {

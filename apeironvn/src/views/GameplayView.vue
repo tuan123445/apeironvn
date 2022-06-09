@@ -1,4 +1,5 @@
 <template>
+  <LoadingView></LoadingView>
   <main class="body-wrapper gameplay-view">
     <!-- section-one -->
     <div class="section-one">
@@ -89,6 +90,24 @@
     </div>
   </main>
 </template>
+
+<script>
+import index from "../core/index.js";
+import LoadingView from "../components/LoadingView.vue";
+
+export default {
+  mixins: [index.mixins],
+  components: {
+    LoadingView,
+  },
+  data() {
+    return {};
+  },
+  created() {
+    this.scrollToTop();
+  },
+};
+</script>
 
 <style lang="scss" scoped>
 @media (min-width: 200px) {

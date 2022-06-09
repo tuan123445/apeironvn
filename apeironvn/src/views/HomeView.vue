@@ -137,7 +137,7 @@
           <div class="slide-img-captions">
             <h1>Breed</h1>
             <div class="detail-btn">
-              <a href="#"> Xem Thêm </a>
+              <a href="/breed"> Xem Thêm </a>
             </div>
           </div>
         </div>
