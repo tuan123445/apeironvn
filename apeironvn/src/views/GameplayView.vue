@@ -77,15 +77,13 @@
         />
       </div>
       <div class="infomation">
-        Khi bạn dùng Eden để tạo phép Alignment của bạn sẽ chuyển sang hai hướng
-        khác nhau đó là tốt hoặc ác. Khi bạn đối xử với các doods bằng lòng nhân
-        từ, Alignment của bạn sẽ trở nên tốt hơn, mở ra các kỹ năng, nhiệm vụ
-        đặc biệt. Còn ngược lại nếu bạn liên tục trừng phạt các doods thì
-        Alignment của bạn sẽ chuyển thành ác - cũng có các kỹ năng, nhiệm vụ của
-        riêng nó sẽ được mở và thế giới của bạn sẽ dần trở thành địa ngục trần
-        gian. Nếu bạn tối đa hóa Alignment của bạn thì bạn sẽ có cơ hội để Dood
-        của bạn xây dựng một hành tinh đặc biệt cho những cá thể Dood độc nhất
-        xuất hiện.
+        Mỗi khi sử dụng Eden để niệm phép, bản ngã của bạn sẽ suy vong hoặc tăng
+        tiến, hướng thiện hoặc tà ác cho tới khi đạt cảnh giới bản ngã. Khi đó
+        thế giới sẽ trở thành địa ngục trần gian hoặc thiên đường trên mặt đất,
+        việc này sẽ giúp việc mở ra các kĩ năng, nhiệm vụ và ngoại hình mới cho
+        thần dân Dood của bạn và biết đâu sẽ một vài cá thể ưu việt hoặc kỳ quan
+        sẽ xuất hiện. Liệu bạn sẽ chọn hướng đi nào cho hành tinh và thần dân
+        của mình?
       </div>
     </div>
   </main>

@@ -17,7 +17,6 @@ import "./style/header.scss";
 import '../node_modules/@splidejs/splide/dist/css/splide.min.css';
 
 const app = createApp(App);
-
 app.use(router);
 app.use(VueApexCharts);
 

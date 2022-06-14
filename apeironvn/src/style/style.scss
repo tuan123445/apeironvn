@@ -406,7 +406,7 @@
 }
 
 body {
-  font-family: big john;
+  font-family: roboto;
   cursor: url("../assets/img/mouse.png"), auto;
   -moz-user-select: none !important;
   -webkit-touch-callout: none !important;
@@ -426,7 +426,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: big john;
+    font-family: roboto;
     width: 100%;
     height: 100vh;
     box-shadow: 0 0 30px black;
@@ -722,7 +722,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: big john;
+    font-family: roboto;
     width: 100%;
     height: 100%;
     box-shadow: 0 0 30px black;
@@ -857,7 +857,7 @@ body {
     text-align: center;
     color: #fff8dc;
     text-transform: uppercase;
-    font-family: "Marcellus", sans-serif;
+    font-family: roboto;
   }
 
   /* animation */

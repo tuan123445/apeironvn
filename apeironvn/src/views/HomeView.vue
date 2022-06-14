@@ -144,7 +144,7 @@
         <div class="img-hover-zoom">
           <img src="../assets/img/conjungsion.png" alt="" />
           <div class="slide-img-captions">
-            <h1>Conjunction</h1>
+            <h1>Armageddon</h1>
             <div class="detail-btn">
               <a href="#"> Xem Thêm </a>
             </div>
@@ -255,7 +255,7 @@
           <div class="img-hover-zoom" style="margin: 0 !important">
             <img src="../assets/img/team.png" alt="" />
             <div class="slide-img-captions">
-              <h1>team</h1>
+              <h1>Team</h1>
               <div class="detail-btn">
                 <a href="#"> Xem Thêm </a>
               </div>
