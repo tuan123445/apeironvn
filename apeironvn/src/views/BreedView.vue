@@ -302,12 +302,12 @@
 
 <script>
 import index from "../core/index.js";
-// import LoadingView from "../components/LoadingView.vue";
+import LoadingView from "../components/LoadingView.vue";
 
 export default {
-  // mixins: [index.mixins],
+  mixins: [index.mixins],
   components: {
-    // LoadingView,
+    LoadingView,
   },
   data() {
     return {
