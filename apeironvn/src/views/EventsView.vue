@@ -21,6 +21,30 @@
           <!-- event one -->
           <div class="event-item">
             <div class="event-item-img">
+              <img src="../assets/img/event/event1.png" alt="" />
+            </div>
+            <div class="event-item-information">
+              <h6>Đố vui về Celestial Conjunction</h6>
+              <div>Thời gian: 18/06/2022 2PM UTC.</div>
+              <div>Đối tượng: Toàn bộ Doodies</div>
+              <div>Phần thưởng:</div>
+              <div>- Giải nhất: Mythic Primeval Planet NFT</div>
+              <div>- Giải 2-4: 50$USDC</div>
+              <div>- Giải 4-10: 20$USDC</div>
+              <div>
+                Thông tin chi tiết:
+                <span
+                  ><a href="https://discord.gg/UAJsWwZygr" target="_blank">
+                    discord.gg/apeironnft
+                  </a></span
+                >
+              </div>
+            </div>
+          </div>
+          <hr />
+          <!-- event two -->
+          <div class="event-item">
+            <div class="event-item-img">
               <img src="../assets/img/event/askAndAnswerContest.jpg" alt="" />
             </div>
             <div class="event-item-information">
@@ -54,7 +78,7 @@
             </div>
           </div>
           <hr />
-          <!-- event one -->
+          <!-- event three -->
           <div class="event-item">
             <div class="event-item-img">
               <img src="../assets/img/event/event4.jpeg" alt="" />
@@ -109,7 +133,7 @@
             </div>
           </div>
           <hr />
-          <!-- event two -->
+          <!-- event four -->
           <div class="event-item">
             <div class="event-item-img">
               <img src="../assets/img/event/event3.png" alt="" />
@@ -164,30 +188,6 @@
                     href="https://discord.com/channels/922326984497954857/922336631820787732/980760321314652180"
                     target="_blank"
                   >
-                    discord.gg/apeironnft
-                  </a></span
-                >
-              </div>
-            </div>
-          </div>
-          <hr />
-          <!-- event three -->
-          <div class="event-item">
-            <div class="event-item-img">
-              <img src="../assets/img/event/event1.png" alt="" />
-            </div>
-            <div class="event-item-information">
-              <h6>Aperon x Zombue Club Poker Night.</h6>
-              <div>Thời gian: 04/06/2022 1PM UTC.</div>
-              <div>
-                Đối tượng: Những planet holder và những người sở hữu role
-                ZombieDood.
-              </div>
-              <div>Phần thưởng: Có thể nhận được lên đến 2000 USDC.</div>
-              <div>
-                Thông tin chi tiết:
-                <span
-                  ><a href="https://discord.gg/UAJsWwZygr" target="_blank">
                     discord.gg/apeironnft
                   </a></span
                 >
