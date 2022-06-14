@@ -1,5 +1,5 @@
 <template>
-  <!-- <LoadingView></LoadingView> -->
+  <LoadingView></LoadingView>
   <main class="body-wrapper breed-view">
     <!-- section-one -->
     <div class="section-one">
@@ -76,7 +76,7 @@
         playsinline
       ></video>
     </div>
-    <div class="section-six">
+    <div class="section-six" style="display: none">
       <h1>Breed Simulation</h1>
       <div class="infomation" style="text-align: center">
         Đây chỉ là bản thử nghiệm nên mọi thông tin có thể sai lệch
