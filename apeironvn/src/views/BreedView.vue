@@ -76,6 +76,7 @@
         playsinline
       ></video>
     </div>
+    <!-- section-four -->
     <div class="section-six" style="display: none">
       <h1>Breed Simulation</h1>
       <div class="infomation" style="text-align: center">
@@ -89,7 +90,7 @@
           <img id="planetTwo" :src="planetTwoLink" />
         </div>
         <div class="center-side">
-          <img id="planetCenter" src="../assets/img/planet/Oasis.png" />
+          <img id="planetCenter" :src="planetChild.link" />
         </div>
       </div>
       <div class="half-body">
@@ -124,6 +125,58 @@
               {{ planet.title }}
             </option>
           </select>
+        </div>
+      </div>
+      <div class="half-body">
+        <div class="container" style="width: 25%; padding-left: 35px">
+          <div class="row pt-3" style="text-align: center; width: 100%">
+            <div class="col-3" style="color: #fff">F</div>
+            <div class="col-3" style="color: #fff">W</div>
+            <div class="col-3" style="color: #fff">A</div>
+            <div class="col-3" style="color: #fff">E</div>
+          </div>
+          <div class="row pt-3 pb-3" style="text-align: center; width: 100%">
+            <div class="col-3">
+              <input
+                v-model="planetChild.fire"
+                class="text-center"
+                type="text"
+                maxlength="2"
+                :disabled="true"
+                style="width: 100%"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                v-model="planetChild.water"
+                class="text-center"
+                type="text"
+                maxlength="2"
+                :disabled="true"
+                style="width: 100%"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                v-model="planetChild.air"
+                class="text-center"
+                type="text"
+                maxlength="2"
+                :disabled="true"
+                style="width: 100%"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                v-model="planetChild.earth"
+                class="text-center"
+                type="text"
+                maxlength="2"
+                :disabled="true"
+                style="width: 100%"
+              />
+            </div>
+          </div>
         </div>
       </div>
       <div class="half-body">
@@ -167,7 +220,7 @@
                   v-if="legacyShowOne"
                 >
                   <select
-                    @change="valueChange($event, 'two')"
+                    @change="legacyChange($event, 'one')"
                     class="select-btn"
                   >
                     <option disabled value="">Chọn Legacy</option>
@@ -194,6 +247,7 @@
                     class="text-center"
                     type="text"
                     maxlength="2"
+                    :disabled="!planetOne.haveFire"
                   />
                 </div>
                 <div class="col-3">
@@ -202,6 +256,7 @@
                     class="text-center"
                     type="text"
                     maxlength="2"
+                    :disabled="!planetOne.haveWater"
                   />
                 </div>
                 <div class="col-3">
@@ -210,6 +265,7 @@
                     class="text-center"
                     type="text"
                     maxlength="2"
+                    :disabled="!planetOne.haveAir"
                   />
                 </div>
                 <div class="col-3">
@@ -218,6 +274,7 @@
                     class="text-center"
                     type="text"
                     maxlength="2"
+                    :disabled="!planetOne.haveEarth"
                   />
                 </div>
               </div>
@@ -237,7 +294,7 @@
                 <div class="col-6"></div>
                 <div class="col-6" v-if="legacyShowTwo">
                   <select
-                    @change="valueChange($event, 'two')"
+                    @change="legacyChange($event, 'two')"
                     class="select-btn"
                   >
                     <option disabled value="">Chọn Legacy</option>
@@ -264,6 +321,7 @@
                     class="text-center"
                     type="text"
                     maxlength="2"
+                    :disabled="!planetTwo.haveFire"
                   />
                 </div>
                 <div class="col-3">
@@ -272,6 +330,7 @@
                     class="text-center"
                     type="text"
                     maxlength="2"
+                    :disabled="!planetTwo.haveWater"
                   />
                 </div>
                 <div class="col-3">
@@ -280,6 +339,7 @@
                     class="text-center"
                     type="text"
                     maxlength="2"
+                    :disabled="!planetTwo.haveAir"
                   />
                 </div>
                 <div class="col-3">
@@ -288,6 +348,7 @@
                     class="text-center"
                     type="text"
                     maxlength="2"
+                    :disabled="!planetTwo.haveEarth"
                   />
                 </div>
               </div>
@@ -480,7 +541,7 @@ export default {
         haveFire: false,
         haveWater: false,
         haveAir: false,
-        haveEarth: false,
+        haveEarth: true,
       },
       planetTwo: {
         fire: "",
@@ -490,7 +551,18 @@ export default {
         haveFire: false,
         haveWater: false,
         haveAir: false,
+        haveEarth: true,
+      },
+      planetChild: {
+        fire: "",
+        water: "",
+        air: "",
+        earth: "",
+        haveFire: false,
+        haveWater: false,
+        haveAir: false,
         haveEarth: false,
+        link: "",
       },
       legacyDatasOne: [],
       legacyDatasTwo: [],
@@ -498,6 +570,8 @@ export default {
       planetTwoLink: "./src/assets/img/planet/Gigas.png",
       legacyShowOne: false,
       legacyShowTwo: false,
+      selectedLegacyPlanetOne: {},
+      selectedLegacyPlanetTwo: {},
       disableBtn: true,
     };
   },
@@ -505,27 +579,61 @@ export default {
     this.scrollToTop();
   },
   methods: {
-    scrollToTop() {},
     valueChange(e, selectOne) {
-      let datas = this.options;
+      this.planetChild = this.resetDataField(false, false, false, false);
+
+      let datas = this.planets;
       datas.forEach((planetListItem) => {
         if (e.target.value == planetListItem.title) {
           if (selectOne == "one") {
+            this.planetOne = this.resetDataField(false, false, false, true);
             this.planetOneLink = planetListItem.link;
             this.legacyDatasOne = planetListItem.legacy;
+            this.planetOne.haveFire = planetListItem.haveFire;
+            this.planetOne.haveWater = planetListItem.haveWater;
+            this.planetOne.haveAir = planetListItem.haveAir;
+            this.planetOne.haveEarth = planetListItem.haveEarth;
           } else {
+            this.planetTwo = this.resetDataField(false, false, false, true);
             this.planetTwoLink = planetListItem.link;
             this.legacyDatasTwo = planetListItem.legacy;
+            this.planetTwo.haveFire = planetListItem.haveFire;
+            this.planetTwo.haveWater = planetListItem.haveWater;
+            this.planetTwo.haveAir = planetListItem.haveAir;
+            this.planetTwo.haveEarth = planetListItem.haveEarth;
           }
         }
       });
     },
+    legacyChange(e, selectOne) {
+      if (selectOne == "one") {
+        this.selectedLegacyPlanetOne =
+          this.legacyDatasOne[e.target.selectedIndex - 1];
+      } else {
+        this.selectedLegacyPlanetTwo =
+          this.legacyDatasTwo[e.target.selectedIndex - 1];
+      }
+    },
     breed() {
-      this.breedSimulate();
-      this.animationOfPlanet();
+      let planetOneHaveData = this.checkValueOfPlanet(this.planetOne);
+      let planetTwoHaveData = this.checkValueOfPlanet(this.planetTwo);
+      if (planetOneHaveData && planetTwoHaveData) {
+        this.breedSimulate();
+        this.animationOfPlanet();
+      } else {
+        window.alert(
+          "Một trong hai planet không có chỉ số! Hãy điền đầy đủ thông tin"
+        );
+      }
     },
     reset() {
       this.disableBtn = true;
+      this.planetOne = this.resetDataField(false, false, false, true);
+      this.planetTwo = this.resetDataField(false, false, false, true);
+      this.planetChild = this.resetDataField(false, false, false, false);
+      this.planetOneLink = "./src/assets/img/planet/Gigas.png";
+      this.planetTwoLink = "./src/assets/img/planet/Gigas.png";
+
       document.getElementById("planetOne").classList.remove("left-active");
       document.getElementById("planetTwo").classList.remove("right-active");
       document.getElementById("planetCenter").classList.remove("center-active");
@@ -539,7 +647,69 @@ export default {
       }, "5000");
     },
     breedSimulate() {
-      console.log(this.checkAndGetPlanetLink("55", "0", "45", "0"));
+      new Promise((res) => {
+        this.planetChild.fire = this.getStatAverage(
+          this.planetOne.fire,
+          this.planetTwo.fire
+        );
+        this.planetChild.water = this.getStatAverage(
+          this.planetOne.water,
+          this.planetTwo.water
+        );
+        this.planetChild.air = this.getStatAverage(
+          this.planetOne.air,
+          this.planetTwo.air
+        );
+        this.planetChild.earth = this.getStatAverage(
+          this.planetOne.earth,
+          this.planetTwo.earth
+        );
+        return res(this.planetChild);
+      })
+        .then((rs) => {
+          let legacyStat = {};
+          if (this.legacyShowOne && this.legacyShowTwo) {
+            let maxNumberOfLegacyOne = this.getTheMaxNumber(
+              this.selectedLegacyPlanetOne
+            );
+            let maxNumberOfLegacyTwo = this.getTheMaxNumber(
+              this.selectedLegacyPlanetTwo
+            );
+
+            // So sánh 2 PL 3 trường hợp, A<B, A>B, A=B
+            if (maxNumberOfLegacyOne < maxNumberOfLegacyTwo) {
+              legacyStat = this.selectedLegacyPlanetTwo;
+            } else if (maxNumberOfLegacyOne > maxNumberOfLegacyTwo) {
+              legacyStat = this.selectedLegacyPlanetOne;
+            } else {
+              legacyStat = this.selectedLegacyPlanetOne;
+            }
+
+            rs = this.assignTwoObject(rs, legacyStat);
+          }
+          // else if (this.legacyShowOne || this.legacyShowTwo) {
+          //   console.log(this.getTheMaxNumber(this.selectedLegacyPlanetOne));
+          // }
+          return rs;
+        })
+        .then((rs) => {
+          this.planetChild.link = this.checkAndGetPlanetLink(
+            rs.fire,
+            rs.water,
+            rs.air,
+            rs.earth
+          );
+        });
+    },
+    getStatAverage(statOne, statTwo) {
+      let result = "";
+      let stOne = "0";
+      let stTwo = "0";
+      if (statOne) stOne = statOne;
+      if (statTwo) stTwo = statTwo;
+
+      result = (parseInt(stOne) + parseInt(stTwo)) / 2;
+      return Math.round(result).toString();
     },
     checkAndGetPlanetLink(fire, water, air, earth) {
       let planetLink = "";
@@ -551,11 +721,6 @@ export default {
       if (water != "" && water != "0") haveWater = true;
       if (air != "" && air != "0") haveAir = true;
       if (earth != "" && earth != "0") haveEarth = true;
-
-      console.log("haveFire", haveFire);
-      console.log("haveWater", haveWater);
-      console.log("haveAir", haveAir);
-      console.log("haveEarth", haveEarth);
 
       this.planets.forEach((planetItem) => {
         if (
@@ -570,6 +735,66 @@ export default {
 
       return planetLink;
     },
+    resetDataField(haveFire, haveWater, haveAir, haveEarth) {
+      return {
+        fire: "",
+        water: "",
+        air: "",
+        earth: "",
+        haveFire: haveFire,
+        haveWater: haveWater,
+        haveAir: haveAir,
+        haveEarth: haveEarth,
+      };
+    },
+    checkValueOfPlanet(data) {
+      let result = false;
+      if (
+        data.fire != "" ||
+        data.water != "" ||
+        data.air != "" ||
+        data.earth != ""
+      ) {
+        result = true;
+      }
+      return result;
+    },
+    checkValueStatAndPL(planetStat, primevalStat) {
+      let result = false;
+      if (
+        planetStat.fire > primevalStat.fire ||
+        planetStat.water > primevalStat.water ||
+        planetStat.air > primevalStat.air ||
+        planetStat.earth > primevalStat.earth
+      ) {
+        result = true;
+      }
+      return result;
+    },
+    getTheMaxNumber(object) {
+      let covertToArr = Object.values(object);
+      let maxNum = 0;
+      covertToArr.forEach((item) => {
+        if (maxNum < item) {
+          maxNum = item;
+        }
+      });
+      return maxNum;
+    },
+    assignTwoObject(obAssigned, objToAssign) {
+      let resultObj = {};
+      let newObj = {};
+      let keyArr = Object.keys(objToAssign);
+      keyArr.forEach((item) => {
+        if (typeof objToAssign[item] != String && objToAssign[item] != 0) {
+          newObj[item] = objToAssign[item];
+        }
+      });
+
+      resultObj = Object.assign(obAssigned, newObj);
+      return resultObj;
+    },
+    getLeftOfDatas() {},
   },
 };
 </script>
@@ -618,7 +843,11 @@ export default {
 }
 
 .breed-view {
+  input:disabled {
+    background: #ccc;
+  }
   .select-btn {
+    width: -webkit-fill-available;
     border-radius: 5px;
     padding: 10px;
   }

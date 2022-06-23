@@ -15,7 +15,7 @@
       </h1>
     </div>
     <!-- section-two -->
-    <div class="section-six">
+    <div class="section-four">
       <h1>Eden là gì?</h1>
       <div class="center-icon">
         <img
@@ -33,18 +33,15 @@
         />
       </div>
       <div class="infomation">
-        Eden chính là biểu tượng bên dưới. Sẽ có bốn nguyên tố chính: lửa, gió,
-        nước và đất. Thông qua bốn nguyên tố này người chơi có thể tự do kết hợp
-        để tạo ra phép thuật khác nhau giúp định hình thế giới của bạn. Và không
-        những thế các Doods của bạn cũng sẽ phản hồi theo từng phép thuật. Bạn
-        có thể dùng nước để có thể tạo mưa giúp các doods trồng trọt. Dùng đất
-        để phá vỡ các ngọn núi. Hoặc nếu có dood nào khiến bạn không vừa lòng
-        bạn hoàn toàn có thể dùng lửa để ném quả cầu lửa vào chúng. Bạn cũng có
-        thể kết hợp được các nguyên tố lại với nhau để có thể tạo ra được nguyên
-        tố mới tương tác với môi trường và xã hội Dood của bạn.
-        <div class="eden-img" style="text-align: center">
-          <img src="../assets/img/eden_img.png" />
-        </div>
+        Eden có bốn nguyên tố chính: lửa, gió, nước và đất. Thông qua bốn nguyên
+        tố này người chơi có thể tự do kết hợp để tạo ra phép thuật khác nhau
+        giúp định hình thế giới của bạn. Và không những thế các Doods của bạn
+        cũng sẽ phản hồi theo từng phép thuật. Bạn có thể dùng nước để có thể
+        tạo mưa giúp các doods trồng trọt. Dùng đất để phá vỡ các ngọn núi. Hoặc
+        nếu có dood nào khiến bạn không vừa lòng bạn hoàn toàn có thể dùng lửa
+        để ném quả cầu lửa vào chúng. Bạn cũng có thể kết hợp được các nguyên tố
+        lại với nhau để có thể tạo ra được nguyên tố mới tương tác với môi
+        trường và xã hội Dood của bạn.
       </div>
     </div>
     <!-- section-three -->
@@ -86,6 +83,33 @@
         của mình?
       </div>
     </div>
+    <!-- section-three -->
+    <div class="section-three">
+      <img class="bgr-img" src="../assets/img/bbqparty_final.png" alt="" />
+    </div>
+    <!-- section-four -->
+    <!-- <div class="section-two">
+      <h1>Armageddon</h1>
+      <div class="center-icon">
+        <img
+          src="../assets/img/center-icon/small_dood_kv_lineup_left.png"
+          alt=""
+        />
+        <img
+          src="../assets/img/center-icon/treasure.png"
+          alt=""
+          style="width: 30px !important"
+        />
+        <img
+          src="../assets/img/center-icon/small_dood_kv_lineup_right.png"
+          alt=""
+        />
+      </div>
+      <div class="infomation">
+        Khi hành tinh của bạn đã lớn đến một mức độ nhất định, bạn có thể chọn
+        lựa
+      </div>
+    </div> -->
   </main>
 </template>
 

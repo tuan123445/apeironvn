@@ -18,10 +18,72 @@
         <h1>Sự kiện gần đây</h1>
         <hr />
         <div class="event-list">
+          <div class="event-item">
+            <div class="event-item-img">
+              <img src="../assets/img/event/game.png" alt="" />
+            </div>
+            <div class="event-item-information">
+              <h6>Who is the best</h6>
+              <div>Thời gian: Đang cập nhật</div>
+              <div>Đối tượng: Toàn bộ cộng đồng Việt Nam</div>
+              <div>Phần thưởng: Một Apostle NFT Hunter</div>
+              <div>Thông tin chi tiết:</div>
+              <div>
+                Hiện tại bọn mình đang thống nhất với cộng đồng nên tổ chức game
+                gì theo dạng react các game có sẵn. Vì vậy nếu bạn muốn tham gia
+                game gì hãy vào đường link dưới đây và thả 1 react cho game bạn
+                muốn được tổ chức nhé
+              </div>
+              <a
+                href="https://discord.com/channels/922326984497954857/947498231271682118/988092957414526986"
+                target="_blank"
+                >Discord</a
+              >
+              <div>
+                Thông tin chi tiết:
+                <span
+                  ><a href="https://discord.gg/UAJsWwZygr" target="_blank">
+                    discord.gg/apeironnft
+                  </a></span
+                >
+              </div>
+            </div>
+          </div>
+          <hr />
           <!-- event one -->
           <div class="event-item">
             <div class="event-item-img">
-              <img src="../assets/img/event/event1.png" alt="" />
+              <img src="../assets/img/event/plush.png" alt="" />
+            </div>
+            <div class="event-item-information">
+              <h6>PLUMPY PLUSHQUEST</h6>
+              <div>Thời gian: từ 23/06/2022 đến 07/07/2022</div>
+              <div>
+                Đối tượng: Bạn phải có 3 role dưới đây để có thể tham gia event
+              </div>
+              <div>1. Chat lên level 5 để có thể sở hữu role @Dooder</div>
+              <div>
+                2. Alignment của bạn phải +5 hoặc -5 để có thể sở hữu 1 trong 2
+                role @GOODIETWOSHOES hoặc @IMP
+              </div>
+              <div>3. Sở hữu ít nhất 4 apostle để có role @TeamOrigins</div>
+              <div>Phần thưởng:</div>
+              <div>- Một chú gấu bông Dood đáng yêu</div>
+              <div>
+                Thông tin chi tiết:
+                <span
+                  ><a href="https://discord.gg/UAJsWwZygr" target="_blank">
+                    discord.gg/apeironnft
+                  </a></span
+                >
+              </div>
+            </div>
+          </div>
+          <hr />
+          <!-- event one -->
+          <div class="event-item">
+            <div class="event-item-img">
+              <img src="../assets/img/event/trivia.png" alt="" />
             </div>
             <div class="event-item-information">
               <h6>Đố vui về Celestial Conjunction</h6>
@@ -74,123 +136,6 @@
               <div>
                 Phần thưởng: Mỗi câu trả lời đúng bạn sẽ nhân được 10$USDC. Phần
                 thưởng sẽ được trao kể từ sao khi sự kiện kết thúc.
-              </div>
-            </div>
-          </div>
-          <hr />
-          <!-- event three -->
-          <div class="event-item">
-            <div class="event-item-img">
-              <img src="../assets/img/event/event4.jpeg" alt="" />
-            </div>
-            <div class="event-item-information">
-              <h6>The doodiequest tell-a-tale contest.</h6>
-              <div>Thời gian: 31/05/2022 ~ 08/06/2022 06:00 AM .</div>
-              <div>Đối tượng: Toàn bộ doodies.</div>
-              <div>
-                Entry: Hãy gửi tổng cộng 2 câu truyện bằng cách điền vào
-                <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSeOHSBFhG43lh1MQHl5yF6cOo7j00LrBL3FXmxrXZ3rj09nNw/viewform"
-                  target="_blank"
-                  >form</a
-                >
-              </div>
-              <div>
-                Điều cần làm? Bạn phải gửi 2 câu chuyện tương tác phân nhánh,
-                một là dựa trên Apeiron và một là một thể loại bất kỳ. Mỗi câu
-                chuyện phải trong 150 từ. Mỗi câu chuyện bao gồm từ 2-4 câu trả
-                lời phản ứng để người chơi lựa chọn. Những câu trả lời cũng bị
-                giới hạn trong 150 từ.
-              </div>
-              <div>Phần thưởng: Primeval Elemental Planet Core 🪐.</div>
-              <div>
-                Số người thắng cuộc sẽ dựa vào số lượng người dự thi.(1-3) người
-              </div>
-              <div>
-                Thông tin chi tiết:
-                <div>
-                  -
-                  <span
-                    ><a
-                      href="https://discord.com/channels/922326984497954857/922336631820787732/981154009891110912"
-                      target="_blank"
-                    >
-                      discord.gg/apeironnft
-                    </a></span
-                  >
-                </div>
-                <div>
-                  -
-                  <span
-                    ><a
-                      href="https://twitter.com/ApeironNFT/status/1531591339430670336?s=20&t=FRTFpEUL5Iqim9IWiKjYpQ"
-                      target="_blank"
-                      >twitter</a
-                    ></span
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr />
-          <!-- event four -->
-          <div class="event-item">
-            <div class="event-item-img">
-              <img src="../assets/img/event/event3.png" alt="" />
-            </div>
-            <div class="event-item-information">
-              <h6>DaDi Apeiron T-Shirt Design Contest.</h6>
-              <div>Thời gian: 01/06/2022 ~ 15/06/2022.</div>
-              <div>Đối tượng: DADis.</div>
-              <div>Cách thức tham gia: Thiết kế T-shirt về Apeiron.</div>
-              <div>
-                Chú thích:
-                <div>
-                  - Nếu bạn tạo ra được hình ảnh có độ phân giải 150-300 DPI thì
-                  càng được điểm cao
-                </div>
-                <div>
-                  - Chúng tôi khuyên bạn (nhưng không bắt buộc) nên làm thiết kế
-                  bao gồm biểu tượng của Apeiron và các hình ảnh đại diện cho
-                  cách chơi Apeiron
-                </div>
-                <div>- Kích thước tệp phải dưới 50mb</div>
-                <div>
-                  Vui lòng xem liên kết dưới đây để xem DTG Printing có thể làm
-                  được những gì trên Printful.com, đối tác được chúng tôi lựa
-                  chọn để in áo thun. Các thiết kế có thể được áp dụng cho mặt
-                  trước, mặt sau, nhãn bên ngoài, nhãn bên trong, ống tay trái
-                  và ống tay phải.
-                  <a
-                    href="https://www.printful.com/generator/mens/t-shirts/unisex-staple-t-shirt-bella-canvas-3001"
-                    >(Printful)</a
-                  >
-                </div>
-                <div>
-                  Xin lưu ý bài dự thi phải được gửi cho chúng tôi dưới dạng tệp
-                  hình ảnh cho từng phần của áo, lý tưởng nhất là bao gồm hình
-                  ảnh tác phẩm của bạn trên mẫu áo phông. Cũng vui lòng nêu rõ
-                  màu áo mà bạn muốn thiết kế của mình được làm nổi bật.
-                </div>
-                <div>
-                  Vui lòng không tải bài dự thi của bạn lên Printful.com. Chúng
-                  tôi sẽ không chấp nhận các bài dự thi từ trang Printful.com.
-                </div>
-              </div>
-              <div>
-                Phần thưởng: 200USDC + Nếu thiết kế của bạn được chọn và bán,
-                bạn sẽ nhận được hoa hồng trên mỗi lần bán.
-              </div>
-              <div>
-                Thông tin chi tiết:
-                <span
-                  ><a
-                    href="https://discord.com/channels/922326984497954857/922336631820787732/980760321314652180"
-                    target="_blank"
-                  >
-                    discord.gg/apeironnft
-                  </a></span
-                >
               </div>
             </div>
           </div>
