@@ -14,21 +14,7 @@
     <!-- section-two -->
     <div class="section-six">
       <h1>Breed?</h1>
-      <div class="center-icon">
-        <img
-          src="../assets/img/center-icon/small_dood_kv_lineup_left.png"
-          alt=""
-        />
-        <img
-          src="../assets/img/center-icon/treasure.png"
-          alt=""
-          style="width: 30px !important"
-        />
-        <img
-          src="../assets/img/center-icon/small_dood_kv_lineup_right.png"
-          alt=""
-        />
-      </div>
+      <CenterIconView></CenterIconView>
       <div class="infomation">
         <div>
           Giống như hầu hết các game có thể đẻ khác. Apeiron cũng có cơ chế nhân
@@ -364,11 +350,13 @@
 <script>
 import index from "../core/index.js";
 import LoadingView from "../components/LoadingView.vue";
+import CenterIconView from "../components/CenterIconView.vue";
 
 export default {
   mixins: [index.mixins],
   components: {
     LoadingView,
+    CenterIconView,
   },
   data() {
     return {

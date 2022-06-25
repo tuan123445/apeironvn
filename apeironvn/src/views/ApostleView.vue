@@ -16,21 +16,7 @@
     <!-- section-two -->
     <div class="section-two">
       <h1>Apostle là gì?</h1>
-      <div class="center-icon">
-        <img
-          src="../assets/img/center-icon/small_dood_kv_lineup_left.png"
-          alt=""
-        />
-        <img
-          src="../assets/img/center-icon/treasure.png"
-          alt=""
-          style="width: 30px !important"
-        />
-        <img
-          src="../assets/img/center-icon/small_dood_kv_lineup_right.png"
-          alt=""
-        />
-      </div>
+      <CenterIconView></CenterIconView>
       <div class="infomation">
         Apostle không khác gì những con pet của bạn trong game. Chúng sẽ hỗ trợ
         bạn chiến đấu
@@ -270,21 +256,7 @@
     <!-- section-six -->
     <div class="section-six">
       <h1>Profit</h1>
-      <div class="center-icon">
-        <img
-          src="../assets/img/center-icon/small_dood_kv_lineup_left.png"
-          alt=""
-        />
-        <img
-          src="../assets/img/center-icon/treasure.png"
-          alt=""
-          style="width: 30px !important"
-        />
-        <img
-          src="../assets/img/center-icon/small_dood_kv_lineup_right.png"
-          alt=""
-        />
-      </div>
+      <CenterIconView></CenterIconView>
       <div class="infomation">
         Tùy thuộc vào số lượng Apostle mà bạn sở hữu. Bạn sẽ có cơ hội nhận được
         cực kỳ nhiều phần thưởng giá trị.
@@ -348,11 +320,14 @@
 import { Splide, SplideSlide } from "@splidejs/vue-splide";
 import LoadingView from "../components/LoadingView.vue";
 import index from "../core/index.js";
+import CenterIconView from "../components/CenterIconView.vue";
+
 export default {
   components: {
     Splide,
     SplideSlide,
     LoadingView,
+    CenterIconView,
   },
   mixins: [index.mixins],
   data() {

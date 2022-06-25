@@ -16,21 +16,7 @@
     <!-- section-two -->
     <div class="section-two">
       <h1>NFT Game đầu tiên thuộc thể loại GODGAME</h1>
-      <div class="center-icon">
-        <img
-          src="../assets/img/center-icon/small_dood_kv_lineup_left.png"
-          alt=""
-        />
-        <img
-          src="../assets/img/center-icon/treasure.png"
-          alt=""
-          style="width: 30px !important"
-        />
-        <img
-          src="../assets/img/center-icon/small_dood_kv_lineup_right.png"
-          alt=""
-        />
-      </div>
+      <CenterIconView></CenterIconView>
       <div class="infomation">
         Không có gì đáng nói ngoài sự thật rằng đây chính là một game thể loại
         god game ĐẦU TIÊN trên blockchain. Nếu bạn muốn sử dụng sức mạnh sáng
@@ -54,21 +40,7 @@
     <!-- section-four -->
     <div class="section-four">
       <h1>Apeiron</h1>
-      <div class="center-icon">
-        <img
-          src="../assets/img/center-icon/small_dood_kv_lineup_left.png"
-          alt=""
-        />
-        <img
-          src="../assets/img/center-icon/treasure.png"
-          alt=""
-          style="width: 30px !important"
-        />
-        <img
-          src="../assets/img/center-icon/small_dood_kv_lineup_right.png"
-          alt=""
-        />
-      </div>
+      <CenterIconView></CenterIconView>
       <div class="infomation">
         Trong Apeiron, bạn sẽ có quyền kiểm soát EDEN của một hành tinh - một
         cấu trúc bí ẩn để truyền năng lượng thần thánh - và tạo ra nhiều phép
@@ -111,21 +83,7 @@
     <!-- section-six -->
     <div class="section-six">
       <h1>Planet</h1>
-      <div class="center-icon">
-        <img
-          src="../assets/img/center-icon/small_dood_kv_lineup_left.png"
-          alt=""
-        />
-        <img
-          src="../assets/img/center-icon/treasure.png"
-          alt=""
-          style="width: 30px !important"
-        />
-        <img
-          src="../assets/img/center-icon/small_dood_kv_lineup_right.png"
-          alt=""
-        />
-      </div>
+      <CenterIconView></CenterIconView>
       <div class="infomation">
         Để có thể bắt đầu chơi Apeiron, bạn sẽ cần một hành tinh. Mỗi 1 hành
         tinh là một NFT độc nhất được tạo thành từ sự kết hợp của các yếu tố
@@ -177,21 +135,7 @@
     <!-- section-eight -->
     <div class="section-eight">
       <h1>Partner</h1>
-      <div class="center-icon">
-        <img
-          src="../assets/img/center-icon/small_dood_kv_lineup_left.png"
-          alt=""
-        />
-        <img
-          src="../assets/img/center-icon/treasure.png"
-          alt=""
-          style="width: 30px !important"
-        />
-        <img
-          src="../assets/img/center-icon/small_dood_kv_lineup_right.png"
-          alt=""
-        />
-      </div>
+      <CenterIconView></CenterIconView>
       <div class="infomation">
         Hiện tại apeiron đã gọi vốn và đang hợp tác với nhiều quỹ đầu tư và
         gaming guild lớn! Cộng đồng của Apeiron đang phát triển một cách cực kỳ
@@ -270,10 +214,12 @@
 <script>
 import index from "../core/index.js";
 import LoadingView from "../components/LoadingView.vue";
+import CenterIconView from "../components/CenterIconView.vue";
 
 export default {
   components: {
     LoadingView: LoadingView,
+    CenterIconView,
   },
   mixins: [index.mixins],
   created() {

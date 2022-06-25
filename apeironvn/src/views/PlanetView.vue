@@ -15,21 +15,7 @@
     <!-- section-two -->
     <div class="section-two">
       <h1>Planet là gì?</h1>
-      <div class="center-icon">
-        <img
-          src="../assets/img/center-icon/small_dood_kv_lineup_left.png"
-          alt=""
-        />
-        <img
-          src="../assets/img/center-icon/treasure.png"
-          alt=""
-          style="width: 30px !important"
-        />
-        <img
-          src="../assets/img/center-icon/small_dood_kv_lineup_right.png"
-          alt=""
-        />
-      </div>
+      <CenterIconView></CenterIconView>
       <div class="infomation">
         Tất nhiên nếu bạn muốn làm god của một hành tinh thì trước hết bạn sẽ
         phải sở hữu ít nhất một hành tinh để làm được điều đó. Mỗi một hành tinh
@@ -55,21 +41,7 @@
     <!-- section-four -->
     <div class="section-four">
       <h1>Cách sở hữu</h1>
-      <div class="center-icon">
-        <img
-          src="../assets/img/center-icon/small_dood_kv_lineup_left.png"
-          alt=""
-        />
-        <img
-          src="../assets/img/center-icon/treasure.png"
-          alt=""
-          style="width: 30px !important"
-        />
-        <img
-          src="../assets/img/center-icon/small_dood_kv_lineup_right.png"
-          alt=""
-        />
-      </div>
+      <CenterIconView></CenterIconView>
       <div class="infomation">
         Hiện tại vòng Primeval Planet sale đã được diễn ra vào ngày 14 tháng 4
         năm 2022. Giờ đây các Planet NFT đang được bán trên
@@ -116,21 +88,7 @@
     <!-- section-six -->
     <div class="section-six">
       <h1>Core là gì?</h1>
-      <div class="center-icon">
-        <img
-          src="../assets/img/center-icon/small_dood_kv_lineup_left.png"
-          alt=""
-        />
-        <img
-          src="../assets/img/center-icon/treasure.png"
-          alt=""
-          style="width: 30px !important"
-        />
-        <img
-          src="../assets/img/center-icon/small_dood_kv_lineup_right.png"
-          alt=""
-        />
-      </div>
+      <CenterIconView></CenterIconView>
       <div class="infomation">
         Core chính là thứ cốt lõi, nguyên thủy nhất. Thứ mà mở ra 1 planet cho
         bạn. Như đã thấy ở trên. Đây là toàn bộ 5 core của chúng tôi. Mỗi 1 core
@@ -413,6 +371,7 @@
 import index from "../core/index.js";
 import { Splide, SplideSlide } from "@splidejs/vue-splide";
 import LoadingView from "../components/LoadingView.vue";
+import CenterIconView from "../components/CenterIconView.vue";
 
 export default {
   mixins: [index.mixins],
@@ -420,6 +379,7 @@ export default {
     Splide,
     SplideSlide,
     LoadingView,
+    CenterIconView,
   },
   data() {
     return {

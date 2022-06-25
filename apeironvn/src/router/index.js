@@ -91,6 +91,18 @@ const router = createRouter({
       },
       component: () => import("../views/BreedView.vue")
     },
+    {
+      path: "/marketplace",
+      name: "marketplace",
+      meta: {
+        dropdown: true,
+        dropdownItem: true
+      },
+      beforeEnter() {
+        // Put the full page URL including the protocol http(s) below
+        window.location.replace("https://marketplace.apeironnft.com/")
+      }
+    },
   ],
 
 });

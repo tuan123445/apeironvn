@@ -19,21 +19,7 @@
     <!-- section-two -->
     <div class="section-two">
       <h1>Hệ thống Tri-Token</h1>
-      <div class="center-icon">
-        <img
-          src="../assets/img/center-icon/small_dood_kv_lineup_left.png"
-          alt=""
-        />
-        <img
-          src="../assets/img/center-icon/treasure.png"
-          alt=""
-          style="width: 30px !important"
-        />
-        <img
-          src="../assets/img/center-icon/small_dood_kv_lineup_right.png"
-          alt=""
-        />
-      </div>
+      <CenterIconView></CenterIconView>
       <div class="infomation">
         Các game trên hiện trường hiện nay chỉ có nhiều nhất 2 tokens, nhưng
         Apeiron có tận 3 tokens. Đó chính là Apeiros (APRS), Anima (ANIMA),
@@ -48,21 +34,7 @@
     <!-- section-four -->
     <div class="section-four">
       <h1>Chi tiết hệ thống Tri-Token</h1>
-      <div class="center-icon">
-        <img
-          src="../assets/img/center-icon/small_dood_kv_lineup_left.png"
-          alt=""
-        />
-        <img
-          src="../assets/img/center-icon/treasure.png"
-          alt=""
-          style="width: 30px !important"
-        />
-        <img
-          src="../assets/img/center-icon/small_dood_kv_lineup_right.png"
-          alt=""
-        />
-      </div>
+      <CenterIconView></CenterIconView>
       <div class="infomation">
         <div>
           <img
@@ -221,11 +193,14 @@
 </template>
 <script>
 import LoadingView from "../components/LoadingView.vue";
+import CenterIconView from "../components/CenterIconView.vue";
+
 import index from "../core/index.js";
 
 export default {
   components: {
     LoadingView,
+    CenterIconView,
   },
   mixins: [index.mixins],
   data() {

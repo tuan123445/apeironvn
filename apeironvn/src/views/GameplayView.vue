@@ -17,21 +17,7 @@
     <!-- section-two -->
     <div class="section-four">
       <h1>Eden là gì?</h1>
-      <div class="center-icon">
-        <img
-          src="../assets/img/center-icon/small_dood_kv_lineup_left.png"
-          alt=""
-        />
-        <img
-          src="../assets/img/center-icon/treasure.png"
-          alt=""
-          style="width: 30px !important"
-        />
-        <img
-          src="../assets/img/center-icon/small_dood_kv_lineup_right.png"
-          alt=""
-        />
-      </div>
+      <CenterIconView></CenterIconView>
       <div class="infomation">
         Eden có bốn nguyên tố chính: lửa, gió, nước và đất. Thông qua bốn nguyên
         tố này người chơi có thể tự do kết hợp để tạo ra phép thuật khác nhau
@@ -58,21 +44,7 @@
     <!-- section-four -->
     <div class="section-four">
       <h1>Alignment</h1>
-      <div class="center-icon">
-        <img
-          src="../assets/img/center-icon/small_dood_kv_lineup_left.png"
-          alt=""
-        />
-        <img
-          src="../assets/img/center-icon/treasure.png"
-          alt=""
-          style="width: 30px !important"
-        />
-        <img
-          src="../assets/img/center-icon/small_dood_kv_lineup_right.png"
-          alt=""
-        />
-      </div>
+      <CenterIconView></CenterIconView>
       <div class="infomation">
         Mỗi khi sử dụng Eden để niệm phép, bản ngã của bạn sẽ suy vong hoặc tăng
         tiến, hướng thiện hoặc tà ác cho tới khi đạt cảnh giới bản ngã. Khi đó
@@ -88,39 +60,63 @@
       <img class="bgr-img" src="../assets/img/bbqparty_final.png" alt="" />
     </div>
     <!-- section-four -->
-    <!-- <div class="section-two">
+    <div class="section-two">
       <h1>Armageddon</h1>
-      <div class="center-icon">
-        <img
-          src="../assets/img/center-icon/small_dood_kv_lineup_left.png"
-          alt=""
-        />
-        <img
-          src="../assets/img/center-icon/treasure.png"
-          alt=""
-          style="width: 30px !important"
-        />
-        <img
-          src="../assets/img/center-icon/small_dood_kv_lineup_right.png"
-          alt=""
-        />
-      </div>
+      <CenterIconView></CenterIconView>
       <div class="infomation">
-        Khi hành tinh của bạn đã lớn đến một mức độ nhất định, bạn có thể chọn
-        lựa
+        Khi hành tinh của bạn đã lớn đến một mức độ nhất định, bạn sẽ có hai
+        hướng đi. Một là bạn có thể lựa chọn tiếp tục chơi hành tinh của bạn.
+        Hai là bạn có thể hy sinh hành tinh. Nếu bạn lựa chọn tiếp tục thì bạn
+        sẽ được cấp tiền thưởng lâu dài và một lượng nhỏ Soul Gem, trong khi
+        trường hợp hai thì bạn sẽ nhận được một lượng lớn soul gem (và hướng bản
+        ngã của bạn sang một chút tà ác).
       </div>
-    </div> -->
+    </div>
+    <!-- section-three -->
+    <div class="section-three">
+      <img class="bgr-img" src="../assets/img/gameplay.jpeg" alt="" />
+    </div>
+    <!-- section-four -->
+    <div class="section-six">
+      <h1>PvE & PvP</h1>
+      <CenterIconView></CenterIconView>
+      <div class="infomation">
+        <h3>PvE:</h3>
+        <div>
+          Khi bạn đã chuẩn bị sẵn sàng, bạn và các Apostle của mình có thể khám
+          phá các Dungeon để có thể thu thập được vật phẩm quý hiếm cũng như
+          ANIMA. Sẽ có ba loại Dungeon. Dirac Sea (Dungeon thường) là nơi bạn có
+          thể giải cứu các linh hồn của Dood Apostle và mời họ vào team của bạn.
+          Manifold Paths of Dirac (Dungeon cao cấp) độ khó sẽ tăng dần và phần
+          thưởng cũng sẽ tăng. Dungeon Worlds (Dungeon ngẫu nhiên) sẽ xuất hiện
+          ngãu nhiên giống như nhưng nhiệm vụ phụ của bạn.
+        </div>
+        <hr />
+        <h3>PvP:</h3>
+        <div>
+          Khi người chơi đã tập hợp đầy đủ Apostle bạn có thể đưa chúng vào
+          Hourglass Coliseum (một đấu trường giữa các thiên hà) để so tài. Đấu
+          trường sẽ là một trải nghiệm 1v1, nơi bạn có thể so tài các Apostle và
+          Avatar của bạn với người chơi khác. Người chơi có thứ hạng cao cuối
+          mùa sẽ được nhận nhiều phần thưởng hấp dẫn. Chúng tôi sẽ theo dõi sát
+          sao meta PvP và đưa ra các bản sửa để đảm bảo trận chiến được công
+          bằng nhất.
+        </div>
+      </div>
+    </div>
   </main>
 </template>
 
 <script>
 import index from "../core/index.js";
 import LoadingView from "../components/LoadingView.vue";
+import CenterIconView from "../components/CenterIconView.vue";
 
 export default {
   mixins: [index.mixins],
   components: {
     LoadingView,
+    CenterIconView,
   },
   data() {
     return {};
