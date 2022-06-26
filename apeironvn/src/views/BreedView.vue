@@ -63,7 +63,7 @@
       ></video>
     </div>
     <!-- section-four -->
-    <div class="section-six" style="display: none">
+    <div class="section-six breed-simulation">
       <h1>Breed Simulation</h1>
       <div class="infomation" style="text-align: center">
         Đây chỉ là bản thử nghiệm nên mọi thông tin có thể sai lệch
@@ -85,6 +85,7 @@
             @change="valueChange($event, 'one')"
             class="select-btn"
             style="width: auto"
+            :disabled="!disableBtn"
           >
             <option disabled value="">Chọn Planet</option>
             <option
@@ -101,6 +102,7 @@
             @change="valueChange($event, 'two')"
             class="select-btn"
             style="width: auto"
+            :disabled="!disableBtn"
           >
             <option disabled value="">Chọn Planet</option>
             <option
@@ -114,7 +116,7 @@
         </div>
       </div>
       <div class="half-body">
-        <div class="container" style="width: 25%; padding-left: 35px">
+        <div class="container result-planet">
           <div class="row pt-3" style="text-align: center; width: 100%">
             <div class="col-3" style="color: #fff">F</div>
             <div class="col-3" style="color: #fff">W</div>
@@ -672,12 +674,23 @@ export default {
             } else {
               legacyStat = this.selectedLegacyPlanetOne;
             }
-
-            rs = this.assignTwoObject(rs, legacyStat);
+          } else if (this.legacyShowOne || this.legacyShowTwo) {
+            if (this.legacyShowOne) {
+              legacyStat = this.selectedLegacyPlanetOne;
+            } else {
+              legacyStat = this.selectedLegacyPlanetTwo;
+            }
           }
-          // else if (this.legacyShowOne || this.legacyShowTwo) {
-          //   console.log(this.getTheMaxNumber(this.selectedLegacyPlanetOne));
-          // }
+
+          if (this.legacyShowOne || this.legacyShowTwo) {
+            legacyStat = this.getLegacyBigStat(
+              legacyStat,
+              this.planetOne,
+              this.planetTwo
+            );
+            rs = this.calStatWhenHaveLG(legacyStat, rs);
+          }
+
           return rs;
         })
         .then((rs) => {
@@ -698,6 +711,83 @@ export default {
 
       result = (parseInt(stOne) + parseInt(stTwo)) / 2;
       return Math.round(result).toString();
+    },
+    getLegacyBigStat(item, planetOne, planetTwo) {
+      let getKeys = Object.keys(planetOne);
+      let newLegacy = {
+        air: 0,
+        earth: 0,
+        fire: 0,
+        water: 0,
+      };
+      let haveSameStat = false;
+      let legacyKey = "";
+
+      getKeys.forEach((key) => {
+        if (key == "fire" || key == "water" || key == "earth" || key == "air") {
+          if (planetOne[key] != 0 && planetTwo[key] != 0 && item[key] != 0) {
+            haveSameStat = true;
+            legacyKey = key;
+          }
+        }
+      });
+
+      if (haveSameStat) {
+        newLegacy[legacyKey] = item[legacyKey];
+      } else {
+        // lấy chỉ số đầu tiên
+        getKeys.forEach((key) => {
+          if (
+            key == "fire" ||
+            key == "water" ||
+            key == "earth" ||
+            key == "air"
+          ) {
+            if (item[key] != 0) {
+              legacyKey = key;
+            }
+          }
+        });
+        newLegacy[legacyKey] = item[legacyKey];
+      }
+
+      return newLegacy;
+    },
+    calStatWhenHaveLG(legacy, oldStat) {
+      let getKeys = Object.keys(legacy);
+      let legacyKey = "";
+      let notLegacyKeyList = [];
+
+      // lấy key của legacy
+      getKeys.forEach((key) => {
+        if (legacy[key] != 0) {
+          legacyKey = key;
+        } else {
+          notLegacyKeyList.push(key);
+        }
+      });
+
+      // thay thế chỉ số của hành tinh
+      oldStat[legacyKey] = 0;
+
+      // tính toán
+      let statLeftWhenAddLegacy = 0;
+      let statLeftWhenNotLegacy = 0;
+      // tính tổng
+      notLegacyKeyList.forEach((key) => {
+        statLeftWhenNotLegacy += parseInt(oldStat[key]);
+      });
+
+      statLeftWhenAddLegacy = statLeftWhenNotLegacy + legacy[legacyKey] - 100;
+
+      notLegacyKeyList.forEach((key) => {
+        oldStat[key] = Math.round(
+          oldStat[key] -
+            (oldStat[key] / statLeftWhenNotLegacy) * statLeftWhenAddLegacy
+        );
+      });
+      oldStat[legacyKey] = legacy[legacyKey];
+      return oldStat;
     },
     checkAndGetPlanetLink(fire, water, air, earth) {
       let planetLink = "";
@@ -800,6 +890,15 @@ export default {
         width: 100%;
       }
     }
+
+    .result-planet {
+      width: 50% !important;
+      padding-left: 35px;
+    }
+  }
+
+  .breed-simulation {
+    display: none;
   }
 }
 @media (min-width: 400px) {
@@ -822,9 +921,20 @@ export default {
       }
     }
   }
+
+  .breed-simulation {
+    display: block;
+  }
 }
 @media (min-width: 900px) {
+  .section-six {
+    .result-planet {
+      width: 25% !important;
+      padding-left: 35px;
+    }
+  }
 }
+
 @media (min-width: 1200px) {
 }
 @media (min-width: 1400px) {

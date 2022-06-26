@@ -255,7 +255,7 @@
     </div>
     <!-- section-six -->
     <div class="section-six">
-      <h1>Profit</h1>
+      <h1>Benefit</h1>
       <CenterIconView></CenterIconView>
       <div class="infomation">
         Tùy thuộc vào số lượng Apostle mà bạn sở hữu. Bạn sẽ có cơ hội nhận được
