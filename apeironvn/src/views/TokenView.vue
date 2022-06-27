@@ -19,6 +19,7 @@
     <!-- section-two -->
     <div class="section-two">
       <h1>Hệ thống Tri-Token</h1>
+      <h2 class="apeiron-font">Tri-Token</h2>
       <CenterIconView></CenterIconView>
       <div class="infomation">
         Các game trên hiện trường hiện nay chỉ có nhiều nhất 2 tokens, nhưng
@@ -34,6 +35,7 @@
     <!-- section-four -->
     <div class="section-four">
       <h1>Chi tiết hệ thống Tri-Token</h1>
+      <h2 class="apeiron-font">Tri-Token detail</h2>
       <CenterIconView></CenterIconView>
       <div class="infomation">
         <div>
@@ -96,6 +98,7 @@
           <h1 class="title" style="margin-top: 20px">
             Khuyến khích người chơi
           </h1>
+          <h1 class="title apeiron-font">How to play</h1>
           <div class="infor">
             <div>
               Tri-tokens và NFTs của chúng tôi hoạt động song song như một nền
@@ -136,6 +139,7 @@
       </div>
     </div>
     <!-- section-six -->
+    <hr />
     <div class="section-five" style="box-shadow: unset; display: inline">
       <h1 style="text-align: center; padding-top: 30px">
         Lịch trình Token Realease
@@ -152,10 +156,15 @@
           ></apexchart>
         </div>
       </div>
+      <hr />
       <div class="center-item">
         <div class="infor">
-          <h1 style="margin-bottom: 30px; text-align: center">
-            Tỷ lệ phát hành APRS Token
+          <h1 style="text-align: center">Tỷ lệ phát hành APRS Token</h1>
+          <h1
+            class="apeiron-font"
+            style="margin-bottom: 30px; text-align: center"
+          >
+            APRS Token
           </h1>
           <h5>- 210,000,000 (21%)</h5>
           <div>

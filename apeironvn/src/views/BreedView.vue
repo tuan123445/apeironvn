@@ -14,6 +14,7 @@
     <!-- section-two -->
     <div class="section-six">
       <h1>Breed?</h1>
+      <h2 class="apeiron-font">Breed</h2>
       <CenterIconView></CenterIconView>
       <div class="infomation">
         <div>
@@ -65,6 +66,7 @@
     <!-- section-four -->
     <div class="section-six breed-simulation">
       <h1>Breed Simulation</h1>
+      <h2 class="apeiron-font">Breed Simulation</h2>
       <div class="infomation" style="text-align: center">
         Đây chỉ là bản thử nghiệm nên mọi thông tin có thể sai lệch
       </div>
@@ -895,6 +897,8 @@ export default {
 <style lang="scss" scoped>
 @media (min-width: 200px) {
   .section-six {
+    padding: 70px 0 !important;
+
     .half-body {
       .left-side,
       .right-side {
@@ -920,6 +924,8 @@ export default {
 }
 @media (min-width: 768px) {
   .section-six {
+    padding: 100px 0 !important;
+
     .half-body {
       .left-side,
       .right-side {

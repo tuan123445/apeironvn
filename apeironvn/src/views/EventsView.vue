@@ -24,6 +24,7 @@
             </div>
             <div class="event-item-information">
               <h6>Who is the best</h6>
+              <h6 class="apeiron-font">Who is the best</h6>
               <div>Thời gian: Đang cập nhật</div>
               <div>Đối tượng: Toàn bộ cộng đồng Việt Nam</div>
               <div>Phần thưởng: Một Apostle NFT Hunter</div>
@@ -57,6 +58,7 @@
             </div>
             <div class="event-item-information">
               <h6>PLUMPY PLUSHQUEST</h6>
+              <h6 class="apeiron-font">PLUMPY PLUSHQUEST</h6>
               <div>Thời gian: từ 23/06/2022 đến 07/07/2022</div>
               <div>
                 Đối tượng: Bạn phải có 3 role dưới đây để có thể tham gia event
@@ -87,6 +89,7 @@
             </div>
             <div class="event-item-information">
               <h6>Đố vui về Celestial Conjunction</h6>
+              <h6 class="apeiron-font">Celestial Conjunction trivia</h6>
               <div>Thời gian: 18/06/2022 2PM UTC.</div>
               <div>Đối tượng: Toàn bộ Doodies</div>
               <div>Phần thưởng:</div>
@@ -111,6 +114,7 @@
             </div>
             <div class="event-item-information">
               <h6>ASK and ANSWER contest.</h6>
+              <h6 class="apeiron-font">ASK and ANSWER contest</h6>
               <div>Thời gian: 13/05/2022 ~ 19/06/2022 .</div>
               <div>Đối tượng: Doodies Việt Nam.</div>
               <div>

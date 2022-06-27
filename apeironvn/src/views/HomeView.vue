@@ -16,6 +16,7 @@
     <!-- section-two -->
     <div class="section-two">
       <h1>NFT Game đầu tiên thuộc thể loại GODGAME</h1>
+      <h2 class="apeiron-font">GODGAME</h2>
       <CenterIconView></CenterIconView>
       <div class="infomation">
         Không có gì đáng nói ngoài sự thật rằng đây chính là một game thể loại
@@ -40,6 +41,7 @@
     <!-- section-four -->
     <div class="section-four">
       <h1>Apeiron</h1>
+      <h2 class="apeiron-font">Apeiron</h2>
       <CenterIconView></CenterIconView>
       <div class="infomation">
         Trong Apeiron, bạn sẽ có quyền kiểm soát EDEN của một hành tinh - một
@@ -56,6 +58,7 @@
       <img class="bgr-img" src="../assets/img/Bood_lineup.jpg" alt="" />
       <div class="info-wrapper">
         <h1>Apostle</h1>
+        <h2 class="apeiron-font">Apostle</h2>
         <div class="center-icon">
           <img
             src="../assets/img/center-icon/small_dood_kv_lineup_left.png"
@@ -83,6 +86,7 @@
     <!-- section-six -->
     <div class="section-six">
       <h1>Planet</h1>
+      <h2 class="apeiron-font">Planet</h2>
       <CenterIconView></CenterIconView>
       <div class="infomation">
         Để có thể bắt đầu chơi Apeiron, bạn sẽ cần một hành tinh. Mỗi 1 hành
@@ -135,6 +139,7 @@
     <!-- section-eight -->
     <div class="section-eight">
       <h1>Partner</h1>
+      <h2 class="apeiron-font">Partner</h2>
       <CenterIconView></CenterIconView>
       <div class="infomation">
         Hiện tại apeiron đã gọi vốn và đang hợp tác với nhiều quỹ đầu tư và

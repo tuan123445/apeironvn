@@ -17,6 +17,7 @@
     <!-- section-two -->
     <div class="section-four">
       <h1>Eden là gì?</h1>
+      <h2 class="apeiron-font">Eden</h2>
       <CenterIconView></CenterIconView>
       <div class="infomation">
         Eden có bốn nguyên tố chính: lửa, gió, nước và đất. Thông qua bốn nguyên
@@ -44,6 +45,7 @@
     <!-- section-four -->
     <div class="section-four">
       <h1>Alignment</h1>
+      <h2 class="apeiron-font">Alignment</h2>
       <CenterIconView></CenterIconView>
       <div class="infomation">
         Mỗi khi sử dụng Eden để niệm phép, bản ngã của bạn sẽ suy vong hoặc tăng
@@ -62,6 +64,7 @@
     <!-- section-four -->
     <div class="section-two">
       <h1>Armageddon</h1>
+      <h2 class="apeiron-font">Armageddon</h2>
       <CenterIconView></CenterIconView>
       <div class="infomation">
         Khi hành tinh của bạn đã lớn đến một mức độ nhất định, bạn sẽ có hai
@@ -79,6 +82,7 @@
     <!-- section-four -->
     <div class="section-six">
       <h1>PvE & PvP</h1>
+      <h2 class="apeiron-font">PvE PvP</h2>
       <CenterIconView></CenterIconView>
       <div class="infomation">
         <h3>PvE:</h3>

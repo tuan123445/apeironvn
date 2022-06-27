@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Apeiron;
+  src: url(Apeiron-fonts.0f5214c0.woff) format("woff");
+}
+
 /* Small devices (tablets, 200px and up) */
 @media (min-width: 200px) {
   .section-one {
@@ -421,6 +426,10 @@ body {
   width: 100%;
   height: 100%;
 
+  .apeiron-font {
+    font-family: Apeiron;
+  }
+
   /* section-one */
   .section-one {
     display: flex;
@@ -452,34 +461,34 @@ body {
         filter: blur(5px);
 
         &:nth-child(1) {
-          animation: fade-in 2s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+          animation: fade-in 8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
         }
         &:nth-child(2) {
-          animation: fade-in 2s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+          animation: fade-in 8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
         }
         &:nth-child(3) {
-          animation: fade-in 2s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+          animation: fade-in 8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
         }
         &:nth-child(4) {
-          animation: fade-in 2s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+          animation: fade-in 8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
         }
         &:nth-child(5) {
-          animation: fade-in 2s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+          animation: fade-in 8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
         }
         &:nth-child(6) {
-          animation: fade-in 2s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+          animation: fade-in 8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
         }
         &:nth-child(7) {
-          animation: fade-in 2s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+          animation: fade-in 8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
         }
         &:nth-child(8) {
-          animation: fade-in 2s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+          animation: fade-in 8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
         }
         &:nth-child(9) {
-          animation: fade-in 2s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+          animation: fade-in 8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
         }
         &:nth-child(10) {
-          animation: fade-in 2s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+          animation: fade-in 8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
         }
       }
     }
@@ -544,7 +553,8 @@ body {
     width: 100%;
   }
 
-  .info-wrapper h1 {
+  .info-wrapper h1,
+  h2 {
     text-align: center;
     color: #fff8dc;
   }
@@ -747,7 +757,8 @@ body {
     position: relative;
     width: -webkit-fill-available;
     height: $height;
-    h1 {
+    h1,
+    h2 {
       text-align: center;
       color: #fff8dc;
     }

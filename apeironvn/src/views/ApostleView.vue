@@ -16,6 +16,7 @@
     <!-- section-two -->
     <div class="section-two">
       <h1>Apostle là gì?</h1>
+      <h2 class="apeiron-font">Apostle</h2>
       <CenterIconView></CenterIconView>
       <div class="infomation">
         Apostle không khác gì những con pet của bạn trong game. Chúng sẽ hỗ trợ
@@ -45,6 +46,7 @@
             </div>
             <div class="slide-info">
               <div class="slide-title">warrior</div>
+              <div class="slide-title apeiron-font">warrior</div>
               <div class="slide-detail">
                 <p>
                   Thẻ bài của warriror kết hợp cả gây sát thương và phòng thủ.
@@ -62,6 +64,7 @@
             </div>
             <div class="slide-info">
               <div class="slide-title">Mage</div>
+              <div class="slide-title apeiron-font">Mage</div>
               <div class="slide-detail">
                 <p>
                   Không giống như warrior Mage có cự li đánh tầm xa và chúng có
@@ -81,7 +84,8 @@
               <img src="../assets/img/apostle/bard_nft.png" />
             </div>
             <div class="slide-info">
-              <div class="slide-title">bard</div>
+              <div class="slide-title">Bard</div>
+              <div class="slide-title apeiron-font">Bard</div>
               <div class="slide-detail">
                 <p>
                   Bard giống như 1 supporter.Bard sẽ không xông pha đứng đầu đội
@@ -96,7 +100,8 @@
               <img src="../assets/img/apostle/berserker_nft.jpg" />
             </div>
             <div class="slide-info">
-              <div class="slide-title">berserker</div>
+              <div class="slide-title">Berserker</div>
+              <div class="slide-title apeiron-font">Berserker</div>
               <div class="slide-detail">
                 <p>
                   Các Berserker sẽ có nhiệm vụ đứng ở tuyến trước, chúng là tiên
@@ -113,6 +118,7 @@
             </div>
             <div class="slide-info">
               <div class="slide-title">dragoon</div>
+              <div class="slide-title apeiron-font">dragoon</div>
               <div class="slide-detail">
                 <p>
                   Dragoon là Apostle với tầm đánh gần gây sát thương vật lý. Ví
@@ -129,6 +135,7 @@
             </div>
             <div class="slide-info">
               <div class="slide-title">hunter</div>
+              <div class="slide-title apeiron-font">hunter</div>
               <div class="slide-detail">
                 <p>
                   Thợ săn mang đến sự kết hợp vô song giữa khả năng tiếp cận
@@ -148,6 +155,7 @@
             </div>
             <div class="slide-info">
               <div class="slide-title">knight</div>
+              <div class="slide-title apeiron-font">knight</div>
               <div class="slide-detail">
                 <p>
                   Knight trong chiến đấu được mặc áo giáp và khiên cổ điển. Vậy
@@ -164,6 +172,7 @@
             </div>
             <div class="slide-info">
               <div class="slide-title">priest</div>
+              <div class="slide-title apeiron-font">priest</div>
               <div class="slide-detail">
                 <p>
                   Trong chiến đấu các Priest giữ cho các apostle khác sống sót.
@@ -179,6 +188,7 @@
             </div>
             <div class="slide-info">
               <div class="slide-title">rogue</div>
+              <div class="slide-title apeiron-font">rogue</div>
               <div class="slide-detail">
                 <p>
                   Rogue là tướng cận chiến sát thương vật lý. Chúng gây sát
@@ -194,6 +204,7 @@
             </div>
             <div class="slide-info">
               <div class="slide-title">shaman</div>
+              <div class="slide-title apeiron-font">shaman</div>
               <div class="slide-detail">
                 <p>
                   Trong chiến đấu các Shaman cúng có nhiệm vụ hỗ trợ cho đồng
@@ -211,6 +222,7 @@
             </div>
             <div class="slide-info">
               <div class="slide-title">summoner</div>
+              <div class="slide-title apeiron-font">summoner</div>
               <div class="slide-detail">
                 <p>
                   Trong chiến đấu, các Summoner có thể triệu hồi các linh hồn để
@@ -229,6 +241,7 @@
             </div>
             <div class="slide-info">
               <div class="slide-title">Guardian</div>
+              <div class="slide-title apeiron-font">Guardian</div>
               <div class="slide-detail">
                 <p>
                   Đây là tướng tank đích thực trong hàng ngũ Apostle. Một bức
@@ -256,6 +269,7 @@
     <!-- section-six -->
     <div class="section-six">
       <h1>Benefit</h1>
+      <h2 class="apeiron-font">Benefit</h2>
       <CenterIconView></CenterIconView>
       <div class="infomation">
         Tùy thuộc vào số lượng Apostle mà bạn sở hữu. Bạn sẽ có cơ hội nhận được

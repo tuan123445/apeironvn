@@ -15,6 +15,7 @@
     <!-- section-two -->
     <div class="section-two">
       <h1>Planet là gì?</h1>
+      <h2 class="apeiron-font">Planet</h2>
       <CenterIconView></CenterIconView>
       <div class="infomation">
         Tất nhiên nếu bạn muốn làm god của một hành tinh thì trước hết bạn sẽ
@@ -41,6 +42,7 @@
     <!-- section-four -->
     <div class="section-four">
       <h1>Cách sở hữu</h1>
+      <h2 class="apeiron-font">How to get</h2>
       <CenterIconView></CenterIconView>
       <div class="infomation">
         Hiện tại vòng Primeval Planet sale đã được diễn ra vào ngày 14 tháng 4
@@ -88,6 +90,7 @@
     <!-- section-six -->
     <div class="section-six">
       <h1>Core là gì?</h1>
+      <h2 class="apeiron-font">Core</h2>
       <CenterIconView></CenterIconView>
       <div class="infomation">
         Core chính là thứ cốt lõi, nguyên thủy nhất. Thứ mà mở ra 1 planet cho
@@ -111,6 +114,7 @@
     <!-- section-eight -->
     <div class="section-eight">
       <h1>Planet & Avatar</h1>
+      <h2 class="apeiron-font">planet avatar</h2>
       <div class="center-icon">
         <img
           src="../assets/img/center-icon/small_dood_kv_lineup_left.png"
@@ -292,6 +296,7 @@
         </div>
         <div class="right-side">
           <h3 class="title" style="margin-top: 20px">Planet Age</h3>
+          <h3 class="title apeiron-font">Planet Age</h3>
           <div class="infor">
             Mỗi planet đều có tuổi thọ. Khi một hành tinh được sinh ra, tuổi của
             nó được đặt thành 0 và nó sẽ tăng thêm 1 mỗi ngày (tính theo ngày
@@ -338,6 +343,7 @@
       <div class="half-body">
         <div class="right-side">
           <h3 class="title" style="margin-top: 20px">Planet Breed</h3>
+          <h3 class="title apeiron-font">Planet Breed</h3>
           <div class="infor">
             Khi bạn sở hữu 2 planet trở lên bạn có thể tham gia vào sự kiện
             Primeval Celestial Conjunction để nhân giống hành tinh của bạn. Có 2
