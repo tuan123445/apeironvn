@@ -353,6 +353,21 @@
 import index from "../core/index.js";
 import LoadingView from "../components/LoadingView.vue";
 import CenterIconView from "../components/CenterIconView.vue";
+import GigasImg from "../img/planet/Gigas.png";
+import LeviathanImg from "../img/planet/Leviathan.png";
+import InfernoImg from "../img/planet/Inferno.png";
+import TempestImg from "../img/planet/Tempest.png";
+import ArchipelagoImg from "../img/planet/Archipelago.png";
+import VolcanicImg from "../img/planet/Volcanic.png";
+import KarstImg from "../img/planet/Karst.png";
+import TundraImg from "../img/planet/Tundra.png";
+import DeltaImg from "../img/planet/Delta.png";
+import DunesImg from "../img/planet/Dunes.png";
+import MountainousImg from "../img/planet/Mountainous.png";
+import ForestyImg from "../img/planet/Foresty.png";
+import WasterlandImg from "../img/planet/Wasterland.png";
+import OasisImg from "../img/planet/Oasis.png";
+import NormalImg from "../img/planet/Normal.png";
 
 export default {
   mixins: [index.mixins],
@@ -375,7 +390,7 @@ export default {
         {
           title: "Gigas",
           value: 1,
-          link: "./src/assets/img/planet/Gigas.png",
+          link: GigasImg,
           legacy: [],
           haveFire: false,
           haveWater: false,
@@ -385,7 +400,7 @@ export default {
         {
           title: "Leviathan",
           value: 2,
-          link: "./src/assets/img/planet/Leviathan.png",
+          link: LeviathanImg,
           legacy: [],
           haveFire: false,
           haveWater: true,
@@ -395,7 +410,7 @@ export default {
         {
           title: "Inferno",
           value: 3,
-          link: "./src/assets/img/planet/Inferno.png",
+          link: InfernoImg,
           legacy: [],
           haveFire: true,
           haveWater: false,
@@ -405,7 +420,7 @@ export default {
         {
           title: "Tempest",
           value: 4,
-          link: "./src/assets/img/planet/Tempest.png",
+          link: TempestImg,
           legacy: [],
           haveFire: false,
           haveWater: false,
@@ -415,7 +430,7 @@ export default {
         {
           title: "Archipelago",
           value: 5,
-          link: "./src/assets/img/planet/Archipelago.png",
+          link: ArchipelagoImg,
           legacy: index.legacyList.Archipelago,
           haveFire: false,
           haveWater: true,
@@ -425,7 +440,7 @@ export default {
         {
           title: "Volcanic",
           value: 6,
-          link: "./src/assets/img/planet/Volcanic.png",
+          link: VolcanicImg,
           legacy: index.legacyList.Volcanic,
           haveFire: true,
           haveWater: false,
@@ -435,7 +450,7 @@ export default {
         {
           title: "Karsts",
           value: 7,
-          link: "./src/assets/img/planet/Karst.png",
+          link: KarstImg,
           legacy: index.legacyList.Karsts,
           haveFire: false,
           haveWater: false,
@@ -445,7 +460,7 @@ export default {
         {
           title: "Tundra",
           value: 8,
-          link: "./src/assets/img/planet/Tundra.png",
+          link: TundraImg,
           legacy: index.legacyList.Tundra,
           haveFire: true,
           haveWater: true,
@@ -455,7 +470,7 @@ export default {
         {
           title: "Delta",
           value: 9,
-          link: "./src/assets/img/planet/Delta.png",
+          link: DeltaImg,
           legacy: index.legacyList.Delta,
           haveFire: false,
           haveWater: true,
@@ -465,7 +480,7 @@ export default {
         {
           title: "Dunes",
           value: 10,
-          link: "./src/assets/img/planet/Dunes.png",
+          link: DunesImg,
           legacy: index.legacyList.Dunes,
           haveFire: true,
           haveWater: false,
@@ -475,7 +490,7 @@ export default {
         {
           title: "Mountainous",
           value: 11,
-          link: "./src/assets/img/planet/Mountainous.png",
+          link: MountainousImg,
           legacy: index.legacyList.Mountainous,
           haveFire: true,
           haveWater: true,
@@ -485,7 +500,7 @@ export default {
         {
           title: "Foresty",
           value: 12,
-          link: "./src/assets/img/planet/Foresty.png",
+          link: ForestyImg,
           legacy: index.legacyList.Foresty,
           haveFire: false,
           haveWater: true,
@@ -495,7 +510,7 @@ export default {
         {
           title: "Wasteland",
           value: 13,
-          link: "./src/assets/img/planet/Wasterland.png",
+          link: WasterlandImg,
           legacy: index.legacyList.Wasterland,
           haveFire: true,
           haveWater: false,
@@ -505,7 +520,7 @@ export default {
         {
           title: "Oasis",
           value: 14,
-          link: "./src/assets/img/planet/Oasis.png",
+          link: OasisImg,
           legacy: index.legacyList.Oasis,
           haveFire: true,
           haveWater: true,
@@ -515,7 +530,7 @@ export default {
         {
           title: "Normal",
           value: 15,
-          link: "./src/assets/img/planet/Normal.png",
+          link: NormalImg,
           legacy: index.legacyList.Normal,
           haveFire: true,
           haveWater: true,
@@ -556,8 +571,8 @@ export default {
       },
       legacyDatasOne: [],
       legacyDatasTwo: [],
-      planetOneLink: "./src/assets/img/planet/Gigas.png",
-      planetTwoLink: "./src/assets/img/planet/Gigas.png",
+      planetOneLink: GigasImg,
+      planetTwoLink: GigasImg,
       legacyShowOne: false,
       legacyShowTwo: false,
       selectedLegacyPlanetOne: {},
@@ -621,8 +636,8 @@ export default {
       this.planetOne = this.resetDataField(false, false, false, true);
       this.planetTwo = this.resetDataField(false, false, false, true);
       this.planetChild = this.resetDataField(false, false, false, false);
-      this.planetOneLink = "./src/assets/img/planet/Gigas.png";
-      this.planetTwoLink = "./src/assets/img/planet/Gigas.png";
+      this.planetOneLink = GigasImg;
+      this.planetTwoLink = GigasImg;
 
       document.getElementById("planetOne").classList.remove("left-active");
       document.getElementById("planetTwo").classList.remove("right-active");
