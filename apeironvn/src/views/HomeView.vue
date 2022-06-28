@@ -15,6 +15,7 @@
     </div>
     <!-- section-two -->
     <div class="section-two">
+      <!-- <div id="slide-from-left"> -->
       <h1>NFT Game đầu tiên thuộc thể loại GODGAME</h1>
       <h2 class="apeiron-font">GODGAME</h2>
       <CenterIconView></CenterIconView>
@@ -23,6 +24,7 @@
         god game ĐẦU TIÊN trên blockchain. Nếu bạn muốn sử dụng sức mạnh sáng
         tạo của mình để tạo nên một vũ trụ đầy những chú chubster đáng yêu thì
         khi đến với Apeiron bạn hoàn toàn có thể làm được những điều đó.
+        <!-- </div> -->
       </div>
     </div>
     <!-- section-three -->
@@ -40,6 +42,7 @@
     </div>
     <!-- section-four -->
     <div class="section-four">
+      <!-- <div id="slide-from-right"> -->
       <h1>Apeiron</h1>
       <h2 class="apeiron-font">Apeiron</h2>
       <CenterIconView></CenterIconView>
@@ -52,6 +55,7 @@
         một người khổng lồ có thể điều khiển và di chuyển được để khám phá vũ
         trụ, chiến đấu với quái vật và kiếm chiến lợi phẩm cực kỳ hoành tráng!
       </div>
+      <!-- </div> -->
     </div>
     <!-- section-five -->
     <div class="section-five">

@@ -20,6 +20,27 @@
         <div class="event-list">
           <div class="event-item">
             <div class="event-item-img">
+              <img src="../assets/img/event/AGT.jpeg" alt="" />
+            </div>
+            <div class="event-item-information">
+              <h6>Apeiron's Got Talent</h6>
+              <h6 class="apeiron-font">Apeiron's Got Talent</h6>
+              <div>Thời gian: 09/07/2022 12:00 PM UTC</div>
+              <div>Đối tượng: Toàn bộ cộng đồng</div>
+              <div>Phần thưởng: Lên đến Divine Core giá trị 2ETH</div>
+              <div>
+                Thông tin chi tiết:
+                <span
+                  ><a href="https://discord.gg/UAJsWwZygr" target="_blank">
+                    discord.gg/apeironnft
+                  </a></span
+                >
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="event-item">
+            <div class="event-item-img">
               <img src="../assets/img/event/game.png" alt="" />
             </div>
             <div class="event-item-information">
