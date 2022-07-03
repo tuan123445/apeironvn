@@ -432,7 +432,7 @@ body {
   }
 
   /* slide animation */
-  #slide-from-left {
+  .slide-from-left {
     transform: translateX(-30%);
     opacity: 0;
   }
@@ -441,7 +441,7 @@ body {
     animation: slide-from-left-anim 1s ease-out forwards;
   }
 
-  #slide-from-right {
+  .slide-from-right {
     opacity: 0;
     transform: translateX(30%);
   }

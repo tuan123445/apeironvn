@@ -2,7 +2,7 @@
   <LoadingView></LoadingView>
   <main class="body-wrapper planet-view">
     <!-- section-one -->
-    <div class="section-one">
+    <div class="section-one" id="section-one">
       <h1 class="title">
         <span>P</span>
         <span>L</span>
@@ -13,21 +13,24 @@
       </h1>
     </div>
     <!-- section-two -->
-    <div class="section-two">
-      <h1>Planet là gì?</h1>
-      <h2 class="apeiron-font">Planet</h2>
-      <CenterIconView></CenterIconView>
-      <div class="infomation">
-        Tất nhiên nếu bạn muốn làm god của một hành tinh thì trước hết bạn sẽ
-        phải sở hữu ít nhất một hành tinh để làm được điều đó. Mỗi một hành tinh
-        là một NFT độc nhất được tạo thành từ sự kết hợp của các yếu tố truyền
-        thống là nước, không khí, lửa, và đất. Trên hết, mỗi hành tinh đều có
-        Avatar đặc biệt của riêng mình, đi kèm với ngoại hình và lớp chiến đấu
-        riêng. Bạn hoàn toàn có thể sở hữu không giới hạn số lượng hành tinh.
+    <div class="section-two" id="section-two">
+      <div class="slide-from-left">
+        <h1>Planet là gì?</h1>
+        <h2 class="apeiron-font">Planet</h2>
+        <CenterIconView></CenterIconView>
+        <div class="infomation">
+          Tất nhiên nếu bạn muốn làm god của một hành tinh thì trước hết bạn sẽ
+          phải sở hữu ít nhất một hành tinh để làm được điều đó. Mỗi một hành
+          tinh là một NFT độc nhất được tạo thành từ sự kết hợp của các yếu tố
+          truyền thống là nước, không khí, lửa, và đất. Trên hết, mỗi hành tinh
+          đều có Avatar đặc biệt của riêng mình, đi kèm với ngoại hình và lớp
+          chiến đấu riêng. Bạn hoàn toàn có thể sở hữu không giới hạn số lượng
+          hành tinh.
+        </div>
       </div>
     </div>
     <!-- section-three -->
-    <div class="section-three">
+    <div class="section-three" id="section-three">
       <video
         id="home-video"
         autoplay
@@ -40,28 +43,30 @@
       ></video>
     </div>
     <!-- section-four -->
-    <div class="section-four">
-      <h1>Cách sở hữu</h1>
-      <h2 class="apeiron-font">How to get</h2>
-      <CenterIconView></CenterIconView>
-      <div class="infomation">
-        Hiện tại vòng Primeval Planet sale đã được diễn ra vào ngày 14 tháng 4
-        năm 2022. Giờ đây các Planet NFT đang được bán trên
-        <a href="https://opensea.io/collection/apeironplanet">OPENSEA</a>. Vậy
-        nên bạn có thể sở hữu chúng bằng cách mua trực tiếp trên
-        <a href="https://opensea.io/collection/apeironplanet">OPENSEA</a>. Tuy
-        nhiên nếu bạn không có điều kiện kinh tế để có thể sở hữu một Planet cho
-        riêng bản thân mình thì cũng không sao cả. Có rất nhiều cách để tham gia
-        game mà không cần đến vốn. Đúng vậy Apeiron có chế độ FreeToEarn. Bạn
-        hoàn toàn có thể tham gia miễn phí bằng cách tham gia vào các guild
-        gaming và trở thành học viên của họ để có thể sở hữu một suất
-        scholalship để tham gia game. Hiện nay Apeiron đã và vẫn đang bắt tay
-        với nhiều gaming guild lớn trên khắp thế giới như GUILDFI, YGGSEA,
-        ANCIENT8( một gaming guild của Việt Nam ),...
+    <div class="section-four" id="section-four">
+      <div class="slide-from-right">
+        <h1>Cách sở hữu</h1>
+        <h2 class="apeiron-font">How to get</h2>
+        <CenterIconView></CenterIconView>
+        <div class="infomation">
+          Hiện tại vòng Primeval Planet sale đã được diễn ra vào ngày 14 tháng 4
+          năm 2022. Giờ đây các Planet NFT đang được bán trên
+          <a href="https://opensea.io/collection/apeironplanet">OPENSEA</a>. Vậy
+          nên bạn có thể sở hữu chúng bằng cách mua trực tiếp trên
+          <a href="https://opensea.io/collection/apeironplanet">OPENSEA</a>. Tuy
+          nhiên nếu bạn không có điều kiện kinh tế để có thể sở hữu một Planet
+          cho riêng bản thân mình thì cũng không sao cả. Có rất nhiều cách để
+          tham gia game mà không cần đến vốn. Đúng vậy Apeiron có chế độ
+          FreeToEarn. Bạn hoàn toàn có thể tham gia miễn phí bằng cách tham gia
+          vào các guild gaming và trở thành học viên của họ để có thể sở hữu một
+          suất scholalship để tham gia game. Hiện nay Apeiron đã và vẫn đang bắt
+          tay với nhiều gaming guild lớn trên khắp thế giới như GUILDFI, YGGSEA,
+          ANCIENT8( một gaming guild của Việt Nam ),...
+        </div>
       </div>
     </div>
     <!-- section-five -->
-    <div class="section-five">
+    <div class="section-five" id="section-five">
       <div class="body-wrapper">
         <div class="third-body">
           <div class="side-one">
@@ -88,31 +93,33 @@
       </div>
     </div>
     <!-- section-six -->
-    <div class="section-six">
-      <h1>Core là gì?</h1>
-      <h2 class="apeiron-font">Core</h2>
-      <CenterIconView></CenterIconView>
-      <div class="infomation">
-        Core chính là thứ cốt lõi, nguyên thủy nhất. Thứ mà mở ra 1 planet cho
-        bạn. Như đã thấy ở trên. Đây là toàn bộ 5 core của chúng tôi. Mỗi 1 core
-        sẽ có tỷ lệ ra các Planet có element khác nhau. Và khi bạn sở hữu một
-        core bạn sẽ được hưởng lợi ích theo từng tier của core bạn đang nắm giữ.
-        Không những thế tier bạn giữ càng cao thì lợi ích bạn được hưởng sẽ càng
-        lớn theo cấp số nhân. Ví dụ bạn giữ Elemental Core thì phần thưởng sẽ
-        x0.1 nhưng khi bạn giữ divine core thì phần thưởng bạn sẽ được nhận là
-        x2( gấp 20 lần ). Không những thế giữ càng nhiều core thì số lượng phần
-        thưởng còn được nhân lên hơn nữa. Hiện tại vòng Primeval Planet sale đã
-        kết thúc nên khi bạn mua Planet hãy để ý cả Core của chúng. Tier của
-        Core được ghi góc bên dưới của Planet NFT.
+    <div class="section-six" id="section-six">
+      <div class="slide-from-left">
+        <h1>Core là gì?</h1>
+        <h2 class="apeiron-font">Core</h2>
+        <CenterIconView></CenterIconView>
+        <div class="infomation">
+          Core chính là thứ cốt lõi, nguyên thủy nhất. Thứ mà mở ra 1 planet cho
+          bạn. Như đã thấy ở trên. Đây là toàn bộ 5 core của chúng tôi. Mỗi 1
+          core sẽ có tỷ lệ ra các Planet có element khác nhau. Và khi bạn sở hữu
+          một core bạn sẽ được hưởng lợi ích theo từng tier của core bạn đang
+          nắm giữ. Không những thế tier bạn giữ càng cao thì lợi ích bạn được
+          hưởng sẽ càng lớn theo cấp số nhân. Ví dụ bạn giữ Elemental Core thì
+          phần thưởng sẽ x0.1 nhưng khi bạn giữ divine core thì phần thưởng bạn
+          sẽ được nhận là x2( gấp 20 lần ). Không những thế giữ càng nhiều core
+          thì số lượng phần thưởng còn được nhân lên hơn nữa. Hiện tại vòng
+          Primeval Planet sale đã kết thúc nên khi bạn mua Planet hãy để ý cả
+          Core của chúng. Tier của Core được ghi góc bên dưới của Planet NFT.
+        </div>
       </div>
     </div>
     <!-- section-seven -->
-    <div class="section-five">
+    <div class="section-five" id="section-seven">
       <img class="bgr-img" src="../assets/img/planet_avatar.jpeg" alt="" />
       <div class="info-wrapper"></div>
     </div>
     <!-- section-eight -->
-    <div class="section-eight">
+    <div class="section-eight" id="section-eight">
       <h1>Planet & Avatar</h1>
       <h2 class="apeiron-font">planet avatar</h2>
       <div class="center-icon">

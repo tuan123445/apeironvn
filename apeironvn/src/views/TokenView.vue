@@ -2,7 +2,7 @@
   <LoadingView></LoadingView>
   <main class="body-wrapper tokens-view">
     <!-- section-one -->
-    <div class="section-one">
+    <div class="section-one" id="section-one">
       <h1 class="title">
         <span>T</span>
         <span>O</span>
@@ -17,82 +17,91 @@
       </h1>
     </div>
     <!-- section-two -->
-    <div class="section-two">
-      <h1>Hệ thống Tri-Token</h1>
-      <h2 class="apeiron-font">Tri-Token</h2>
-      <CenterIconView></CenterIconView>
-      <div class="infomation">
-        Các game trên hiện trường hiện nay chỉ có nhiều nhất 2 tokens, nhưng
-        Apeiron có tận 3 tokens. Đó chính là Apeiros (APRS), Anima (ANIMA),
-        Ringularity (RINGU). Mỗi token sẽ có chức năng và cách kiếm riêng vậy
-        nên bạn có thể tham gia đầu tư theo nhiều cách khác nhau.
+    <div class="section-two" id="section-two">
+      <div class="slide-from-left">
+        <h1>Hệ thống Tri-Token</h1>
+        <h2 class="apeiron-font">Tri-Token</h2>
+        <CenterIconView></CenterIconView>
+        <div class="infomation">
+          Các game trên hiện trường hiện nay chỉ có nhiều nhất 2 tokens, nhưng
+          Apeiron có tận 3 tokens. Đó chính là Apeiros (APRS), Anima (ANIMA),
+          Ringularity (RINGU). Mỗi token sẽ có chức năng và cách kiếm riêng vậy
+          nên bạn có thể tham gia đầu tư theo nhiều cách khác nhau.
+        </div>
       </div>
     </div>
     <!-- section-three -->
-    <div class="section-three">
+    <div class="section-three" id="section-three">
       <img class="bgr-img" src="../assets/img/token_earn.png" alt="" />
     </div>
     <!-- section-four -->
-    <div class="section-four">
-      <h1>Chi tiết hệ thống Tri-Token</h1>
-      <h2 class="apeiron-font">Tri-Token detail</h2>
-      <CenterIconView></CenterIconView>
-      <div class="infomation">
-        <div>
-          <img
-            src="../assets/img/token/APRS_token.png"
-            width="20"
-            style="margin-right: 10px"
-          />
-          Apeiros đóng vai trò là đồng token chủ đạo của Apeiron, chủ sở hữu
-          APRS sẽ có thể tham gia vào quy trình bỏ phiếu ảnh hưởng đến sự phát
-          triển trong tương lai của trò chơi. Việc phát hành token sẽ được thực
-          hiện theo từng giao đoạn. Sau khi game được phát hành, một phần sẽ
-          được trao cho người chơi trông các sự kiện như PvP, hoặc hoàn thành
-          các sự kiện lớn như đánh bại boss thế giới hay thắng trong Galactic
-          event. Trong game APRS có thể dùng trong việc gắn skill card cho
-          avatar hay gắn Apostle vào khe cắm (relic). APRS có thể sẽ được list
-          trên cả 2 sàn là phi tập trung lẫn tập trung.
-        </div>
-        <br />
-        <div>
-          <img
-            src="../assets/img/token/ANIMA_token.png"
-            width="20"
-            style="margin-right: 10px"
-          />
-          Anima đóng vai trò là token play to earn của Apeiron. Nguồn cung Anima
-          không cố định và token sẽ được trao như phần thưởng cho người chơi khi
-          hoàn thành một số nhiệm vụ nhất định trong trò chơi. Nó có thể được
-          tạo ra như phần thưởng trong việc hoàn thành dungeons, nhiệm vụ, chiến
-          thắng PvP, và một lượng lớn có thể tạo ra trong sự kiên Armageddon.
-          Chỉ có một lượng Anima nhất định có thể tạo ra hàng tuần. Anima có thể
-          sử dụng trong Celestial Conjunction hoặc Chronomerging. Cung và cầu
-          của Anima cân bằng với số lượng người dùng đang hoạt động và chúng tôi
-          sẽ theo dõi chặt chẽ tính kinh ntees của trò chơi để giữ cho Anima ở
-          trạng thái cân bằng lành mạnh. Anima có thể được list trong 1 hoặc cả
-          2 sàn giao dịch phi tập trung và tập trung.
-        </div>
-        <br />
-        <div style="padding-bottom: 110px">
-          <img
-            src="../assets/img/token/RINGU_token.png"
-            width="20"
-            style="margin-right: 10px"
-          />
-          Ringularity đóng vai trò là Token cao cấp của Apeiron để phân phối
-          trong các sự kiện quy mô lớn. Người chơi có thể kiếm được RINGU từ các
-          sự kiện như Galactic Events, World Bosses, và Alliance-level GvG,...
-          Có token thứ ba là một ý tưởng mới lạ chứng minh cho việc chúng tôi và
-          các Gaming guild sẽ hỗ trợ lâu dài cho Apeiron tiếp tục phát triển.
-          Chủ sở hữu Ringularity có thể có quyền truy cập vào các địa điểm, shop
-          và các cơ chế farming hấp dẫn. Cả ba token đều có thể giao dịch trên
-          các sàn giao dịch.
+    <div class="section-four" id="section-four">
+      <div class="slide-from-right">
+        <h1>Chi tiết hệ thống Tri-Token</h1>
+        <h2 class="apeiron-font">Tri-Token detail</h2>
+        <CenterIconView></CenterIconView>
+        <div class="infomation">
+          <div>
+            <img
+              src="../assets/img/token/APRS_token.png"
+              width="20"
+              style="margin-right: 10px"
+            />
+            Apeiros đóng vai trò là đồng token chủ đạo của Apeiron, chủ sở hữu
+            APRS sẽ có thể tham gia vào quy trình bỏ phiếu ảnh hưởng đến sự phát
+            triển trong tương lai của trò chơi. Việc phát hành token sẽ được
+            thực hiện theo từng giao đoạn. Sau khi game được phát hành, một phần
+            sẽ được trao cho người chơi trông các sự kiện như PvP, hoặc hoàn
+            thành các sự kiện lớn như đánh bại boss thế giới hay thắng trong
+            Galactic event. Trong game APRS có thể dùng trong việc gắn skill
+            card cho avatar hay gắn Apostle vào khe cắm (relic). APRS có thể sẽ
+            được list trên cả 2 sàn là phi tập trung lẫn tập trung.
+          </div>
+          <br />
+          <div>
+            <img
+              src="../assets/img/token/ANIMA_token.png"
+              width="20"
+              style="margin-right: 10px"
+            />
+            Anima đóng vai trò là token play to earn của Apeiron. Nguồn cung
+            Anima không cố định và token sẽ được trao như phần thưởng cho người
+            chơi khi hoàn thành một số nhiệm vụ nhất định trong trò chơi. Nó có
+            thể được tạo ra như phần thưởng trong việc hoàn thành dungeons,
+            nhiệm vụ, chiến thắng PvP, và một lượng lớn có thể tạo ra trong sự
+            kiên Armageddon. Chỉ có một lượng Anima nhất định có thể tạo ra hàng
+            tuần. Anima có thể sử dụng trong Celestial Conjunction hoặc
+            Chronomerging. Cung và cầu của Anima cân bằng với số lượng người
+            dùng đang hoạt động và chúng tôi sẽ theo dõi chặt chẽ tính kinh
+            ntees của trò chơi để giữ cho Anima ở trạng thái cân bằng lành mạnh.
+            Anima có thể được list trong 1 hoặc cả 2 sàn giao dịch phi tập trung
+            và tập trung.
+          </div>
+          <br />
+          <div style="padding-bottom: 110px">
+            <img
+              src="../assets/img/token/RINGU_token.png"
+              width="20"
+              style="margin-right: 10px"
+            />
+            Ringularity đóng vai trò là Token cao cấp của Apeiron để phân phối
+            trong các sự kiện quy mô lớn. Người chơi có thể kiếm được RINGU từ
+            các sự kiện như Galactic Events, World Bosses, và Alliance-level
+            GvG,... Có token thứ ba là một ý tưởng mới lạ chứng minh cho việc
+            chúng tôi và các Gaming guild sẽ hỗ trợ lâu dài cho Apeiron tiếp tục
+            phát triển. Chủ sở hữu Ringularity có thể có quyền truy cập vào các
+            địa điểm, shop và các cơ chế farming hấp dẫn. Cả ba token đều có thể
+            giao dịch trên các sàn giao dịch.
+          </div>
         </div>
       </div>
     </div>
     <!-- section-five -->
-    <div class="section-five" style="box-shadow: 0px -20px 30px black">
+    <div
+      class="section-five"
+      style="box-shadow: 0px -20px 30px black"
+      id="section-five"
+    >
       <div class="half-body">
         <div class="right-side">
           <h1 class="title" style="margin-top: 20px">
@@ -140,7 +149,11 @@
     </div>
     <!-- section-six -->
     <hr />
-    <div class="section-five" style="box-shadow: unset; display: inline">
+    <div
+      class="section-five"
+      style="box-shadow: unset; display: inline"
+      id="section-six"
+    >
       <h1 style="text-align: center; padding-top: 30px">
         Lịch trình Token Realease
         <span style="font-size: 20px">(Dadi's contributed)</span>

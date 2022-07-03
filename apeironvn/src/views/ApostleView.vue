@@ -2,7 +2,7 @@
   <LoadingView></LoadingView>
   <main class="body-wrapper apostle-view">
     <!-- section-one -->
-    <div class="section-one">
+    <div class="section-one" id="section-one">
       <h1 class="title">
         <span>A</span>
         <span>P</span>
@@ -14,17 +14,19 @@
       </h1>
     </div>
     <!-- section-two -->
-    <div class="section-two">
-      <h1>Apostle là gì?</h1>
-      <h2 class="apeiron-font">Apostle</h2>
-      <CenterIconView></CenterIconView>
-      <div class="infomation">
-        Apostle không khác gì những con pet của bạn trong game. Chúng sẽ hỗ trợ
-        bạn chiến đấu
+    <div class="section-two" id="section-two">
+      <div class="slide-from-left">
+        <h1>Apostle là gì?</h1>
+        <h2 class="apeiron-font">Apostle</h2>
+        <CenterIconView></CenterIconView>
+        <div class="infomation">
+          Apostle không khác gì những con pet của bạn trong game. Chúng sẽ hỗ
+          trợ bạn chiến đấu
+        </div>
       </div>
     </div>
     <!-- section-three -->
-    <div class="section-three">
+    <div class="section-three" id="section-three">
       <video
         id="home-video"
         autoplay
@@ -37,7 +39,7 @@
       ></video>
     </div>
     <!-- section-four -->
-    <div class="section-four">
+    <div class="section-four" id="section-four">
       <div class="infomation">
         <Splide :options="options" style="z-index: 1">
           <SplideSlide class="slide-item">
@@ -254,7 +256,7 @@
       </div>
     </div>
     <!-- section-five -->
-    <div class="section-five">
+    <div class="section-five" id="section-five">
       <img class="bgr-img" src="../assets/img/apostle-opensea.jpeg" alt="" />
       <div class="info-wrapper">
         <div>
@@ -267,63 +269,65 @@
       </div>
     </div>
     <!-- section-six -->
-    <div class="section-six">
-      <h1>Benefit</h1>
-      <h2 class="apeiron-font">Benefit</h2>
-      <CenterIconView></CenterIconView>
-      <div class="infomation">
-        Tùy thuộc vào số lượng Apostle mà bạn sở hữu. Bạn sẽ có cơ hội nhận được
-        cực kỳ nhiều phần thưởng giá trị.
-        <br />
-        <br />
-        <div>
-          Dưới đây là danh sách phần thưởng tùy theo số lượng Apostle bạn sở
-          hữu:
-        </div>
-        <br />
-        <div style="text-align: center">
+    <div class="section-six" id="section-six">
+      <div class="slide-from-left">
+        <h1>Benefit</h1>
+        <h2 class="apeiron-font">Benefit</h2>
+        <CenterIconView></CenterIconView>
+        <div class="infomation">
+          Tùy thuộc vào số lượng Apostle mà bạn sở hữu. Bạn sẽ có cơ hội nhận
+          được cực kỳ nhiều phần thưởng giá trị.
+          <br />
+          <br />
           <div>
-            <h6>4 Unique Apostle</h6>
-            <div>- Dood Plushie Rafle</div>
+            Dưới đây là danh sách phần thưởng tùy theo số lượng Apostle bạn sở
+            hữu:
           </div>
-          <div style="padding-top: 10px">
-            <h6>6 Unique Apostle</h6>
-            <div>- Planet NFT Whitelist [Completed]</div>
-          </div>
-          <div style="padding-top: 10px">
-            <h6>7 Unique Apostle</h6>
-            <div>- APRS TGE Whitelist</div>
-          </div>
-          <div style="padding-top: 10px">
-            <h6>8 Unique Apostle</h6>
-            <div>- Star NFT Whitelist</div>
-          </div>
-          <div style="padding-top: 10px">
-            <h6>9 Unique Apostle</h6>
+          <br />
+          <div style="text-align: center">
             <div>
-              - Planet VIP Whitelist [Completed], Free Planet NFT Raffle
+              <h6>4 Unique Apostle</h6>
+              <div>- Dood Plushie Rafle</div>
             </div>
-          </div>
-          <div style="padding-top: 10px">
-            <h6>10 Unique Apostle</h6>
-            <div>
-              - APRS TGE Whitelist , Increased APRS Staking Rewards , Free APRS
-              Raffle , Discord OG Role
+            <div style="padding-top: 10px">
+              <h6>6 Unique Apostle</h6>
+              <div>- Planet NFT Whitelist [Completed]</div>
             </div>
-          </div>
-          <div style="padding-top: 10px">
-            <h6>11 Unique Apostle</h6>
-            <div>- Star NFT VIP Whitelist, Free Star NFT Raffle</div>
-          </div>
-          <div style="padding-top: 10px">
-            <h6>12 Unique Apostle</h6>
-            <div>- CLASSIFIED</div>
+            <div style="padding-top: 10px">
+              <h6>7 Unique Apostle</h6>
+              <div>- APRS TGE Whitelist</div>
+            </div>
+            <div style="padding-top: 10px">
+              <h6>8 Unique Apostle</h6>
+              <div>- Star NFT Whitelist</div>
+            </div>
+            <div style="padding-top: 10px">
+              <h6>9 Unique Apostle</h6>
+              <div>
+                - Planet VIP Whitelist [Completed], Free Planet NFT Raffle
+              </div>
+            </div>
+            <div style="padding-top: 10px">
+              <h6>10 Unique Apostle</h6>
+              <div>
+                - APRS TGE Whitelist , Increased APRS Staking Rewards , Free
+                APRS Raffle , Discord OG Role
+              </div>
+            </div>
+            <div style="padding-top: 10px">
+              <h6>11 Unique Apostle</h6>
+              <div>- Star NFT VIP Whitelist, Free Star NFT Raffle</div>
+            </div>
+            <div style="padding-top: 10px">
+              <h6>12 Unique Apostle</h6>
+              <div>- CLASSIFIED</div>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <!-- section-five -->
-    <div class="section-five">
+    <div class="section-five" id="section-seven">
       <img class="bgr-img" src="../assets/img/team.png" alt="" />
       <div class="info-wrapper"></div>
     </div>
