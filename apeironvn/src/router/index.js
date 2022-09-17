@@ -103,6 +103,33 @@ const router = createRouter({
         window.location.replace("https://marketplace.apeironnft.com/")
       }
     },
+    {
+      path: "/star",
+      name: "star",
+      meta: {
+        dropdown: true,
+        dropdownItem: true
+      },
+      component: () => import("../views/StarView.vue")
+    },
+    {
+      path: "/constellation",
+      name: "constellation",
+      meta: {
+        dropdown: true,
+        dropdownItem: true
+      },
+      component: () => import("../views/ConstellationView.vue")
+    },
+    {
+      path: "/alliances",
+      name: "alliances",
+      meta: {
+        dropdown: true,
+        dropdownItem: true
+      },
+      component: () => import("../views/AlliancesView.vue")
+    },
   ],
 
 });

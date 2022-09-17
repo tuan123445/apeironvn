@@ -510,6 +510,15 @@ body {
         &:nth-child(10) {
           animation: fade-in 7s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
         }
+        &:nth-child(11) {
+          animation: fade-in 7s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+        &:nth-child(12) {
+          animation: fade-in 7s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+        &:nth-child(13) {
+          animation: fade-in 7s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
       }
     }
   }
@@ -740,6 +749,20 @@ body {
     }
   }
 
+  /* el-collap */
+  .el-collapse-item__header,
+  .el-collapse-item__wrap,
+  .el-collapse-item__content {
+    color: #fff8dc !important;
+    background-color: transparent !important;
+    font-weight: 300;
+    font-size: large;
+  }
+
+  .el-collapse-item__header {
+    height: fit-content;
+  }
+
   // .apexcharts-toolbar {
   //   display: none !important;
   // }
@@ -807,7 +830,7 @@ body {
   .section-two {
     @include section-option-two(
       700px,
-      800px,
+      900px,
       "../assets/img/background/background-avatar-left.jpg"
     );
   }
@@ -821,7 +844,7 @@ body {
   .section-four {
     @include section-option-two(
       850px,
-      1050px,
+      1400px,
       "../assets/img/background/background-avatar-right.jpg"
     );
   }
@@ -931,4 +954,23 @@ body {
       transform: translateX(0%);
     }
   }
+}
+
+.el-dialog {
+  background-image: url(../assets/img/background/background-avatar-right.jpg) !important;
+
+  .el-dialog__headerbtn {
+    .el-dialog__close {
+      font-size: large;
+      color: #fff;
+    }
+  }
+}
+
+.el-tabs__item {
+  color: #fff8dc !important;
+}
+
+.el-tabs__item.is-active {
+  color: var(--el-color-primary) !important;
 }

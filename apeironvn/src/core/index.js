@@ -1,7 +1,9 @@
 /* eslint-disable prettier/prettier */
 import mixins from "./mixins";
-import legacyList from "./lib";
+import lib from "./lib";
+import helper from "./helper";
 export default {
   mixins: mixins,
-  legacyList: legacyList
+  lib: lib,
+  helper: helper
 };
