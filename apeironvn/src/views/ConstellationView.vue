@@ -112,7 +112,6 @@
 import index from "../core/index.js";
 import LoadingView from "../components/LoadingView.vue";
 import CenterIconView from "../components/CenterIconView.vue";
-import lib from "../core/constellationLib";
 import libPng from "../core/constellation_pngList";
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
@@ -150,7 +149,6 @@ export default {
     this.constellation2 = null;
 
     return {
-      constellationList: lib.constellationList,
       options: {
         rewind: true,
         gap: "1rem",
