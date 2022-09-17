@@ -228,7 +228,7 @@ export default {
     addBlackHole() {
       const loader = new GLTFLoader();
       loader.load(
-        "../src/img/star/blackhole.glb",
+        "../src/img/star/blackhole.gltf",
         (gltf) => {
           this.scene.add(gltf.scene);
           this.mixer = new THREE.AnimationMixer(gltf.scene);
