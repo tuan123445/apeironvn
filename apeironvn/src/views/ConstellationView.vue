@@ -115,8 +115,7 @@ import CenterIconView from "../components/CenterIconView.vue";
 import libPng from "../core/constellation_pngList";
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
-import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
-
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 export default {
   mixins: [index.mixins],
   components: {
@@ -147,7 +146,7 @@ export default {
     this.centerCube = null;
     this.constellation = null;
     this.constellation2 = null;
-
+    this.loader = new GLTFLoader();
     return {
       options: {
         rewind: true,
@@ -226,9 +225,8 @@ export default {
     },
 
     addBlackHole() {
-      const loader = new GLTFLoader();
-      loader.load(
-        "../src/img/star/blackhole.gltf",
+      this.loader.load(
+        "src/img/star/blackhole.glb",
         (gltf) => {
           this.scene.add(gltf.scene);
           this.mixer = new THREE.AnimationMixer(gltf.scene);
