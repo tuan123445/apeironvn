@@ -168,12 +168,12 @@
       display: flex;
 
       .slide-img {
-        width: 50%;
+        width: 40%;
         display: flex;
       }
 
       .slide-info {
-        width: 50%;
+        width: 60%;
       }
     }
 
@@ -546,6 +546,10 @@ body {
           display: block;
           z-index: 1;
 
+          img {
+            width: 100px;
+          }
+
           .slide-title {
             text-align: center;
             width: 100%;
@@ -844,7 +848,7 @@ body {
   .section-four {
     @include section-option-two(
       850px,
-      1400px,
+      1500px,
       "../assets/img/background/background-avatar-right.jpg"
     );
   }
@@ -973,4 +977,14 @@ body {
 
 .el-tabs__item.is-active {
   color: var(--el-color-primary) !important;
+}
+
+.el-dialog__header {
+  padding: unset !important;
+}
+
+.apostle-view {
+  .el-collapse {
+    border-top: unset !important;
+  }
 }

@@ -90,11 +90,16 @@ export default {
       }
     },
     getValueOfSection(section) {
+      var sum;
       var listSection = ["section-one", "section-two", "section-three", "section-four", "section-five", "section-six", "section-seven", "section-eight", "section-nine"];
       var indexPosition = listSection.indexOf(section);
-      var sum = document.getElementById(section).offsetHeight / 1.5;
+      if (document.getElementById(section)) {
+        sum = document.getElementById(section).offsetHeight / 1.5;
+      }
       for (var i = 0; i < indexPosition; i++) {
-        sum += document.getElementById(listSection[i]).offsetHeight;
+        if (document.getElementById(section)) {
+          sum += document.getElementById(listSection[i]).offsetHeight;
+        }
       }
       return sum;
     }

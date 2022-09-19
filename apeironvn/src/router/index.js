@@ -48,6 +48,15 @@ const router = createRouter({
       component: () => import("../views/PlanetView.vue")
     },
     {
+      path: "/star",
+      name: "star",
+      meta: {
+        dropdown: false,
+        dropdownItem: false
+      },
+      component: () => import("../views/StarView.vue")
+    },
+    {
       path: "/token",
       name: "token",
       meta: {
@@ -60,8 +69,8 @@ const router = createRouter({
       path: "/events",
       name: "events",
       meta: {
-        dropdown: false,
-        dropdownItem: false
+        dropdown: true,
+        dropdownItem: true
       },
       component: () => import("../views/EventsView.vue")
     },
@@ -104,15 +113,6 @@ const router = createRouter({
       }
     },
     {
-      path: "/star",
-      name: "star",
-      meta: {
-        dropdown: true,
-        dropdownItem: true
-      },
-      component: () => import("../views/StarView.vue")
-    },
-    {
       path: "/constellation",
       name: "constellation",
       meta: {
@@ -129,6 +129,15 @@ const router = createRouter({
         dropdownItem: true
       },
       component: () => import("../views/AlliancesView.vue")
+    },
+    {
+      path: "/expedition",
+      name: "Expedition",
+      meta: {
+        dropdown: true,
+        dropdownItem: true
+      },
+      component: () => import("../views/ExpeditionView.vue")
     },
   ],
 

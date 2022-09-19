@@ -33,3 +33,7 @@ npm run build
 ```sh
 npm run lint
 ```
+
+Khi build mới phải di chuyển file blackhole.glg sang dist
+
+Khi deploy lên server cần install pm2 bằng lệnh sudo npm i -g pm2 --force

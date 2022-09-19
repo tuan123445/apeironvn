@@ -134,6 +134,9 @@ export default {
     // this.addCircle();
     // this.addCircleTwo();
   },
+  created() {
+    this.scrollToTop();
+  },
   data() {
     this.scene = null;
     this.camera = null;
@@ -226,7 +229,7 @@ export default {
 
     addBlackHole() {
       this.loader.load(
-        "src/img/star/blackhole.glb",
+        "./src/img/star/blackhole.glb",
         (gltf) => {
           this.scene.add(gltf.scene);
           this.mixer = new THREE.AnimationMixer(gltf.scene);

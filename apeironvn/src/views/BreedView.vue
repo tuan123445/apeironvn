@@ -34,6 +34,16 @@
         </div>
         <br />
         <div>
+          Hiện tại bạn có thể Breed Planet của bạn tại trang market chính thức
+          của Apeiron.
+          <a
+            href="https://marketplace.apeironnft.com/sanctuary/conjunction/"
+            target="_blank"
+            >https://marketplace.apeironnft.com/sanctuary/conjunction/</a
+          >
+        </div>
+        <br />
+        <div>
           <table class="blackHoleNeedTable">
             <tr>
               <th v-for="headerItem in tableDataHeader" :key="headerItem">
@@ -51,11 +61,10 @@
     </div>
     <!-- section-three -->
     <div class="section-three">
-      <div class="notice">tanbod dadi contributed</div>
       <video
         id="home-video"
         autoplay
-        src="../assets/video/breedingGuide.mp4"
+        src="../assets/video/Celestial_Conjunction.mp4"
         loop
         type="video/mp4"
         muted="muted"
@@ -380,13 +389,16 @@ export default {
   data() {
     return {
       tableDataHeader: [
-        "# Số lần nhân giống của một planet",
-        "# Số Mini-Black Holes cần (mỗi planet)",
+        "",
+        "# Số mBH cần để nhân giống lần #1",
+        "# Số mBH cần để nhân giống lần #2",
+        "# Số mBH cần để nhân giống lần #3",
       ],
       tableData: [
-        ["0", "1"],
-        ["1", "3"],
-        ["2+", "6"],
+        ["Primeval Plannet", "1", "1", "1"],
+        ["Non-Primeval Plannet (Quad/Tri Planet)", "1", "3", "6"],
+        ["Non-Primeval Plannet (Duo Planet)", "3", "9", "18"],
+        ["Non-Primeval Plannet (Pure planet)", "9", "27", "54"],
       ],
       planets: [
         {
@@ -976,6 +988,7 @@ export default {
   }
 
   .section-six {
+    height: 1300px !important;
     background-image: url(../assets/img/background/landing-background.jpg) !important;
     .blackHoleNeedTable {
       tr {

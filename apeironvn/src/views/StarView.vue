@@ -266,7 +266,13 @@
           tổng số lượng rương là 473 rương. Sẽ có 2 vòng 1 vòng cho whitelist sẽ
           được mở bán sớm trước 1 giờ đồng hồ. VIP whitelist có thể mua max 2
           rương, WL thường sẽ có thể mua max 1 rương. Ở vòng public, tất cả mọi
-          người đều có thể mua với số lượng vô hạn.
+          người đều có thể mua với số lượng vô hạn. Bạn có thể xem hướng dẫn mua
+          star tại
+          <span
+            ><el-button size="small" type="info" @click="openGGuideDialog()"
+              >ĐÂY</el-button
+            ></span
+          >
           <div class="row">
             <div class="col-4">
               <img
@@ -335,6 +341,54 @@
       :typeOfChest="typeOfChest"
       @getShowChestDialogValue="getShowChestDialogValue()"
     ></StarChestDialog>
+    <el-dialog
+      v-model="showStarSaleGuideDialog"
+      style="width: 80%"
+      class="star-sale-guide-dialog"
+      :before-close="!showStarSaleGuideDialog"
+    >
+      <div class="star-sale-guide-dialog-title">
+        Hướng dẫn cách mua Star ở đợt Presale tới
+      </div>
+      <div class="star-sale-guide-dialog-body mt-5">
+        <div class="mt-2">
+          1. Có wallet hỗ trợ mạng polygon và chuẩn bị sẵn WETH. (Ưu tiên dùng
+          Metamask)
+        </div>
+        <div class="mt-2">
+          2. Đến trang web mint
+          <a href="https://mint.apeironnft.com/">https://mint.apeironnft.com</a
+          >.
+        </div>
+        <div class="mt-2">
+          3. Nhấp vào "Connect Wallet" để connect ví của bạn. (Hãy chắc chắn
+          browser của bạn có Metamask và hỗ trợ Metamask).
+        </div>
+        <div class="mt-2">4. Chọn Account của ví bạn</div>
+        <div class="mt-2">
+          5. Nhấn CONNECT, sau đó bạn sẽ thấy ví của bạn hiện "Metamask is
+          connected".
+        </div>
+        <div class="mt-2">
+          6. Sau khi ví của bạn đã được connect, chọn một Stella Tabula Chest
+          bạn muốn mua và click "Mint Now".
+        </div>
+        <div class="mt-2">
+          7. Làm theo hướng dẫn của những tin nhắn hiện lên màn hình và confirm.
+        </div>
+        <div class="mt-2">
+          8. Đợi cho đến khi xuất hiện tiên nhắn đã mua thành công.
+        </div>
+        <div class="mt-2">
+          9. Connect ví của bạn vào OpenSea để mở chest lấy Star và
+          Astronomicals của bạn.
+        </div>
+        <div class="mt-2">
+          10. Với những ai Vip WL thì có thể lặp lại từ bước 6 để mua thêm cái
+          chest nữa nếu bạn muốn.
+        </div>
+      </div>
+    </el-dialog>
   </main>
 </template>
 
@@ -352,6 +406,9 @@ export default {
     CenterIconView,
     AstronomicalDialog,
     StarChestDialog,
+  },
+  created() {
+    this.scrollToTop();
   },
   data() {
     return {
@@ -371,6 +428,7 @@ export default {
       showAstronomical: false,
       showChest: false,
       typeOfChest: undefined,
+      showStarSaleGuideDialog: false,
     };
   },
   watch: {
@@ -421,6 +479,9 @@ export default {
     openChest(type) {
       this.typeOfChest = type;
       this.$nextTick(() => (this.showChest = true));
+    },
+    openGGuideDialog() {
+      this.showStarSaleGuideDialog = true;
     },
   },
 };
@@ -572,6 +633,17 @@ export default {
 .collapse-style {
   color: #fff8dc !important;
   background-color: unset !important;
+}
+.star-sale-guide-dialog {
+  .star-sale-guide-dialog-title {
+    color: #fff8dc;
+    font-size: 20px;
+    padding-left: 20px;
+  }
+  .star-sale-guide-dialog-body {
+    color: #fff8dc;
+    padding-left: 20px;
+  }
 }
 
 .star-view {

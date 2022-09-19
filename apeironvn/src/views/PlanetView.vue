@@ -51,17 +51,46 @@
         <div class="infomation">
           Hiện tại vòng Primeval Planet sale đã được diễn ra vào ngày 14 tháng 4
           năm 2022. Giờ đây các Planet NFT đang được bán trên
-          <a href="https://opensea.io/collection/apeironplanet">OPENSEA</a>. Vậy
-          nên bạn có thể sở hữu chúng bằng cách mua trực tiếp trên
-          <a href="https://opensea.io/collection/apeironplanet">OPENSEA</a>. Tuy
-          nhiên nếu bạn không có điều kiện kinh tế để có thể sở hữu một Planet
-          cho riêng bản thân mình thì cũng không sao cả. Có rất nhiều cách để
-          tham gia game mà không cần đến vốn. Đúng vậy Apeiron có chế độ
-          FreeToEarn. Bạn hoàn toàn có thể tham gia miễn phí bằng cách tham gia
-          vào các guild gaming và trở thành học viên của họ để có thể sở hữu một
-          suất scholalship để tham gia game. Hiện nay Apeiron đã và vẫn đang bắt
-          tay với nhiều gaming guild lớn trên khắp thế giới như GUILDFI, YGGSEA,
-          ANCIENT8( một gaming guild của Việt Nam ),...
+          <span
+            ><a
+              href="https://opensea.io/collection/apeironplanet"
+              target="_blank"
+              >OPENSEA</a
+            ></span
+          >
+          hoặc
+          <span
+            ><a
+              href="https://marketplace.apeironnft.com/?nftListingStatus=Listing"
+              target="_blank"
+              >market chính thức</a
+            ></span
+          >
+          của Apeiron. Vậy nên bạn có thể sở hữu chúng bằng cách mua trực tiếp
+          trên
+          <span
+            ><a
+              href="https://opensea.io/collection/apeironplanet"
+              target="_blank"
+              >OPENSEA</a
+            ></span
+          >
+          hoặc
+          <span
+            ><a
+              href="https://marketplace.apeironnft.com/?nftListingStatus=Listing"
+              target="_blank"
+              >market chính thức</a
+            ></span
+          >
+          của Apeiron. Tuy nhiên nếu bạn không có điều kiện kinh tế để có thể sở
+          hữu một Planet cho riêng bản thân mình thì cũng không sao cả. Có rất
+          nhiều cách để tham gia game mà không cần đến vốn. Đúng vậy Apeiron có
+          chế độ FreeToEarn. Bạn hoàn toàn có thể tham gia miễn phí bằng cách
+          tham gia vào các guild gaming và trở thành học viên của họ để có thể
+          sở hữu một suất scholalship để tham gia game. Hiện nay Apeiron đã và
+          vẫn đang bắt tay với nhiều gaming guild lớn trên khắp thế giới như
+          GUILDFI, YGGSEA, ANCIENT8( một gaming guild của Việt Nam ),...
         </div>
       </div>
     </div>
