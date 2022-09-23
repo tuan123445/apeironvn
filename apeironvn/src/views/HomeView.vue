@@ -23,7 +23,15 @@
           Không có gì đáng nói ngoài sự thật rằng đây chính là một game thể loại
           god game ĐẦU TIÊN trên blockchain. Nếu bạn muốn sử dụng sức mạnh sáng
           tạo của mình để tạo nên một vũ trụ đầy những chú chubster đáng yêu thì
-          khi đến với Apeiron bạn hoàn toàn có thể làm được những điều đó.
+          khi đến với Apeiron bạn hoàn toàn có thể làm được những điều đó. Trong
+          Apeiron, bạn sẽ có quyền kiểm soát EDEN của một hành tinh - một cấu
+          trúc bí ẩn để truyền năng lượng thần thánh - và tạo ra nhiều phép màu
+          nguyên tố khác nhau để giải quyết vô số vấn đề mà Doods mũm mĩm gặp
+          phải trong cuộc sống hàng ngày của họ. Và sau khi bạn có đủ niềm tin
+          từ Doods của mình, bạn sẽ có thể biến thành Thế thần của hành tinh
+          mình, một người khổng lồ có thể điều khiển và di chuyển được để khám
+          phá vũ trụ, chiến đấu với quái vật và kiếm chiến lợi phẩm cực kỳ hoành
+          tráng!
         </div>
       </div>
     </div>
@@ -43,54 +51,6 @@
     <!-- section-four -->
     <div class="section-four" id="section-four">
       <div class="slide-from-right">
-        <h1>Apeiron</h1>
-        <h2 class="apeiron-font">Apeiron</h2>
-        <CenterIconView></CenterIconView>
-        <div class="infomation">
-          Trong Apeiron, bạn sẽ có quyền kiểm soát EDEN của một hành tinh - một
-          cấu trúc bí ẩn để truyền năng lượng thần thánh - và tạo ra nhiều phép
-          màu nguyên tố khác nhau để giải quyết vô số vấn đề mà Doods mũm mĩm
-          gặp phải trong cuộc sống hàng ngày của họ. Và sau khi bạn có đủ niềm
-          tin từ Doods của mình, bạn sẽ có thể biến thành Thế thần của hành tinh
-          mình, một người khổng lồ có thể điều khiển và di chuyển được để khám
-          phá vũ trụ, chiến đấu với quái vật và kiếm chiến lợi phẩm cực kỳ hoành
-          tráng!
-        </div>
-      </div>
-    </div>
-    <!-- section-five -->
-    <div class="section-five" id="section-five">
-      <img class="bgr-img" src="../assets/img/Bood_lineup.jpg" alt="" />
-      <div class="info-wrapper">
-        <h1>Apostle</h1>
-        <h2 class="apeiron-font">Apostle</h2>
-        <div class="center-icon">
-          <img
-            src="../assets/img/center-icon/small_dood_kv_lineup_left.png"
-            alt=""
-          />
-          <img
-            src="../assets/img/center-icon/treasure.png"
-            alt=""
-            style="width: 30px !important"
-          />
-          <img
-            src="../assets/img/center-icon/small_dood_kv_lineup_right.png"
-            alt=""
-          />
-        </div>
-        <div class="infomation">
-          Apostle giống như pet của bạn trong game. Mỗi Apostle lại có bộ kỹ
-          năng riêng của chính mình.
-        </div>
-        <div class="see-detail-btn">
-          <a href="/apostle">Xem thêm</a>
-        </div>
-      </div>
-    </div>
-    <!-- section-six -->
-    <div class="section-six" id="section-six">
-      <div class="slide-from-left">
         <h1>Planet</h1>
         <h2 class="apeiron-font">Planet</h2>
         <CenterIconView></CenterIconView>
@@ -121,17 +81,17 @@
           <div class="img-hover-zoom">
             <img src="../assets/img/godiverse.png" alt="" />
             <div class="slide-img-captions">
-              <h1>More</h1>
+              <h1>Star</h1>
               <div class="detail-btn">
-                <a href="#"> Xem Thêm </a>
+                <a href="/star"> Xem Thêm </a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- section-seven -->
-    <div class="section-seven" id="section-seven">
+    <!-- section-five -->
+    <div class="section-five" id="section-five">
       <video
         id="home-video"
         autoplay
@@ -143,9 +103,9 @@
         playsinline
       ></video>
     </div>
-    <!-- section-eight -->
-    <div class="section-eight" id="section-eight">
-      <div class="slide-from-right">
+    <!-- section-six -->
+    <div class="section-six" id="section-six">
+      <div class="slide-from-left">
         <h1>Partner</h1>
         <h2 class="apeiron-font">Partner</h2>
         <CenterIconView></CenterIconView>
@@ -159,7 +119,6 @@
         </div>
       </div>
     </div>
-    <!-- section-nine -->
     <div class="section-nine" id="section-nine">
       <div class="body-wrapper">
         <div class="img-line-one">
@@ -168,16 +127,16 @@
             <div class="slide-img-captions">
               <h1>Star NFT</h1>
               <div class="detail-btn">
-                <a href="#"> Xem Thêm </a>
+                <a href="/star"> Xem Thêm </a>
               </div>
             </div>
           </div>
           <div class="img-hover-zoom" style="margin: 0 !important">
-            <img src="../assets/img/relic.png" alt="" />
+            <img src="../assets/img/apostles.png" alt="" />
             <div class="slide-img-captions">
-              <h1>Relic</h1>
+              <h1>Apostle</h1>
               <div class="detail-btn">
-                <a href="#"> Xem Thêm </a>
+                <a href="/apostle"> Xem Thêm </a>
               </div>
             </div>
           </div>
@@ -202,20 +161,20 @@
             </div>
           </div>
           <div class="img-hover-zoom" style="margin: 0 !important">
-            <img src="../assets/img/roadmap.jpg" alt="" />
+            <img src="../assets/img/Expedition.jpeg" alt="" />
             <div class="slide-img-captions">
-              <h1>Road map</h1>
+              <h1>Expedition</h1>
               <div class="detail-btn">
-                <a href="#"> Xem Thêm </a>
+                <a href="/expedition"> Xem Thêm </a>
               </div>
             </div>
           </div>
           <div class="img-hover-zoom" style="margin: 0 !important">
-            <img src="../assets/img/team.png" alt="" />
+            <img src="../assets/img/major_constellation.jpg" alt="" />
             <div class="slide-img-captions">
-              <h1>Team</h1>
+              <h1>Constellation</h1>
               <div class="detail-btn">
-                <a href="#"> Xem Thêm </a>
+                <a href="/constellation"> Xem Thêm </a>
               </div>
             </div>
           </div>
@@ -243,8 +202,18 @@ export default {
 };
 </script>
 
-<style>
-.home-view .section-one {
-  background-image: url(../assets/img/apostle_oasis.jpg) !important;
+<style lang="scss" scoped>
+.home-view {
+  .section-one {
+    background-image: url(../assets/img/apostle_oasis.jpg) !important;
+  }
+
+  .section-two {
+    height: 800px !important;
+  }
+
+  .section-four {
+    height: 1000px !important;
+  }
 }
 </style>

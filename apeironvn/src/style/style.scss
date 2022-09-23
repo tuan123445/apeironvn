@@ -5,6 +5,10 @@
 
 /* Small devices (tablets, 200px and up) */
 @media (min-width: 200px) {
+  .core-detail {
+    width: 80% !important;
+  }
+
   .section-one {
     h1 {
       span {
@@ -25,7 +29,8 @@
     height: 1000px !important;
   }
 
-  .section-eight {
+  .section-eight,
+  .section-six {
     .info-center-img {
       img {
         width: 90%;
@@ -195,6 +200,9 @@
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .core-detail {
+    width: 70% !important;
+  }
   .section-one {
     h1 {
       span {
@@ -221,7 +229,8 @@
     padding: 100px 0 0 0;
   }
 
-  .section-eight {
+  .section-eight,
+  .section-six {
     .info-center-img {
       img {
         width: 700px;
@@ -337,6 +346,10 @@
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 900px) {
+  .core-detail {
+    width: 50% !important;
+  }
+
   .half-body {
     .right-side {
       .age_line_table {
@@ -356,7 +369,8 @@
     padding-right: 30%;
   }
 
-  .section-eight {
+  .section-eight,
+  .section-six {
     .info-center-img {
       img {
         width: 700px;

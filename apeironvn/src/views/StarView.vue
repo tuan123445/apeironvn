@@ -269,10 +269,11 @@
           người đều có thể mua với số lượng vô hạn. Bạn có thể xem hướng dẫn mua
           star tại
           <span
-            ><el-button size="small" type="info" @click="openGGuideDialog()"
-              >ĐÂY</el-button
-            ></span
-          >
+            ><el-button size="small" type="info" @click="openGGuideDialog()">
+              <i class="mdi mdi-chevron-right"></i>
+              Đây
+              <i class="mdi mdi-chevron-left"></i></el-button
+          ></span>
           <div class="row">
             <div class="col-4">
               <img

@@ -139,6 +139,13 @@
           thì số lượng phần thưởng còn được nhân lên hơn nữa. Hiện tại vòng
           Primeval Planet sale đã kết thúc nên khi bạn mua Planet hãy để ý cả
           Core của chúng. Tier của Core được ghi góc bên dưới của Planet NFT.
+          Xem thêm về các nguyên tố tại
+          <span class="avatar-detail"
+            ><el-button type="info" size="small" @click="openAvatarDetail()">
+              <i class="mdi mdi-chevron-right"></i>
+              Đây
+              <i class="mdi mdi-chevron-left"></i> </el-button
+          ></span>
         </div>
       </div>
     </div>
@@ -406,6 +413,102 @@
         </div>
       </div>
     </div>
+    <el-dialog
+      v-model="coreDetailDialogShow"
+      :before-close="!coreDetailDialogShow"
+      class="core-detail"
+    >
+      <el-tabs v-model="activeElementarName">
+        <el-tab-pane label="Earth" name="Earth">
+          <div class="core-wrapper row">
+            <div class="col-8 px-4" style="word-break: break-word">
+              Nguyên tố Đất là một nguyên tố thiên về hướng phòng thủ, những
+              Avatar có nguyên tố Đất sẽ có các kỹ năng hồi máu, tăng thủ và
+              buff lá chắn. Chúng cũng có các kỹ năng tấn công để vô hiệu hóa kẻ
+              địch bằng cách làm choáng. Các avatar có kỹ năng chủ yếu về Đất
+              thì sẽ có khả năng chống chịu đòn tấn công bẩm sinh và khả năng
+              kiếm soát diện rộng (CC) nếu đưa vào các Apostle có thể gây sát
+              thương cao như Mage hoặc Summoner, hoặc bạn có thể gia tăng khả
+              năng phòng thủ đội hình của mình bằng cách đem theo Warrior và
+              Guardian.
+            </div>
+            <div class="col-4">
+              <img
+                src="../assets/img/core/earth.png"
+                alt=""
+                style="width: -webkit-fill-available"
+              />
+            </div>
+          </div>
+        </el-tab-pane>
+        <el-tab-pane label="Fire" name="Fire">
+          <div class="core-wrapper row">
+            <div class="col-8 px-4" style="word-break: break-word">
+              Nguyên tố lửa là nguyên tố của sự hủy diệt. Chúng rất mạnh với các
+              bộ skill AOE gây damage diện rộng. Tuy nhiên nếu không dùng cẩn
+              thận thì chính đồng đội của bạn cũng sẽ bị thiêu cháy bới ngọn lửa
+              bạn gây ra. Những avatar với kỹ năng chủ yếu là lửa chắc chắn sẽ
+              mang lại nỗi khiếp sợ cho đội hình đối phương. Bạn có thể bù đắp
+              thiệt hại bạn gây ra cho đồng đội bằng cách đem theo Priest hoặc
+              Guardian để có thể chữa trị cho đồng đội. Mặt khác bạn cũng có thể
+              liều ăn nhiều đánh nhanh thắng nhanh bằng cách đem theo Berserker,
+              Apostle có công caao nhưng phòng thủ thấp.
+            </div>
+            <div class="col-4">
+              <img
+                src="../assets/img/core/fire.png"
+                alt=""
+                style="width: -webkit-fill-available"
+              />
+            </div>
+          </div>
+        </el-tab-pane>
+        <el-tab-pane label="Water" name="Water">
+          <div class="core-wrapper row">
+            <div class="col-8 px-4" style="word-break: break-word">
+              Nguyên tố Nước là nguyên tố có sức mạnh phép lớn nhất.Với khả năng
+              giảm thời gian hồi chiêu đáng kể và các kỹ năng phép linh hoạt, nó
+              vừa gây sát thương lâu dài cho kẻ thù vừa hỗ trợ đồng minh. Các
+              avatar có kỹ năng Nước có thể đi theo nhiều hướng khác nhau. Chúng
+              có thể hoạt động như 1 supporter để hỗ trợ cho sát thương chính
+              như Knight, Rouge, hoặc Dragoon. Hoặc chúng cũng có thể là damage
+              chủ lực của team khi kết hợp với các Guardian, Knight, Warrior.
+              Hoặc bạn cũng có thể tận dụng khả năng hồi chiêu của nước để mang
+              theo các Apostle có kỹ năng sát thương cao như Shaman, Bard để
+              spam skill và gây damage nhất có thể.
+            </div>
+            <div class="col-4">
+              <img
+                src="../assets/img/core/water.png"
+                alt=""
+                style="width: -webkit-fill-available"
+              />
+            </div>
+          </div>
+        </el-tab-pane>
+        <el-tab-pane label="Air" name="Air">
+          <div class="core-wrapper row">
+            <div class="col-8 px-4" style="word-break: break-word">
+              Nghe thấy nguyên tố Khí là chúng ta sẽ liên tưởng được đến ngay
+              tốc độ. Di chuyển nhanh như cơn gió, tuy nhiên nhược điểm là bạn
+              cũng phải là người xử lý tình huống nhanh thì mới bắt kịp được tốc
+              độ của trò chơi. Các Avatar có kỹ năng Khí đều có tốc độ di chuyển
+              nhanh tuy nhiên sẽ yêu cầu người chơi có kỹ năng ngắm mục tiêu
+              tốt. Khi bạn quá tập trung vào điều khiển Avatar thì tốt nhất bạn
+              nên đem theo các Apostle có khả năng dễ sử dụng hoặc có khả năng
+              tự di chuyển tốt như Warrior, Hunter.
+            </div>
+            <div class="col-4">
+              <img
+                src="../assets/img/core/air.png"
+                alt=""
+                style="width: -webkit-fill-available"
+              />
+            </div>
+          </div>
+        </el-tab-pane>
+      </el-tabs>
+    </el-dialog>
   </main>
 </template>
 
@@ -469,10 +572,17 @@ export default {
         ["10 mil", "Ante-diluvian", "8"],
         ["100 mil", "Forgottetn", "9"],
       ],
+      coreDetailDialogShow: false,
+      activeElementarName: "Earth",
     };
   },
   created() {
     this.scrollToTop();
+  },
+  methods: {
+    openAvatarDetail() {
+      this.coreDetailDialogShow = true;
+    },
   },
 };
 </script>
@@ -541,6 +651,11 @@ export default {
         }
       }
     }
+  }
+
+  .core-wrapper {
+    color: #fff8dc;
+    font-size: 1.1rem;
   }
 
   @keyframes spin {

@@ -18,71 +18,28 @@
         <h1>Sự kiện gần đây</h1>
         <hr />
         <div class="event-list">
-          <div class="event-item">
-            <div class="event-item-img">
-              <img src="../assets/img/event/podcast.png" alt="" />
-            </div>
-            <div class="event-item-information">
-              <h6>Apeiron Music Podcast</h6>
-              <h6 class="apeiron-font">Apeiron Music Podcast</h6>
-              <div>Thời gian: 20/07/2022 02:00 PM UTC</div>
-              <div>Đối tượng: Toàn bộ cộng đồng</div>
-              <div>Phần thưởng: 20 Foonie emblem</div>
-              <div>
-                Thông tin chi tiết:
-                <span
-                  ><a href="https://discord.gg/UAJsWwZygr" target="_blank">
-                    discord.gg/apeironnft
-                  </a></span
-                >
+          <div v-for="eventItem in eventList" :key="eventItem.title">
+            <div class="event-item">
+              <div class="event-item-img">
+                <img :src="eventItem.linkImg" alt="" />
+              </div>
+              <div class="event-item-information">
+                <h6>{{ eventItem.title }}</h6>
+                <h6 class="apeiron-font">{{ eventItem.title }}</h6>
+                <div>Thời gian: {{ eventItem.time }}</div>
+                <div>Đối tượng: {{ eventItem.register }}</div>
+                <div>Phần thưởng: {{ eventItem.prizes }}</div>
+                <div>
+                  Thông tin chi tiết:
+                  <span
+                    ><a :href="eventItem.detail" target="_blank">
+                      discord.gg/apeironnft
+                    </a></span
+                  >
+                </div>
               </div>
             </div>
-          </div>
-          <hr />
-          <div class="event-item">
-            <div class="event-item-img">
-              <img src="../assets/img/event/pokerAndAMA.jpg" alt="" />
-            </div>
-            <div class="event-item-information">
-              <h6>
-                Grand Poker Tournament + Inhouse Fireside #AMA with LoreKeeper
-              </h6>
-              <h6 class="apeiron-font">
-                Grand Poker Tournament + Inhouse Fireside #AMA with LoreKeeper
-              </h6>
-              <div>Thời gian: 17/07/2022 02:00 PM UTC</div>
-              <div>Đối tượng: Toàn bộ cộng đồng</div>
-              <div>Phần thưởng: Lên đến 4000$ USDC</div>
-              <div>
-                Thông tin chi tiết:
-                <span
-                  ><a href="https://discord.gg/UAJsWwZygr" target="_blank">
-                    discord.gg/apeironnft
-                  </a></span
-                >
-              </div>
-            </div>
-          </div>
-          <hr />
-          <div class="event-item">
-            <div class="event-item-img">
-              <img src="../assets/img/event/AGT.jpeg" alt="" />
-            </div>
-            <div class="event-item-information">
-              <h6>Apeiron's Got Talent</h6>
-              <h6 class="apeiron-font">Apeiron's Got Talent</h6>
-              <div>Thời gian: 09/07/2022 12:00 PM UTC</div>
-              <div>Đối tượng: Toàn bộ cộng đồng</div>
-              <div>Phần thưởng: Lên đến Divine Core giá trị 2ETH</div>
-              <div>
-                Thông tin chi tiết:
-                <span
-                  ><a href="https://discord.gg/UAJsWwZygr" target="_blank">
-                    discord.gg/apeironnft
-                  </a></span
-                >
-              </div>
-            </div>
+            <hr />
           </div>
         </div>
       </div>
@@ -93,6 +50,9 @@
 <script>
 import LoadingView from "../components/LoadingView.vue";
 import index from "../core/index.js";
+import Overseer_cup from "../assets/img/event/Overseer_cup.png";
+import grand_prix from "../assets/img/event/grand_prix.png";
+import valorant_event from "../assets/img/event/valorant_event.png";
 
 export default {
   components: {
@@ -102,7 +62,39 @@ export default {
   created() {
     this.scrollToTop();
   },
-  methods: {},
+  data() {
+    return {
+      eventList: [
+        {
+          title: "Grand Prix",
+          time: "Từ 09/09/2022 đến 28/09/2022",
+          register: "Tất cả các Dood",
+          prizes: "Tổng phần thưởng lên tới 15ETH",
+          detail:
+            "https://discord.com/channels/922326984497954857/922336631820787732/1017538819928625162",
+          linkImg: grand_prix,
+        },
+        {
+          title: "The Overseers Cup",
+          time: "Thứ 6 23/09/2022 01:00 PM +UTC",
+          register: "Tất cả các Dood",
+          prizes: "soul, Foonie Emblem NFT, Luna Flag NFT",
+          detail:
+            "https://discord.com/channels/922326984497954857/989018926765723658/1020271649905455134",
+          linkImg: Overseer_cup,
+        },
+        {
+          title: "Apeiron Mini Guild War II - Valorant",
+          time: "Thứ 6 26/09/2022 02:00 PM +UTC",
+          register: "Tất cả các Dood",
+          prizes: "Tổng phần thưởng lên tới 3000USD",
+          detail:
+            "https://discord.com/channels/922326984497954857/989018926765723658/1022068690184831046",
+          linkImg: valorant_event,
+        },
+      ],
+    };
+  },
 };
 </script>
 

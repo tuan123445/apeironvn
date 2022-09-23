@@ -77,7 +77,16 @@
     </div>
     <!-- section-three -->
     <div class="section-three">
-      <img class="bgr-img" src="../assets/img/gameplay.jpeg" alt="" />
+      <video
+        id="home-video"
+        autoplay
+        src="../assets/video/battle.mp4"
+        loop
+        type="video/mp4"
+        muted="muted"
+        controls
+        playsinline
+      ></video>
     </div>
     <!-- section-four -->
     <div class="section-six">

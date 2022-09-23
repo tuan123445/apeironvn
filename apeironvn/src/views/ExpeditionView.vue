@@ -1,4 +1,5 @@
 <template>
+  <LoadingView></LoadingView>
   <main class="body-wrapper nebula-expedition-view">
     <!-- section-one -->
     <div class="section-one" id="section-one">
@@ -421,6 +422,9 @@ export default {
   components: {
     LoadingView,
     CenterIconView,
+  },
+  created() {
+    this.scrollToTop();
   },
   data() {
     return {
