@@ -275,7 +275,7 @@
               <i class="mdi mdi-chevron-left"></i></el-button
           ></span>
           <div class="row">
-            <div class="col-4">
+            <div class="col-3">
               <img
                 src="../assets/img/star/chest/regularstar_box.png"
                 alt=""
@@ -293,7 +293,7 @@
                 </el-button>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-3">
               <img
                 src="../assets/img/star/chest/image_box_celestial.png"
                 alt=""
@@ -311,7 +311,25 @@
                 </el-button>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-3">
+              <img
+                src="../assets/img/star/chest/image_box_empyrean.png"
+                alt=""
+                style="width: 100%"
+              />
+              <div style="text-align: center">
+                <div>5 WEth</div>
+                <el-button
+                  class="mt-3"
+                  type="info"
+                  size="small"
+                  @click="openChest(3)"
+                >
+                  <span class="apeiron-font">Open Chest</span>
+                </el-button>
+              </div>
+            </div>
+            <div class="col-3">
               <img
                 src="../assets/img/star/chest/image_box_omega.png"
                 alt=""
@@ -323,7 +341,7 @@
                   class="mt-3"
                   type="info"
                   size="small"
-                  @click="openChest(3)"
+                  @click="openChest(4)"
                 >
                   <span class="apeiron-font">Open Chest</span>
                 </el-button>

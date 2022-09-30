@@ -30,6 +30,9 @@
           <div>- Mở ra random 4 Astronomic NFT Tier từ 2-3</div>
           <div>- Có cơ hội nhỏ mở ra celestial đặc biệt</div>
         </div>
+        <div class="chest-body mt-3" v-if="typeOfChest === 4">
+          <div>Star này là phần thưởng của Stake</div>
+        </div>
       </div>
     </el-dialog>
   </div>
