@@ -336,7 +336,7 @@
                 style="width: 100%"
               />
               <div style="text-align: center">
-                <div>5 WEth</div>
+                <div>Not SALE</div>
                 <el-button
                   class="mt-3"
                   type="info"

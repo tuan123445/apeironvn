@@ -38,8 +38,7 @@ Khi build mới phải di chuyển file blackhole.glg sang dist
 
 Khi deploy lên server cần install pm2 bằng lệnh sudo npm i -g pm2 --force
 
-cp /home/ec2-user/apeironvn/apeironvn/src/img/star/blackhole/blackhole.gl
-b blackhole.glb
+cp /home/ec2-user/apeironvn/apeironvn/src/img/star/blackhole/blackhole.glb blackhole.glb
 
 cp -R /home/ec2-user/apeironvn/apeironvn/src/img/star/blackhole/textures
 textures
