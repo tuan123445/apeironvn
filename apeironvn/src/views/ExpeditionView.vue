@@ -409,6 +409,18 @@
         </el-collapse>
       </div>
     </div>
+    <div class="section-five" id="section-five">
+      <video
+        id="home-video"
+        autoplay
+        src="../assets/video/ExpeditionTutorial.mp4"
+        loop
+        type="video/mp4"
+        muted="muted"
+        controls
+        playsinline
+      ></video>
+    </div>
   </main>
 </template>
 

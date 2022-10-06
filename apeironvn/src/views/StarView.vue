@@ -369,42 +369,61 @@
       <div class="star-sale-guide-dialog-title">
         Hướng dẫn cách mua Star ở đợt Presale tới
       </div>
-      <div class="star-sale-guide-dialog-body mt-5">
-        <div class="mt-2">
-          1. Có wallet hỗ trợ mạng polygon và chuẩn bị sẵn WETH. (Ưu tiên dùng
-          Metamask)
-        </div>
-        <div class="mt-2">
-          2. Đến trang web mint
-          <a href="https://mint.apeironnft.com/">https://mint.apeironnft.com</a
-          >.
-        </div>
-        <div class="mt-2">
-          3. Nhấp vào "Connect Wallet" để connect ví của bạn. (Hãy chắc chắn
-          browser của bạn có Metamask và hỗ trợ Metamask).
-        </div>
-        <div class="mt-2">4. Chọn Account của ví bạn</div>
-        <div class="mt-2">
-          5. Nhấn CONNECT, sau đó bạn sẽ thấy ví của bạn hiện "Metamask is
-          connected".
-        </div>
-        <div class="mt-2">
-          6. Sau khi ví của bạn đã được connect, chọn một Stella Tabula Chest
-          bạn muốn mua và click "Mint Now".
-        </div>
-        <div class="mt-2">
-          7. Làm theo hướng dẫn của những tin nhắn hiện lên màn hình và confirm.
-        </div>
-        <div class="mt-2">
-          8. Đợi cho đến khi xuất hiện tiên nhắn đã mua thành công.
-        </div>
-        <div class="mt-2">
-          9. Connect ví của bạn vào OpenSea để mở chest lấy Star và
-          Astronomicals của bạn.
-        </div>
-        <div class="mt-2">
-          10. Với những ai Vip WL thì có thể lặp lại từ bước 6 để mua thêm cái
-          chest nữa nếu bạn muốn.
+      <div class="star-sale-guide-dialog-body">
+        <div class="half-body">
+          <div class="left-side">
+            <video
+              id="home-video"
+              autoplay
+              src="../assets/video/StellaPresales.mp4"
+              loop
+              type="video/mp4"
+              muted="muted"
+              controls
+              playsinline
+              style="width: -webkit-fill-available"
+            ></video>
+          </div>
+          <div class="right-side">
+            <div class="mt-2">
+              1. Có wallet hỗ trợ mạng polygon và chuẩn bị sẵn WETH. (Ưu tiên
+              dùng Metamask)
+            </div>
+            <div class="mt-2">
+              2. Đến trang web mint
+              <a href="https://mint.apeironnft.com/"
+                >https://mint.apeironnft.com</a
+              >.
+            </div>
+            <div class="mt-2">
+              3. Nhấp vào "Connect Wallet" để connect ví của bạn. (Hãy chắc chắn
+              browser của bạn có Metamask và hỗ trợ Metamask).
+            </div>
+            <div class="mt-2">4. Chọn Account của ví bạn</div>
+            <div class="mt-2">
+              5. Nhấn CONNECT, sau đó bạn sẽ thấy ví của bạn hiện "Metamask is
+              connected".
+            </div>
+            <div class="mt-2">
+              6. Sau khi ví của bạn đã được connect, chọn một Stella Tabula
+              Chest bạn muốn mua và click "Mint Now".
+            </div>
+            <div class="mt-2">
+              7. Làm theo hướng dẫn của những tin nhắn hiện lên màn hình và
+              confirm.
+            </div>
+            <div class="mt-2">
+              8. Đợi cho đến khi xuất hiện tiên nhắn đã mua thành công.
+            </div>
+            <div class="mt-2">
+              9. Connect ví của bạn vào OpenSea để mở chest lấy Star và
+              Astronomicals của bạn.
+            </div>
+            <div class="mt-2">
+              10. Với những ai Vip WL thì có thể lặp lại từ bước 6 để mua thêm
+              cái chest nữa nếu bạn muốn.
+            </div>
+          </div>
         </div>
       </div>
     </el-dialog>
