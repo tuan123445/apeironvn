@@ -85,7 +85,7 @@
               style="margin-right: 10px"
             />
             Ringularity đóng vai trò là Token cao cấp của Apeiron để phân phối
-            trong các sự kiện quy mô lớn. Người chơi có thể kiếm được RINGU từ
+            trong các sự kiện quy mô lớn. Người chơi có thể kiếm được RNGU từ
             các sự kiện như Galactic Events, World Bosses, và Alliance-level
             GvG,... Có token thứ ba là một ý tưởng mới lạ chứng minh cho việc
             chúng tôi và các Gaming guild sẽ hỗ trợ lâu dài cho Apeiron tiếp tục
